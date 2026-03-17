@@ -13,7 +13,7 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant
+      - Grant U54OD036472
   - github: techvik
     name: Vikram Adithya Ganesh
     initials: VG
@@ -21,7 +21,7 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
   - github: falquaddoomi
     name: Faisal Alquaddoomi
     initials: FA
@@ -29,7 +29,7 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: false
   - github: the-mayer
     name: David Mayer
@@ -38,15 +38,16 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: false
-  - name: Adriana Ivich
+  - github: ivichadriana
+    name: Adriana Ivich
     initials: AI
     orcid: XXXX-XXXX-XXXX-XXXX
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: false
   - github: vincerubinetti
     name: Vince Rubinetti
@@ -55,7 +56,7 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: false
   - github: cgreene
     name: Casey Greene
@@ -65,7 +66,7 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: true
   - github: seandavis
     name: Sean Davis
@@ -75,5 +76,5 @@ authors:
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant 
+      - Grant U54OD036472
     corresponding: true
