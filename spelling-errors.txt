@@ -4,6 +4,7 @@ Anschutz
 APM
 Bibliometric
 BioData
+bioinformatics
 BioProject
 biospecimen
 CFDE
@@ -17,14 +18,18 @@ CWIC
 discoverability
 DRC
 DSM
+Eigenfactor
+eval
 FAIRplus
 falquaddoomi
 Findable
+FISMA
 Ganesh
 genomic
 GH
 GlyGen
 GTEx
+HIPAA
 HuBMAP
 IAM
 impactful
@@ -32,8 +37,10 @@ implementability
 ISSM
 Ivich
 ivichadriana
+KPI
+KPIs
 Lange
-lifecycle
+Lifecycle
 linkability
 Matomo
 metabolomic
@@ -51,6 +58,7 @@ PIsCO
 pre
 programmatically
 proteomics
+Reimplementation
 representativeness
 reusability
 roadmap
@@ -65,7 +73,7 @@ TCGA
 techvik
 TOPMed
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti

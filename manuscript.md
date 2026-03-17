@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-17" />
   <meta name="citation_publication_date" content="2026-03-17" />
   <meta property="article:published_time" content="2026-03-17" />
-  <meta name="dc.modified" content="2026-03-17T22:39:36+00:00" />
-  <meta property="article:modified_time" content="2026-03-17T22:39:36+00:00" />
+  <meta name="dc.modified" content="2026-03-17T22:54:41+00:00" />
+  <meta property="article:modified_time" content="2026-03-17T22:54:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/850acfbb0bb4e5cdf9c2579a5e434bf1ea62b363/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/850acfbb0bb4e5cdf9c2579a5e434bf1ea62b363/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/850acfbb0bb4e5cdf9c2579a5e434bf1ea62b363/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/850acfbb0bb4e5cdf9c2579a5e434bf1ea62b363/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@850acfb](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/850acfbb0bb4e5cdf9c2579a5e434bf1ea62b363)
+from [seandavi/2026-cfde-metrics-manuscript@e9e3dbe](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e)
 on March 17, 2026.
 </em></small>
 
@@ -244,6 +244,22 @@ Building upon the data coordinating centers spanning 19 projects including GTEx 
 The CFDE's mission is to create a scalable, sustainable infrastructure that enables researchers to find and reuse data across the Common Fund portfolio, with the ultimate goal of accelerating scientific discovery and improving human health.
 The ecosystem is organized into five specialized centers: the Data Resource Center (DRC), the Knowledge Center (KC), the Training Center (TC), the Cloud Workspace Implementation Center (CWIC), and the Integration and Coordination Center (ICC).
 The ICC bears primary responsibility for leading annual program-wide metric collection and facilitating evaluation efforts in partnership with NIH program staff, ensuring a continuous improvement cycle and building the evidence base for future science investments.
+The Council of Councils Working Group identified "facilitation of new scientific discovery" as the chief metric of CFDE success — specifically, the extent to which researchers can use Common Fund data to generate and validate novel hypotheses that were previously unattainable through isolated datasets [@https://dpcpsi.nih.gov/sites/default/files/Day2-1225PM-Final-Report-CFDE-CoC-WG-HorwitzWilder_.pdf].
+
+The CFDE recently transitioned from its three-year pilot phase, which focused on establishing a coordination center and building the initial portal infrastructure [@https://commonfund.nih.gov/sites/default/files/OTA-23-004.pdf], to a full-scale implementation phase emphasizing outreach, skills development, and community-wide adoption [@https://commonfund.nih.gov/sites/default/files/OTA-24-004.pdf].
+Evaluation frameworks must now adapt to capture this shift toward "use and reuse" as the primary drivers of impact.
+Each center carries a distinct evaluative focus, as summarized in Table {@tbl:center-eval}.
+
+| Center | Core Evaluative Focus | Significance in the Ecosystem |
+| :---- | :---- | :---- |
+| Data Resource Center (DRC) | Ingestion rates, portal performance, data accessibility | Primary entry point for researchers to query datasets |
+| Knowledge Center (KC) | Knowledge network density, integration across omics | Cross-cutting biological insights through knowledge graphs |
+| Training Center (TC) | Training attendance, skill acquisition, long-term behavioral impact | Addresses the cultural shift required for cloud-based computing |
+| Cloud Workspace (CWIC) | Utilization rates, cloud computing efficiency, tool interoperability | Computational power to analyze massive datasets in situ |
+| Integration & Coordination (ICC) | Program-wide cohesion, sustainability metrics, annual evaluation | Ensures disparate centers function as a unified ecosystem |
+
+Table: Center-specific evaluative focus areas across the five CFDE centers. {#tbl:center-eval}
+
 With five centers and 19 projects, the CFDE is a microcosm of the broader NIH data ecosystem, making it an ideal case study for developing and testing federated evaluation frameworks.
 
 Evaluation across the CFDE has historically been somewhat fragmented: each program or projects tracks slightly different metrics in different ways, making portfolio-level evaluation challenging.
@@ -293,6 +309,7 @@ The strongest proxies are publications and citations, accessible via PubMed [@ht
 *Number citations* is a direct measure of data influence; the initial GTEx paper [@doi:10.1038/ng.2653], for example, had accumulated 8,630 citations as of January 2026.
 Citation impact can be weighted by the influence of each citing work — either by that paper's own citation count (*number secondary citations*) or by journal-level metrics (*citing impact score*).
 A composite score weighted by secondary citations (*citations + secondary citations*) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing [@doi:10.1038/s42254-021-00368-x].
+More sophisticated journal-level alternatives to simple impact factors include the Eigenfactor Score, which weights citations by the quality of the citing journal using a network-based algorithm, and the Article Influence Score, which measures the average influence per article — both better capture the prestige and subject-specific impact of data repositories than raw citation counts [@https://pmc.ncbi.nlm.nih.gov/articles/PMC4770502/].
 Key limitations of citation-based metrics are that they lack context (a citation does not convey how central the dataset was to a study), and they lag by months to years relative to actual use.
 Tracking the trend in citations over time (*trend citations*) helps identify whether a resource's scientific influence is growing, plateauing, or declining.
 
@@ -301,16 +318,17 @@ Studies estimate that fewer than 30% of articles performing secondary analysis p
 This "citation gap" means that standard bibliometric approaches systematically underestimate data reuse.
 Evaluators must therefore supplement citation tracking with multi-pronged strategies: searching for unique accession numbers (e.g., GEO accession numbers, NCBI BioProject IDs) in the full text of publications, mining Methods sections for mentions of specific repositories, and conducting case-study analyses of high-value datasets.
 Bibliometric analysis of NeuroMorpho.Org, for example, demonstrated that sharing neural morphology data leads to a significant increase in citations for the original authors, with a reuse rate that remains constant for at least 16 years — effectively doubling peer-reviewed discoveries in the field [@doi:10.1101/2023.09.12.557386].
+Closing this citation gap may ultimately require the CFDE to implement its own citation tracking web-services for more accurate and timely monitoring of data reuse across the portfolio.
 
 Beyond usage and citation metrics, user-centered measures of *perceived value* offer complementary insight into how well a data platform serves its community.
 Research integrating the Information System Success Model, the Technology Acceptance Model, and Consumer Perceived Value Theory identifies four entropy-weighted metrics that explain the majority of perceived value: *number of datasets* (breadth of coverage), *data timeliness* (currency for emergent challenges), *search comprehensiveness* (ability to return all relevant records across federated sources), and *system responsiveness* (loading times and API stability) [@doi:10.2196/63544].
 These metrics can be assessed through structured surveys and complement the behavioral measures captured by web analytics.
 
-### Scientific data quality
-
-The most profound long-term measure of public value is *practice change* — a fundamental shift in how science is conducted.
+The most profound long-term measure of public value is *practice change* — a fundamental shift in how science is conducted, moving from hypothesis-driven research to data-driven discovery and from evidence-based practice to practice-based evidence [@https://pmc.ncbi.nlm.nih.gov/articles/PMC4287083/].
 Concrete indicators include the adoption rate of cloud-based workspaces versus local data downloads (a proxy for computational paradigm shift), cross-disciplinary co-authorship networks across Common Fund programs (a measure of new collaborative partnerships), and the geographic and institutional diversity of the user base, particularly the participation of early-stage investigators from under-resourced institutions.
 These indicators capture whether a data ecosystem is achieving its ultimate goal of democratizing access and accelerating discovery.
+
+### Scientific data quality
 
 The *scientific data quality* framework addresses whether a resource's data can actually be found, understood, and reused by others.
 Poor data quality and poor annotation are leading barriers to data reuse.
@@ -324,13 +342,16 @@ For evaluation purposes, summary metrics spanning all three levels are more trac
 *Quality-control (QC) compliance* and *data uniqueness* are similarly difficult to automate and frequently require trained evaluators.
 Two additional high-value metrics are the presence (*available data dictionary*) and quality (*quality data dictionary*) of a data dictionary that documents variable definitions, units, timing, and transformations; the former can be detected by script, the latter requires domain expertise.
 The Standard Evaluation Framework for Large Health Care Data identifies 49 specific attributes grouped into three domains — the collection process, the data itself, and data use — that provide a comprehensive approach to assessing fitness for purpose [@doi:10.15585/mmwr.su7303a1].
-Two attributes from this framework are particularly relevant for federated ecosystems like the CFDE: *representativeness*, the extent to which a dataset generalizes beyond its source population (critical for avoiding false conclusions), and *linkability*, the extent to which data can be integrated with external sources — a paramount concern for an ecosystem whose mission is to enable queries across diverse programs.
+Two attributes from this framework are particularly relevant for federated ecosystems like the CFDE: *representativeness*, the extent to which a dataset generalizes beyond its source population — critical for avoiding both Type 1 (false positive) and Type 2 (false negative) errors in scientific conclusions drawn from the data — and *linkability*, the extent to which data can be integrated with external sources, a paramount concern for an ecosystem whose mission is to enable queries across diverse programs.
 
 A structured approach to assessing these qualities is provided by FAIR maturity models.
-The FAIRplus Dataset Maturity (FAIRplus-DSM) model <!-- TODO: ref 13 here is wrong - cites AnVIL (Schatz 2022) but should cite FAIRplus-DSM source -->, developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management).
+The evolution from first-generation ("Gen1") FAIR metrics — which relied on manual, human-assessed compliance — to second-generation ("Gen2") maturity indicators that are automated and machine-measurable [@doi:10.1038/sdata.2018.118] is essential for the CFDE, where the volume of metadata prevents manual auditing of every record.
+The FAIRplus Dataset Maturity (FAIRplus-DSM) model [@https://fairplus.github.io/Data-Maturity/docs/Indicators/], developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management).
 Levels 1–2 cover persistent identifiers and indexed metadata; Levels 3–4 require adherence to community reporting standards (e.g., MIAME) and semantic representation using linked data.
+Ontology standardization at these higher maturity levels is particularly important for the CFDE's Knowledge Center, which relies on controlled terminologies to build integrated knowledge graphs that enable cross-omics queries.
 The Research Data Alliance (RDA) further classifies FAIR indicators by priority — Essential (globally unique persistent identifiers, open access protocols), Important (machine-understandable knowledge representation), and Useful (automated data access by software agents) — providing a tiered roadmap for incremental improvement.
-Automated tools such as the FAIR Evaluator can test digital resources against these indicators at scale, making continuous *FAIR compliance* monitoring feasible for large portfolios.
+Automated tools such as the FAIR Evaluator can test digital resources against these indicators at scale using small web applications ("Compliance Tests") that programmatically assess each maturity indicator, making continuous *FAIR compliance* monitoring feasible for large portfolios [@doi:10.1038/sdata.2018.118].
+The ICC is mandated by program funding announcements to leverage these automated assessments to monitor changes in the FAIRness of digital resources over time [@https://commonfund.nih.gov/sites/default/files/OTA-24-004.pdf].
 
 ### Operations and finance
 
@@ -341,14 +362,21 @@ These metrics carry inherent variability due to time-of-day load, job size, and 
 
 For projects built on open-source software — as many CFDE components are — GitHub repository analytics provide an additional operational window.
 Development velocity (commit frequency, pull-request review latency, merge frequency) reflects team capacity and responsiveness to community contributions.
-Codebase health can be assessed by tracking stale pull requests and unresolved issues, which can signal declining institutional support or funding gaps.
+These dimensions can be combined into a composite "Repository Health Score" that provides a single summary indicator of project vitality.
+Codebase health can be assessed by tracking stale pull requests, abandoned branches, and unresolved issues, which can signal accumulating technical debt, declining institutional support, or funding gaps.
 Contributor dynamics — distinguishing core team commits from external community contributions — indicate whether training and outreach efforts are successfully broadening adoption.
 For a more structured assessment of software components, the ELIXIR "Top 10 Metrics for Life Science Software Good Practices" provides a prioritized framework ranked by importance (impact on sustainability) and implementability (ease of generation) [@doi:10.12688/f1000research.9206.1].
-These metrics — spanning version control, software discoverability, automated builds, test data availability, and documentation — offer a reproducible scorecard for evaluating the software that underpins data infrastructure, and can be integrated into evaluation dashboards via automated collection frameworks.
+These metrics — spanning version control, software discoverability, automated builds, test data availability, and documentation — offer a reproducible scorecard for evaluating the software that underpins data infrastructure.
+A particularly relevant metric for federated ecosystems is "Minimal Reimplementation" — the preference for using established libraries over custom code — which reduces errors and technical debt across the portfolio.
+The PIsCO (Performance Indicators framework for Collection of bioinformatics resource metrics) provides a server-side framework for automating the collection and visualization of these metrics, enabling integration of software health data directly into evaluation dashboards [@doi:10.12688/f1000research.9206.1].
 
-On the finance side, *funding cost* is the most accessible metric, but a full cost picture requires decomposing it into components: *sample collection*, *sample measurement*, *QC*, *data storage*, *data preservation* (beyond the grant period), *computing hardware*, *server maintenance*, *cloud-based computing*, and *personnel* costs.
-The National Academies framework for forecasting biomedical information resource costs identifies six cost-driver categories — data content, metadata, labor, infrastructure, compliance, and governance — and notes that labor (curation and user support) consistently represents the largest single cost element.
+On the finance side, sustainability has been identified by the Council of Councils as the "critical issue" for the CFDE, primarily because the programs that generate data are finite in duration [@https://dpcpsi.nih.gov/sites/default/files/Day2-1225PM-Final-Report-CFDE-CoC-WG-HorwitzWilder_.pdf].
+*Funding cost* is the most accessible metric, but a full cost picture requires decomposing it into components: *sample collection*, *sample measurement*, *QC*, *data storage*, *data preservation* (beyond the grant period), *computing hardware*, *server maintenance*, *cloud-based computing*, and *personnel* costs.
+The National Academies six-step framework for forecasting biomedical information resource costs identifies cost-driver categories — data content, metadata, labor, infrastructure, compliance, and governance — and notes that labor (curation and user support) consistently represents the largest single cost element [@https://www.ncbi.nlm.nih.gov/books/NBK562708/].
+Costs vary significantly as data transitions through different states — from the primary research environment to the active repository to the long-term archive — and evaluation must be treated as an iterative process of planning, implementation, and reporting across these states.
+Compliance costs — including HIPAA and FISMA requirements and regulatory governance for human-subjects data such as Kids First and GTEx — represent a distinct cost-driver category that is often underestimated in initial budgeting.
 A critical but often overlooked question is the break-even point for data sharing: mathematical models suggest that the efficiency gains to the research community from reusing shared data do not always outweigh the curation costs borne by generators, highlighting the need for selective investment in high-value datasets.
+Framing sustainability in terms of *cost per data reuse event* — dividing total curation and hosting costs by the number of documented reuse instances — provides a concrete, comparable KPI for portfolio-level evaluation.
 More broadly, evaluating the return on investment (ROI) of a data ecosystem requires distinguishing between direct benefits (cost savings from economies of scale in data generation and curation) and extended benefits (scientific discoveries and improved clinical outcomes enabled by data reuse).
 Cloud computing introduces additional complexity, as costs are provider-specific, usage-dependent, and subject to change unpredictably.
 A summary of all metrics across frameworks is provided in Table 1.
@@ -424,13 +452,17 @@ Mid-phase evaluation should expand to all three frameworks, with particular atte
 Late-phase and sustainability-focused evaluation should center on the public value and operations & finance frameworks, asking whether the resource continues to generate scientific impact and whether its costs can be justified in the absence of original funding.
 
 No framework operates in isolation, and quantitative metrics alone cannot capture the full picture.
+The NIH Common Fund emphasizes a "360-degree view" of program performance, using mixed-method designs to integrate quantitative metrics with the contextual understanding that only qualitative inquiry can provide [@https://commonfund.nih.gov/dataecosystem].
 Mixed-method approaches — combining usage statistics and citation data with structured user interviews, focus groups, and surveys — are essential for understanding *why* certain resources succeed or fail, not just *what* is happening [@doi:10.1007/s10488-013-0528-y].
+Qualitative metrics — including user satisfaction, perceived ease of use, and the "uniqueness" or "novelty" of the integrated data — complement quantitative indicators by revealing dimensions of value that usage counts cannot capture [@doi:10.2196/63544].
 Two established designs are particularly suited to ecosystem evaluation: *sequential explanatory* designs, in which quantitative data (e.g., utilization rates) are collected first and then followed by qualitative interviews or focus groups to explain observed patterns, and *convergent* designs, in which both data types are collected simultaneously and compared at the interpretation stage to triangulate findings.
 Logic models that explicitly connect inputs (funding, data, personnel) to activities (harmonization, training, curation), outputs (portals, trained users, tools), and outcomes (publications, funded grants, practice change) [@https://www.wkkf.org/resource-directory/resources/2004/01/logic-model-development-guide] provide the evaluative scaffolding needed to identify which elements of an ecosystem are working.
+For the CFDE, these models should answer two critical evaluation questions: "To what extent are the elements of the logic model being implemented?" and "What are the critical paths through the model that lead to success?" [@pmid:30861395].
 These models should be treated as living documents, revised as programs transition from pilot to full implementation.
 
 A critical long-term challenge is closing the "know-do gap" — the distance between the information provided by metrics and actual decision-making.
-Evidence from healthcare quality improvement suggests that the act of repeated, structured measurement itself drives behavioral change among data producers and managers, encouraging improved metadata practices and FAIR compliance [@https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html].
+Evidence from healthcare quality improvement suggests that the act of repeated, structured measurement itself drives behavioral change among data producers and managers — a phenomenon known as the Hawthorne effect [@https://pmc.ncbi.nlm.nih.gov/articles/PMC5616207/].
+By requiring Common Fund programs to perform regular FAIRness assessments and report usage statistics, the NIH creates an environment of "sustained attention" that encourages long-term improvements in metadata practices and FAIR compliance [@https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html].
 NIH's 2023 Data Management and Sharing Policy creates a structural opportunity to establish pre-policy baselines for sharing and reuse, enabling rigorous before-and-after assessment of whether mandates translate into measurable ecosystem improvements.
 
 Implementation of these evaluation frameworks can be accelerated through pilot "Driver Projects" — an approach pioneered by the Global Alliance for Genomics and Health (GA4GH) [@https://www.ga4gh.org/about-us/strategic-road-map/], in which selected projects test new standards and metrics in real-world settings and provide deep qualitative feedback on their utility.
@@ -438,6 +470,19 @@ For the CFDE, identifying Driver Projects across centers would generate practica
 Ultimately, the long-term measure of evaluation success is whether the ecosystem achieves practice change: a measurable shift toward data-driven discovery, broader cross-disciplinary collaboration, and more equitable access to computational resources.
 
 Looking forward, the field needs shared dashboards that integrate technical health indicators (FAIR scores, GitHub analytics, software good practices scores, uptime), impact metrics (citation trends, compute job volumes, perceived value surveys), and financial sustainability projections into a coherent, real-time view of portfolio performance.
+A concrete starting point for such a dashboard would prioritize one high-impact KPI per evaluation category, as illustrated in Table 2.
+
+Table 2\. Proposed dashboard KPIs for portfolio-level monitoring of the CFDE.
+
+| Metric Category | Primary KPI | Tool / Method |
+| :---- | :---- | :---- |
+| FAIR Properties | Semantic Maturity (Level 4/5) | FAIR Evaluator (Maturity Indicators) |
+| Utilization | Unique Cross-Program Queries | CFDE Portal Web Analytics |
+| Operations | PR Review Latency & Merge Frequency | GitHub API |
+| Cost / Sustainability | Cost per Data Reuse Event | ROI Formulas / Forecasting Framework |
+| Impact | Accession Number Mentions in Full Text | Text-Mining / Google Scholar Tracking |
+| Qualitative | Perceived Usefulness / Uniqueness | User Surveys / Delphi Consensus |
+
 Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — would enable the portfolio-level comparisons that are currently impossible.
 The frameworks presented here, grounded in real evaluation data from the CFDE, offer a starting point for that standardization.
 
@@ -447,7 +492,7 @@ The frameworks presented here, grounded in real evaluation data from the CFDE, o
   TODOs remaining:
   - Ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014): verify correct paper and add DOI
   - Ref 10 (Volchenboum 2018 Kids First): incomplete citation, needs DOI
-  - Ref 13 reused for FAIRplus-DSM model: original ref 13 is AnVIL (Schatz 2022), need correct FAIRplus-DSM citation
+  - Ref 13 FAIRplus-DSM model: now cited via @https://fairplus.github.io/Data-Maturity/docs/Indicators/
   - Ref 16 (Dahal 2025, SAGE Open): needs DOI
   - Refs 29-32, 36, 37: existed in old reference list but were never cited in text
   - ISBN-based citations (refs 14, 15, 18, 19, 20) should be verified:
