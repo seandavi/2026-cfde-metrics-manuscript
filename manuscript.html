@@ -1,0 +1,4004 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Ethan M. Lange" />
+  <meta name="author" content="Vikram Adithya Ganesh" />
+  <meta name="author" content="Faisal Alquaddoomi" />
+  <meta name="author" content="David Mayer" />
+  <meta name="author" content="Adriana Ivich" />
+  <meta name="author" content="Vince Rubinetti" />
+  <meta name="author" content="Casey Greene" />
+  <meta name="author" content="Sean Davis" />
+  <meta name="dcterms.date" content="2026-03-17" />
+  <meta name="keywords" content="markdown, publishing, manubot" />
+  <title>Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
+  <meta name="dc.title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta name="dc.date" content="2026-03-17" />
+  <meta name="citation_publication_date" content="2026-03-17" />
+  <meta property="article:published_time" content="2026-03-17" />
+  <meta name="dc.modified" content="2026-03-17T19:28:45+00:00" />
+  <meta property="article:modified_time" content="2026-03-17T19:28:45+00:00" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Ethan M. Lange" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0001-7075-4287" />
+  <meta name="citation_author" content="Vikram Adithya Ganesh" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0009-0009-2056-2696" />
+  <meta name="citation_author" content="Faisal Alquaddoomi" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="David Mayer" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Adriana Ivich" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Vince Rubinetti" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Casey Greene" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="citation_author" content="Sean Davis" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0002-8991-6458" />
+  <link rel="canonical" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta property="og:url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta property="twitter:url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems</h1>
+</header>
+<p><small><em>
+This manuscript
+(<a href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/b97b444157c0ac17235df20227fb99cca15ddcc5">seandavi/2026-cfde-metrics-manuscript@b97b444</a>
+on March 17, 2026.
+</em></small></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Ethan M. Lange</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-7075-4287">0000-0001-7075-4287</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Vikram Adithya Ganesh</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0009-0009-2056-2696">0009-0009-2056-2696</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/techvik">techvik</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Faisal Alquaddoomi</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/falquaddoomi">falquaddoomi</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>David Mayer</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/the-mayer">the-mayer</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Adriana Ivich</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/ivichadriana">ivichadriana</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Vince Rubinetti</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/vincerubinetti">vincerubinetti</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Casey Greene</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/cgreene">cgreene</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+<li><p><strong>Sean Davis</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-8991-6458">0000-0002-8991-6458</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/seandavis">seandavis</a>
+<br>
+<small>
+Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+· Funded by Grant U54OD036472
+</small></p></li>
+</ul>
+<div id="correspondence">
+<p>✉ — Correspondence possible via <a href="https://github.com/seandavi/2026-cfde-metrics-manuscript/issues">GitHub Issues</a>
+or email to
+Casey Greene &lt;casey.s.greene@cuanschutz.edu&gt;,
+Sean Davis &lt;seandavi@gmail.com&gt;.</p>
+</div>
+<h2 class="page_break_before" id="bigger-picture">Bigger Picture</h2>
+<p>The U.S. government spends hundreds of millions of dollars every year creating and maintaining large collections of biomedical research data — from genome sequences of hundreds of thousands of people to detailed maps of every cell type in the human body. The goal is to make these datasets openly available to scientists everywhere, accelerating discoveries that no single laboratory could achieve alone.</p>
+<p>But how do we know whether this investment is paying off? At present, each funded program tracks its own success metrics — if it tracks them at all — making it nearly impossible to compare programs or to learn from what works. This is a significant missed opportunity. In the business world, organizations use structured “performance frameworks” to evaluate products, adjust strategies, and decide where to invest next. Publicly funded science deserves the same discipline.</p>
+<p>In this paper, we describe three frameworks for evaluating biomedical data resources: one focused on how widely the data are used and scientifically cited, one on whether the data are well-documented and reusable by others, and one on whether the underlying infrastructure is reliable and financially sustainable. We argue that different metrics matter more at different stages of a project’s life — early on, data quality and infrastructure are paramount; later, scientific impact and long-term cost become critical. Standardizing a common evaluation language across all NIH data programs would enable better decisions about where to invest, how to sustain valuable resources, and when to gracefully retire those that have served their purpose.</p>
+<h2 class="page_break_before" id="summary">Summary</h2>
+<p>The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments remains fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making. We propose a structured approach built on three complementary prioritization frameworks: <em>public value</em> (user engagement, citations, funded grants), <em>scientific data quality</em> (metadata completeness, FAIR compliance, data dictionaries), and <em>operations and finance</em> (infrastructure reliability, cost sustainability). Critically, we argue that the relative importance of each framework shifts predictably across a data resource’s lifecycle — from early infrastructure-building, through active use and impact, to long-term sustainability. Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and propose concrete metrics and tools — including FAIR maturity models, GitHub analytics, and cost-forecasting frameworks — to close them.</p>
+<h2 class="page_break_before" id="main-text">Main text</h2>
+<p>Over the past decade, the U.S. National Institutes of Health (NIH) has made extraordinary investments in large-scale publicly available biomedical data resources. These include the Cancer Research Data Commons <span class="citation" data-cites="15OJrQCGY">[<a href="#ref-15OJrQCGY" role="doc-biblioref">1</a>]</span> (CRDC, NCI), the Cancer Genome Atlas (TCGA) <!-- TODO: ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014) - verify paper and add DOI -->, the Trans-Omics for Precision Medicine program <span class="citation" data-cites="1GK86kFwS">[<a href="#ref-1GK86kFwS" role="doc-biblioref">2</a>]</span> (TOPMed, NHLBI), the All of Us Research Program <span class="citation" data-cites="1BFZlJUIL">[<a href="#ref-1BFZlJUIL" role="doc-biblioref">3</a>]</span>, and the Common Fund Data Ecosystem <span class="citation" data-cites="Fal2OfUt">[<a href="#ref-Fal2OfUt" role="doc-biblioref">4</a>]</span> (CFDE) — an umbrella spanning 19 projects including GTEx <span class="citation" data-cites="187XBwaz7">[<a href="#ref-187XBwaz7" role="doc-biblioref">5</a>]</span>, the Human Microbiome Project <span class="citation" data-cites="OlTk5sv4 mIMnYRc2">[<a href="#ref-OlTk5sv4" role="doc-biblioref">6</a>,<a href="#ref-mIMnYRc2" role="doc-biblioref">7</a>]</span>, HuBMAP <span class="citation" data-cites="tXhdeUZe">[<a href="#ref-tXhdeUZe" role="doc-biblioref">8</a>]</span>, and Kids First <!-- TODO: ref 10 (Volchenboum 2018 Kids First) - incomplete citation, needs DOI -->. NIH has complemented these with cloud computing environments — the Cancer Genomics Cloud <span class="citation" data-cites="10gFsGwES">[<a href="#ref-10gFsGwES" role="doc-biblioref">9</a>]</span>, BioData Catalyst <span class="citation" data-cites="1B6QKgzOa">[<a href="#ref-1B6QKgzOa" role="doc-biblioref">10</a>]</span>, and AnVIL <span class="citation" data-cites="1H67g4epv">[<a href="#ref-1H67g4epv" role="doc-biblioref">11</a>]</span> — designed to make analysis at scale accessible to any researcher. The collective ambition is to democratize access to reusable data and accelerate scientific discovery.</p>
+<p>But are these investments working? Evaluation is currently fragmented: each program tracks different metrics in different ways, making portfolio-level comparison nearly impossible. The business world has long solved analogous problems with structured prioritization frameworks that combine multiple performance metrics into coherent decision tools. Public science needs equivalent rigor. We contend that the “customer” is the research community, the “product” is reusable data and tools, and the measure of success is scientific discovery and improved human health. We describe three complementary prioritization frameworks–<em>public value</em>, <em>scientific data quality</em>, <em>operations and finance</em>–and demonstrate them using real evaluation data from the CFDE, showing what these metrics reveal and — just as importantly — where they fall short.</p>
+<p>Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) <span class="citation" data-cites="GJHOUHBZ">[<a href="#ref-GJHOUHBZ" role="doc-biblioref">12</a>/]</span> to qualitative prioritization methods such as MoSCoW (“must-have”, “should-have”, “could-have”, “won’t have”) <span class="citation" data-cites="ON0n6tcT">[<a href="#ref-ON0n6tcT" role="doc-biblioref">13</a>]</span>. Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure <span class="citation" data-cites="qjmp3FJw F270ouIW">[<a href="#ref-qjmp3FJw" role="doc-biblioref">14</a>,<a href="#ref-F270ouIW" role="doc-biblioref">15</a>]</span> <!-- TODO: add Dahal 2025 (SAGE Open) - needs DOI -->. In publicly-funded research, the same principles apply: good metrics capture the use and impact of data resources, identify barriers to their success, and inform decisions about where to invest limited resources.</p>
+<p><em>Three Frameworks, One Lifecycle</em>. No single metric — and no single framework — can capture the full picture of a data resource’s value or trajectory. We organize our approach around three complementary prioritization frameworks: <em>public value</em>, <em>scientific data quality</em>, and <em>operations and finance</em>. These frameworks overlap and sometimes conflict (more scientifically impactful datasets are often more expensive to create and maintain), and weighted composite scoring (<em>Multi-Criteria Decision Analysis</em>) can balance them when needed <span class="citation" data-cites="BiUt9R7h RH2E7ekW">[<a href="#ref-BiUt9R7h" role="doc-biblioref">16</a>,<a href="#ref-RH2E7ekW" role="doc-biblioref">17</a>]</span>. Our central argument is that these frameworks are not equally relevant at all times: metrics are a function of a resource’s lifecycle phase. In the <strong>early term</strong> — infrastructure-building and data collection — <em>scientific data quality</em> and <em>operations and finance</em> dominate. In the <strong>mid term</strong> — active use within a funded period — all three matter, with <em>public value</em> taking on increasing importance. In the <strong>late, post-funding term</strong> — sustainability and continued scientific relevance — <em>operations and finance</em> and <em>public value</em> become the primary lenses. Embedding this lifecycle logic into evaluation design, rather than applying uniform metrics across all phases, is the key practical contribution of this paper.</p>
+<div id="fig:lifecycle_curves" class="fignos">
+<figure>
+<img src="images/figure1_lifecycle_curves.png" alt="Figure 1: Schematic relative priority of the three metric and evaluation frameworks–public value, scientific data quality, and operations and finance–across the project lifecycle. Note that lower priority does not imply unimportant." />
+<figcaption aria-hidden="true"><span>Figure 1:</span> Schematic relative priority of the three metric and evaluation frameworks–public value, scientific data quality, and operations and finance–across the project lifecycle. Note that lower priority does <strong>not</strong> imply unimportant.</figcaption>
+</figure>
+</div>
+<p>The <em>public value</em> framework captures the outputs and impacts of a data resource: user engagement, data downloads, funded grants, publications, and downstream scientific influence. The <em>scientific data quality</em> framework measures reusability and long-term value, guided by the FAIR principles (Findable, Accessible, Interoperable, Reusable) <span class="citation" data-cites="6DjakjNS 14foUQTpW">[<a href="#ref-6DjakjNS" role="doc-biblioref">18</a>,<a href="#ref-14foUQTpW" role="doc-biblioref">19</a>]</span> and encompassing the metadata, documentation, and standardization needed for data to be reliably reused. The <em>operations and finance</em> framework covers the infrastructure and cost considerations — from server uptime and compute performance to the sustainability of funding beyond the initial grant period. For each framework, we describe key metrics, their strengths and limitations, and highlight what current measurement approaches are missing.<br />
+The <em>public value</em> framework encompasses user behavior and scientific impact. Website engagement metrics — <em>page views</em>, <em>time on page</em>, <em>actions/triggers</em>, <em>priority link clicks</em>, and <em>new vs. returning users</em> — are easy to collect and track trends over time, but they provide limited insight into actual data use. Combining <em>time on page</em> with <em>actions/triggers</em> offers a more informative measure of engagement. A key limitation is that bots can skew counts, and VPN use in academic settings confounds new-versus-returning user tracking. These metrics are typically collected via platforms such as Google Analytics <span class="citation" data-cites="xzGMRp7K">[<a href="#ref-xzGMRp7K" role="doc-biblioref">20</a>/]</span> or Matomo <span class="citation" data-cites="357xwz03">[<a href="#ref-357xwz03" role="doc-biblioref">21</a>/]</span> (direct measurement) or estimated via Semrush <span class="citation" data-cites="5PCcOebO">[<a href="#ref-5PCcOebO" role="doc-biblioref">22</a>/]</span> or Similarweb <span class="citation" data-cites="HskcoXGD">[<a href="#ref-HskcoXGD" role="doc-biblioref">23</a>/]</span>; note that some European jurisdictions restrict use of US-based analytics platforms.</p>
+<p>More direct evidence of data engagement comes from <em>downloads</em> and <em>compute jobs</em>. Downloads are a simple indicator of interest but cannot distinguish actual usage from passive acquisition, nor track data sharing among multiple users of the same file. Cloud-hosted datasets address these limitations: compute jobs directly measure analysis activity, reduce sharing ambiguity, and can be monitored in near real-time (<em>trend downloads</em>, <em>trend compute jobs</em>). Projects that include tool development — such as GlyGen <span class="citation" data-cites="1ACMnIgrl">[<a href="#ref-1ACMnIgrl" role="doc-biblioref">24</a>]</span> or Bridge2AI <span class="citation" data-cites="2AW0RENr">[<a href="#ref-2AW0RENr" role="doc-biblioref">25</a>]</span> — also track <em>tool usage</em> (online) and <em>tool downloads</em>, with online usage being more accurately quantified.</p>
+<p>User behavior metrics do not capture scientific impact. The strongest proxies are publications and citations, accessible via PubMed <span class="citation" data-cites="1DNwvIpHH">[<a href="#ref-1DNwvIpHH" role="doc-biblioref">26</a>/]</span>, Scopus <span class="citation" data-cites="7Hp0BknI">[<a href="#ref-7Hp0BknI" role="doc-biblioref">27</a>/]</span>, Google Scholar <span class="citation" data-cites="1RPBIGHO">[<a href="#ref-1RPBIGHO" role="doc-biblioref">28</a>/]</span>, and Web of Science <span class="citation" data-cites="DYdLjID4">[<a href="#ref-DYdLjID4" role="doc-biblioref">29</a>/]</span>. <em>Number citations</em> is a direct measure of data influence; the initial GTEx paper <span class="citation" data-cites="187XBwaz7">[<a href="#ref-187XBwaz7" role="doc-biblioref">5</a>]</span>, for example, had accumulated 8,630 citations as of January 2026. Citation impact can be weighted by the influence of each citing work — either by that paper’s own citation count (<em>number secondary citations</em>) or by journal-level metrics (<em>citing impact score</em>). A composite score weighted by secondary citations (<em>citations + secondary citations</em>) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing <span class="citation" data-cites="doi:10.1038/s42254-021-00368-x">[<a href="#ref-doi:10.1038/s42254-021-00368-x" role="doc-biblioref"><strong>doi:10.1038/s42254-021-00368-x?</strong></a>]</span>. Key limitations of citation-based metrics are that they lack context (a citation does not convey how central the dataset was to a study), and they lag by months to years relative to actual use. Tracking the trend in citations over time (<em>trend citations</em>) helps identify whether a resource’s scientific influence is growing, plateauing, or declining.<br />
+The <em>scientific data quality</em> framework addresses whether a resource’s data can actually be found, understood, and reused by others. Poor data quality and poor annotation are leading barriers to data reuse. At the broadest level, metadata metrics document the study — its name, description, dates, funding, contributors, and website — and should be uniform across projects to enable portfolio-level comparisons. At a finer grain, data-level metrics capture storage format, dataset size, data types (clinical, genomic, metabolomic, etc.), measurement platforms (e.g., Olink Explore HT for proteomics), biospecimen handling, and collection conditions (e.g., fasting status). At the finest grain, dataset-level metrics include sample sizes, variable counts, demographic summaries, and QC statistics.</p>
+<p>For evaluation purposes, summary metrics spanning all three levels are more tractable than cataloging every study-specific variable. <em>Metadata completeness</em> counts the presence of required fields and can be assessed programmatically. <em>Standardized metadata</em> assesses whether fields conform to community guidelines — a harder problem that often requires human review. <em>Quality-control (QC) compliance</em> and <em>data uniqueness</em> are similarly difficult to automate and frequently require trained evaluators. Two additional high-value metrics are the presence (<em>available data dictionary</em>) and quality (<em>quality data dictionary</em>) of a data dictionary that documents variable definitions, units, timing, and transformations; the former can be detected by script, the latter requires domain expertise.</p>
+<p>A structured approach to assessing these qualities is provided by FAIR maturity models. The FAIRplus Dataset Maturity (FAIRplus-DSM) model <!-- TODO: ref 13 here is wrong - cites AnVIL (Schatz 2022) but should cite FAIRplus-DSM source -->, developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management). Levels 1–2 cover persistent identifiers and indexed metadata; Levels 3–4 require adherence to community reporting standards (e.g., MIAME) and semantic representation using linked data. The Research Data Alliance (RDA) further classifies FAIR indicators by priority — Essential (globally unique persistent identifiers, open access protocols), Important (machine-understandable knowledge representation), and Useful (automated data access by software agents) — providing a tiered roadmap for incremental improvement. Automated tools such as the FAIR Evaluator can test digital resources against these indicators at scale, making continuous <em>FAIR compliance</em> monitoring feasible for large portfolios.<br />
+The <em>operations and finance</em> framework addresses whether the infrastructure supporting a data resource is reliable, performant, and sustainable. On the operations side, server-level metrics — <em>uptime</em>, <em>page load time</em>, <em>latency</em>, <em>server errors</em>, and <em>client errors</em> — can be captured via analytics platforms and log-file scripts. Compute-level metrics (<em>download speed</em>, <em>cpu/gpu usage</em>, <em>memory usage</em>, <em>client queue times</em>, <em>job run times</em>) identify performance bottlenecks. These metrics carry inherent variability due to time-of-day load, job size, and client-side network conditions, so monitoring trends rather than point-in-time values is most informative.</p>
+<p>For projects built on open-source software — as many CFDE components are — GitHub repository analytics provide an additional operational window. Development velocity (commit frequency, pull-request review latency, merge frequency) reflects team capacity and responsiveness to community contributions. Codebase health can be assessed by tracking stale pull requests and unresolved issues, which can signal declining institutional support or funding gaps. Contributor dynamics — distinguishing core team commits from external community contributions — indicate whether training and outreach efforts are successfully broadening adoption.</p>
+<p>On the finance side, <em>funding cost</em> is the most accessible metric, but a full cost picture requires decomposing it into components: <em>sample collection</em>, <em>sample measurement</em>, <em>QC</em>, <em>data storage</em>, <em>data preservation</em> (beyond the grant period), <em>computing hardware</em>, <em>server maintenance</em>, <em>cloud-based computing</em>, and <em>personnel</em> costs. The National Academies framework for forecasting biomedical information resource costs identifies six cost-driver categories — data content, metadata, labor, infrastructure, compliance, and governance — and notes that labor (curation and user support) consistently represents the largest single cost element. A critical but often overlooked question is the break-even point for data sharing: mathematical models suggest that the efficiency gains to the research community from reusing shared data do not always outweigh the curation costs borne by generators, highlighting the need for selective investment in high-value datasets. Cloud computing introduces additional complexity, as costs are provider-specific, usage-dependent, and subject to change unpredictably. A summary of all metrics across frameworks is provided in Table 1.</p>
+<p>Table 1. Quick summary of included metrics and</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Difficulty</th>
+<th style="text-align: left;">How Collected</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Lifecycle Phase</th>
+<th style="text-align: left;">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>User Behavior Framework</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>page views</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A minimum indicator of interest.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>time on page</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A minimum indicator of interest.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>actions/triggers</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics (Tag Manager)</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A moderate indicator of interest.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>priority link clicks</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics (Tag Manager)</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A moderate indicator of interest.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>new vs returning users</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Google Analytics</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A moderate indicator of continuing interest.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>downloads</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics or Server-side logs</td>
+<td style="text-align: left;">Medium-High</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A strong indicator of interest. Downloading not equivalent to usage.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>compute jobs</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Compute scheduler logs or cloud environment logs</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A direct indicator of interest.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>tool downloads</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics or server-side logs</td>
+<td style="text-align: left;">Medium-High</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A strong indicator of interest.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>tool usage</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics or API logs</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid</td>
+<td style="text-align: left;">A direct indicator of interest.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>trend downloads</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Google Analytics or server-side logs BI tools for visualization</td>
+<td style="text-align: left;">Medium-High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">A strong indicator of change in interest over time.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>trend compute jobs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Compute scheduler logs or cloud environment logs BI tools for visualization</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">A direct indicator of change in interest over time.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>number grants</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">NIH RePORTER Self-reporting</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Relevant grant data not publicly available.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>number presentations</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Self-reporting</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Data difficult to track and often not available in sufficient detail.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>number citations</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Scholar or CrossRef or other similar platforms</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">A direct indicator of data value. Can miss downstream cumulative value.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>number secondary citations</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Late</td>
+<td style="text-align: left;">An indirect measure of “downstream” value of initial publications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>citations + secondary citations</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Late</td>
+<td style="text-align: left;">A measure of cumulative impact over time of study data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>trend citations</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Late</td>
+<td style="text-align: left;">Measures change in impact of data over time. Subject to time lag in publications.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Scientific Data Quality Framework</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>metadata completeness</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Metadata validator, Schema validator</td>
+<td style="text-align: left;">Medium-High</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Critical for drawing initial interest in study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>standardized metadata</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Requires human-in-the-loop evaluation.</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Study-specific requirements.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>quality-control (QC) compliance</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Requires human-in-the-loop evaluation.</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Study-specific requirements.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>data uniqueness</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Requires human-in-the-loop evaluation.</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Subjective measure.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>FAIR compliance</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Requires human-in-the-loop evaluation.</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">Subjective measure.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>available data dictionary</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Checks on repository or documentation</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">An essential component for a study to have. Does not guarantee quality.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>quality data dictionary</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Requires human-in-the-loop evaluation.</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">A metric of quality of the data dictionary.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong><em>Operations and Finance</em></strong> <strong>Framework</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>uptime</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Uptime monitoring tool based on infrastructure/cloud used</td>
+<td style="text-align: left;">Medium-Low</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Measure of server stability.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>page load time</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Measure of server performance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>latency</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics ( not real-time)</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Measure of server performance.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>server errors</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Server-side logs or Application Performance Monitoring (APM) tools</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Measure of server stability and performance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>client errors</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Application logs or Application Performance Monitoring (APM) tools</td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Measure of errors on client end. Possible not addressable.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>download speed</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Server-side logs or Application Performance Monitoring (APM) tools</td>
+<td style="text-align: left;">Low-Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Download times can be function of client connection speeds.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>cpu/gpu usage</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Cloud/infrastructure logs or dashboards</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Important to evaluate performance and additional needs.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>memory usage</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Cloud/infrastructure logs or dashboards</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Important to evaluate performance and additional needs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>number of users</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Google Analytics or IAM logs for granular details (if available)</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Indirect measure of computational load/burden.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>client queue times</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Cloud/infrastructure logs or dashboards</td>
+<td style="text-align: left;">Medium-High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Long queue times can result in less usage.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>job run times</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;">Cloud/infrastructure compute logs or dashboards</td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Excessive long job run times can result in less usage.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>funding cost</em></td>
+<td style="text-align: left;">Easy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">Total cost of study. Critical element in evaluating study feasibility and sustainability.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>sample collection costs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Cost typically associated with early study period. Cost does not impact sustainability.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>sample measurement costs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Cost typically associated with early study period. Cost does not impact sustainability.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>QC costs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Cost typically associated with early study period. Cost does not impact sustainability.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>data storage costs</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">Costs and requirements can fluctuate over study.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>data preservation costs</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Late</td>
+<td style="text-align: left;">Costs and requirements can fluctuate over study. Difficult to assess years in advance.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>computing hardware costs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;">Early</td>
+<td style="text-align: left;">Costs often associated with initial study period, but replacement costs are possible.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>server maintenance costs</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Costs can fluctuate. Major source of cost in sustainability period.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>cloud-based computing costs</em></td>
+<td style="text-align: left;">Hard</td>
+<td style="text-align: left;">Cloud Cost Explorer tools or</td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Mid–Late</td>
+<td style="text-align: left;">Costs are highly variable and subject to constant change (for both host and clients). Especially difficult to assess years in advance.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>personnel costs</em></td>
+<td style="text-align: left;">Medium</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">All</td>
+<td style="text-align: left;">Can be measured in money or time. Requires committed time with relevant expertise.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="synthesis-and-recommendations">Synthesis and Recommendations</h2>
+<p>The three frameworks described here — <em>public value</em>, <em>scientific data quality</em>, and <em>operations &amp; finance</em> — are complementary rather than competing, and their relative importance shifts predictably across the data resource lifecycle. Early-phase investments should prioritize the scientific data quality and operations frameworks: getting metadata right, establishing FAIR-compliant structures, and standing up reliable infrastructure are prerequisites for everything that follows. Mid-phase evaluation should expand to all three frameworks, with particular attention to public value metrics as user communities engage with the data. Late-phase and sustainability-focused evaluation should center on the public value and operations &amp; finance frameworks, asking whether the resource continues to generate scientific impact and whether its costs can be justified in the absence of original funding.</p>
+<p>No framework operates in isolation, and quantitative metrics alone cannot capture the full picture. Mixed-method approaches — combining usage statistics and citation data with structured user interviews, focus groups, and surveys — are essential for understanding <em>why</em> certain resources succeed or fail, not just <em>what</em> is happening <span class="citation" data-cites="SG7hkOBQ">[<a href="#ref-SG7hkOBQ" role="doc-biblioref">30</a>]</span>. Logic models that explicitly connect inputs (funding, data, personnel) to activities (harmonization, training, curation), outputs (portals, trained users, tools), and outcomes (publications, funded grants, practice change) <span class="citation" data-cites="14UYP3CHZ">[<a href="#ref-14UYP3CHZ" role="doc-biblioref">31</a>]</span> provide the evaluative scaffolding needed to identify which elements of an ecosystem are working. These models should be treated as living documents, revised as programs transition from pilot to full implementation.</p>
+<p>A critical long-term challenge is closing the “know-do gap” — the distance between the information provided by metrics and actual decision-making. Evidence from healthcare quality improvement suggests that the act of repeated, structured measurement itself drives behavioral change among data producers and managers, encouraging improved metadata practices and FAIR compliance <span class="citation" data-cites="v5liZElp">[<a href="#ref-v5liZElp" role="doc-biblioref">32</a>]</span>. NIH’s 2023 Data Management and Sharing Policy creates a structural opportunity to establish pre-policy baselines for sharing and reuse, enabling rigorous before-and-after assessment of whether mandates translate into measurable ecosystem improvements.</p>
+<p>Looking forward, the field needs shared dashboards that integrate technical health indicators (FAIR scores, GitHub analytics, uptime), impact metrics (citation trends, compute job volumes), and financial sustainability projections into a coherent, real-time view of portfolio performance. Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — would enable the portfolio-level comparisons that are currently impossible. The frameworks presented here, grounded in real evaluation data from the CFDE, offer a starting point for that standardization.</p>
+<!--
+  OLD REFERENCES SECTION REMOVED - Manubot auto-generates references from citation keys.
+
+  TODOs remaining:
+  - Ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014): verify correct paper and add DOI
+  - Ref 10 (Volchenboum 2018 Kids First): incomplete citation, needs DOI
+  - Ref 13 reused for FAIRplus-DSM model: original ref 13 is AnVIL (Schatz 2022), need correct FAIRplus-DSM citation
+  - Ref 16 (Dahal 2025, SAGE Open): needs DOI
+  - Refs 29-32, 36, 37: existed in old reference list but were never cited in text
+  - ISBN-based citations (refs 14, 15, 18, 19, 20) should be verified:
+    - @isbn:9780875846514 (Kaplan & Norton, Balanced Scorecard)
+    - @isbn:9780273653349 (Neely, Performance Prism)
+    - @isbn:9780201624328 (Clegg & Barker, Case Method Fast-Track / MoSCoW)
+    - @isbn:9780471465102 (Keeney & Raiffa, Decisions with Multiple Objectives)
+    - @isbn:9780792375067 (Belton & Stewart, Multiple Criteria Decision Analysis)
+-->
+<h2 class="page_break_before" id="references">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-15OJrQCGY" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>A Comprehensive Infrastructure for Big Data in Cancer Research: Accelerating Cancer Research and Precision Medicine</strong> <div class="csl-block">Izumi V Hinkson, Tanja M Davidsen, Juli D Klemm, Ishwar Chandramouliswaran, Anthony R Kerlavage, Warren A Kibbe</div> <em>Frontiers in Cell and Developmental Biology</em> (2017-09-21) <a href="https://doi.org/gpf2r8">https://doi.org/gpf2r8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3389/fcell.2017.00083">10.3389/fcell.2017.00083</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28983483">28983483</a></div></div>
+</div>
+<div id="ref-1GK86kFwS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Sequencing of 53,831 diverse genomes from the NHLBI TOPMed Program</strong> <div class="csl-block">Daniel Taliun, Daniel N Harris, Michael D Kessler, Jedidiah Carlson, Zachary A Szpiech, Raul Torres, Sarah AGagliano Taliun, André Corvelo, Stephanie M Gogarten, Hyun Min Kang, … Gonçalo R Abecasis</div> <em>Nature</em> (2021-02-10) <a href="https://doi.org/gh4bkp">https://doi.org/gh4bkp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-021-03205-y">10.1038/s41586-021-03205-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33568819">33568819</a></div></div>
+</div>
+<div id="ref-1BFZlJUIL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>The “All of Us” Research Program</strong> <em>New England Journal of Medicine</em> (2019-08-15) <a href="https://doi.org/ggjdzj">https://doi.org/ggjdzj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1056/nejmsr1809937">10.1056/nejmsr1809937</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31412182">31412182</a></div></div>
+</div>
+<div id="ref-Fal2OfUt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Making Common Fund data more findable: catalyzing a data ecosystem</strong> <div class="csl-block">Amanda L Charbonneau, Arthur Brady, Karl Czajkowski, Jain Aluvathingal, Saranya Canchi, Robert Carter, Kyle Chard, Daniel JB Clarke, Jonathan Crabtree, Heather H Creasy, … Owen White</div> <em>GigaScience</em> (2022) <a href="https://doi.org/gsxq6b">https://doi.org/gsxq6b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gigascience/giac105">10.1093/gigascience/giac105</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36409836">36409836</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9677336">PMC9677336</a></div></div>
+</div>
+<div id="ref-187XBwaz7" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>The Genotype-Tissue Expression (GTEx) project</strong> <div class="csl-block">John Lonsdale, Jeffrey Thomas, Mike Salvatore, Rebecca Phillips, Edmund Lo, Saboor Shad, Richard Hasz, Gary Walters, Fernando Garcia, Nancy Young, … Helen F Moore</div> <em>Nature Genetics</em> (2013-05-29) <a href="https://doi.org/gd5z68">https://doi.org/gd5z68</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.2653">10.1038/ng.2653</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23715323">23715323</a></div></div>
+</div>
+<div id="ref-OlTk5sv4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Structure, function and diversity of the healthy human microbiome</strong> <em>Nature</em> (2012-06) <a href="https://doi.org/hzm">https://doi.org/hzm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature11234">10.1038/nature11234</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22699609">22699609</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3564958">PMC3564958</a></div></div>
+</div>
+<div id="ref-mIMnYRc2" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>A framework for human microbiome research</strong> <em>Nature</em> (2012-06) <a href="https://doi.org/f32svq">https://doi.org/f32svq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature11209">10.1038/nature11209</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22699610">22699610</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3377744">PMC3377744</a></div></div>
+</div>
+<div id="ref-tXhdeUZe" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>The human body at cellular resolution: the NIH Human Biomolecular Atlas Program</strong><div class="csl-block">, Michael P Snyder, Shin Lin, Amanda Posgai, Mark Atkinson, Aviv Regev, Jennifer Rood, Orit Rozenblatt-Rosen, Leslie Gaffney, … James Anderson</div> <em>Nature</em> (2019-10-09) <a href="https://doi.org/gf92ht">https://doi.org/gf92ht</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-019-1629-x">10.1038/s41586-019-1629-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31597973">31597973</a></div></div>
+</div>
+<div id="ref-10gFsGwES" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>The Cancer Genomics Cloud: Collaborative, Reproducible, and Democratized—A New Paradigm in Large-Scale Computational Research</strong> <div class="csl-block">Jessica W Lau, Erik Lehnert, Anurag Sethi, Raunaq Malhotra, Gaurav Kaushik, Zeynep Onder, Nick Groves-Kirkby, Aleksandar Mihajlovic, Jack DiGiovanna, Mladen Srdic, … Brandi Davis-Dusenbery</div> <em>Cancer Research</em> (2017-10-31) <a href="https://doi.org/gcjxm2">https://doi.org/gcjxm2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1158/0008-5472.can-17-0387">10.1158/0008-5472.can-17-0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29092927">29092927</a></div></div>
+</div>
+<div id="ref-1B6QKgzOa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>The NHLBI BioData Catalyst</strong> <div class="csl-block">Lung National Heart</div> <em>Zenodo</em> (2020) <a href="https://doi.org/hbswtd">https://doi.org/hbswtd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3822858">10.5281/zenodo.3822858</a></div></div>
+</div>
+<div id="ref-1H67g4epv" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Inverting the model of genomics data sharing with the NHGRI Genomic Data Science Analysis, Visualization, and Informatics Lab-space</strong> <div class="csl-block">Michael C Schatz, Anthony A Philippakis, Enis Afgan, Eric Banks, Vincent J Carey, Robert J Carroll, Alessandro Culotti, Kyle Ellrott, Jeremy Goecks, Robert L Grossman, … Jason Walker</div> <em>Cell Genomics</em> (2022-01) <a href="https://doi.org/gn7rf9">https://doi.org/gn7rf9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.xgen.2021.100085">10.1016/j.xgen.2021.100085</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35199087">35199087</a></div></div>
+</div>
+<div id="ref-GJHOUHBZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>RICE: Simple prioritization for product managers</strong> <div class="csl-block">Sean McBride</div> <em>The Intercom Blog</em> (2018-01-05) <a href="https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/">https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/</a></div>
+</div>
+<div id="ref-ON0n6tcT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>CASE method fast track: a RAD approach</strong> <div class="csl-block">Dai Clegg, Richard Barker</div> <em>Addison-Wesley Pub. Co</em> (1994) <div class="csl-block">ISBN: 9780201624328</div></div>
+</div>
+<div id="ref-qjmp3FJw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>The balanced scorecard: translating strategy into action</strong> <div class="csl-block">Robert S Kaplan, David P Norton</div> <em>Harvard Business School Press</em> (1996) <div class="csl-block">ISBN: 9780875846514</div></div>
+</div>
+<div id="ref-F270ouIW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>The performance prism: the scorecard for measuring and managing business success</strong> <div class="csl-block">Andy D Neely, Chris Adams, Mike Kennerley</div> <em>Financial Times Prentice Hall</em> (2002) <div class="csl-block">ISBN: 9780273653349</div></div>
+</div>
+<div id="ref-BiUt9R7h" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Decisions with multiple objectives: preferences and value tradeoffs</strong> <div class="csl-block">Ralph L Keeney, Howard Raiffa</div> <em>Wiley</em> (1976) <div class="csl-block">ISBN: 9780471465102</div></div>
+</div>
+<div id="ref-RH2E7ekW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Advances in information security management &amp; small systems security: IFIP TC11 WG11.1/WG11.2 Eighth Annual Working Conference on Information Security Management &amp; Small Systems Security, September 27-28, 2001, Las Vegas, Nevada, USA</strong> <div class="csl-block">Jan HP Eloff (editor)</div> <em>Kluwer Academic Publishers</em> (2001) <div class="csl-block">ISBN: 9780792375067</div></div>
+</div>
+<div id="ref-6DjakjNS" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>The FAIR Guiding Principles for scientific data management and stewardship</strong> <div class="csl-block">Mark D Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E Bourne, … Barend Mons</div> <em>Scientific Data</em> (2016-03-15) <a href="https://doi.org/bdd4">https://doi.org/bdd4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26978244">26978244</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792175">PMC4792175</a></div></div>
+</div>
+<div id="ref-14foUQTpW" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>A design framework and exemplar metrics for FAIRness</strong> <div class="csl-block">Mark D Wilkinson, Susanna-Assunta Sansone, Erik Schultes, Peter Doorn, Luiz Olavo Bonino da Silva Santos, Michel Dumontier</div> <em>Scientific Data</em> (2018-06-26) <a href="https://doi.org/gfkrrt">https://doi.org/gfkrrt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/sdata.2018.118">10.1038/sdata.2018.118</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29944145">29944145</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6018520">PMC6018520</a></div></div>
+</div>
+<div id="ref-xzGMRp7K" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Analytics Tools &amp; Solutions for Your Business - Google Analytics</strong> <div class="csl-block">Google Marketing Platform</div> <a href="https://marketingplatform.google.com/about/analytics/">https://marketingplatform.google.com/about/analytics/</a></div>
+</div>
+<div id="ref-357xwz03" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Matomo - The Google Analytics alternative that protects your data</strong> <div class="csl-block">Analytics Platform - Matomo</div> <a href="https://matomo.org/">https://matomo.org/</a></div>
+</div>
+<div id="ref-5PCcOebO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Semrush: Your Unfair Advantage for Growing Brand Visibility</strong> <div class="csl-block">Semrush</div> <a href="https://www.semrush.com/">https://www.semrush.com/</a></div>
+</div>
+<div id="ref-HskcoXGD" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Similarweb: AI-Powered Digital Data Intelligence Solutions</strong> <div class="csl-block">Similarweb</div> <a href="https://www.similarweb.com/">https://www.similarweb.com/</a></div>
+</div>
+<div id="ref-1ACMnIgrl" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>GlyGen: Computational and Informatics Resources for Glycoscience</strong> <div class="csl-block">William S York, Raja Mazumder, Rene Ranzinger, Nathan Edwards, Robel Kahsay, Kiyoko F Aoki-Kinoshita, Matthew P Campbell, Richard D Cummings, Ten Feizi, Maria Martin, … Wenjin Zhang</div> <em>Glycobiology</em> (2019-10-16) <a href="https://doi.org/hbswtb">https://doi.org/hbswtb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/glycob/cwz080">10.1093/glycob/cwz080</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31616925">31616925</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7335483">PMC7335483</a></div></div>
+</div>
+<div id="ref-2AW0RENr" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Reproducible generation of human liver organoids (HLOs) on a pillar plate platform
+&lt;i&gt;via&lt;/i&gt;
+microarray 3D bioprinting</strong> <div class="csl-block">Sunil Shrestha, Vinod Kumar Reddy Lekkala, Prabha Acharya, Soo-Yeon Kang, Manav Goud Vanga, Moo-Yeal Lee</div> <em>openRxiv</em> (2024-03-13) <a href="https://doi.org/hbswtc">https://doi.org/hbswtc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2024.03.11.584478">10.1101/2024.03.11.584478</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/38559126">38559126</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10979895">PMC10979895</a></div></div>
+</div>
+<div id="ref-1DNwvIpHH" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>PubMed</strong> <div class="csl-block">PubMed</div> <a href="https://pubmed.ncbi.nlm.nih.gov/">https://pubmed.ncbi.nlm.nih.gov/</a></div>
+</div>
+<div id="ref-7Hp0BknI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><a href="https://www.scopus.com">https://www.scopus.com</a></div>
+</div>
+<div id="ref-1RPBIGHO" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Google Scholar</strong> <a href="https://scholar.google.com/">https://scholar.google.com/</a></div>
+</div>
+<div id="ref-DYdLjID4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Clarivate</strong> <a href="https://access.clarivate.com/login?app=wos&amp;alternative=true&amp;shibShireURL=https%3A%2F%2Fwww.webofknowledge.com%2F%3Fauth%3DShibboleth&amp;shibReturnURL=https%3A%2F%2Fwww.webofknowledge.com%2F&amp;roaming=true">https://access.clarivate.com/login?app=wos&amp;alternative=true&amp;shibShireURL=https%3A%2F%2Fwww.webofknowledge.com%2F%3Fauth%3DShibboleth&amp;shibReturnURL=https%3A%2F%2Fwww.webofknowledge.com%2F&amp;roaming=true</a></div>
+</div>
+<div id="ref-SG7hkOBQ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Purposeful Sampling for Qualitative Data Collection and Analysis in Mixed Method Implementation Research</strong> <div class="csl-block">Lawrence A Palinkas, Sarah M Horwitz, Carla A Green, Jennifer P Wisdom, Naihua Duan, Kimberly Hoagwood</div> <em>Administration and Policy in Mental Health and Mental Health Services Research</em> (2013-11-06) <a href="https://doi.org/f7nxzd">https://doi.org/f7nxzd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s10488-013-0528-y">10.1007/s10488-013-0528-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24193818">24193818</a></div></div>
+</div>
+<div id="ref-14UYP3CHZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><a href="https://www.wkkf.org/resource-directory/resources/2004/01/logic-model-development-guide">https://www.wkkf.org/resource-directory/resources/2004/01/logic-model-development-guide</a></div>
+</div>
+<div id="ref-v5liZElp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>NOT-OD-21-013: Final NIH Policy for Data Management and Sharing</strong> <a href="https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html">https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html</a></div>
+</div>
+</div>
+<!-- default theme -->
+
+<style>
+  /* import google fonts */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+  /* -------------------------------------------------- */
+  /* global */
+  /* -------------------------------------------------- */
+
+  /* all elements */
+  * {
+    /* force sans-serif font unless specified otherwise */
+    font-family: "Open Sans", "Helvetica", sans-serif;
+
+    /* prevent text inflation on some mobile browsers */
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+  }
+
+  @media only screen {
+    /* "page" element */
+    body {
+      position: relative;
+      box-sizing: border-box;
+      font-size: 12pt;
+      line-height: 1.5;
+      max-width: 8.5in;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* "page" element */
+    body {
+      padding: 20px;
+      margin: 0;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+      background: none;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* headings */
+  /* -------------------------------------------------- */
+
+  /* all headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  /* biggest heading */
+  h1 {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  /* second biggest heading */
+  h2 {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #bdbdbd;
+  }
+
+  /* heading font sizes */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.15em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+
+  /* -------------------------------------------------- */
+  /* manuscript header */
+  /* -------------------------------------------------- */
+
+  /* manuscript title */
+  header > h1 {
+    margin: 0;
+  }
+
+  /* manuscript title caption text (ie "automatically generated on") */
+  header + p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* -------------------------------------------------- */
+  /* text elements */
+  /* -------------------------------------------------- */
+
+  /* links */
+  a {
+    color: #2196f3;
+    overflow-wrap: break-word;
+  }
+
+  /* superscripts and subscripts */
+  sub,
+  sup {
+    /* prevent from affecting line height */
+    line-height: 0;
+  }
+
+  /* unordered and ordered lists*/
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  /* class for styling text semibold */
+  .semibold {
+    font-weight: 600;
+  }
+
+  /* class for styling elements horizontally left aligned */
+  .left {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: left;
+  }
+
+  /* class for styling elements horizontally centered */
+  .center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* class for styling elements horizontally right aligned */
+  .right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: right;
+  }
+
+  /* -------------------------------------------------- */
+  /* section elements */
+  /* -------------------------------------------------- */
+
+  /* horizontal divider line */
+  hr {
+    border: none;
+    height: 1px;
+    background: #bdbdbd;
+  }
+
+  /* paragraphs, horizontal dividers, figures, tables, code */
+  p,
+  hr,
+  figure,
+  table,
+  pre {
+    /* treat all as "paragraphs", with consistent vertical margins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* figures */
+  /* -------------------------------------------------- */
+
+  /* figure */
+  figure {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure caption */
+  figcaption {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  /* figure image element */
+  figure > img,
+  figure > svg {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure auto-number */
+  img + figcaption > span:first-of-type,
+  svg + figcaption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tables */
+  /* -------------------------------------------------- */
+
+  /* table */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* table cells */
+  th,
+  td {
+    border: solid 1px #bdbdbd;
+    padding: 10px;
+    /* squash table if too wide for page by forcing line breaks */
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* header row and even rows */
+  th,
+  tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+
+  /* odd rows */
+  tr:nth-child(2n + 1) {
+    background-color: #ffffff;
+  }
+
+  /* table caption */
+  caption {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  /* table auto-number */
+  table > caption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* code */
+  /* -------------------------------------------------- */
+
+  /* multi-line code block */
+  pre {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+    break-inside: avoid;
+    text-align: left;
+  }
+
+  /* inline code, ie code within normal text */
+  :not(pre) > code {
+    padding: 0 4px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+  }
+
+  /* code text */
+  /* apply all children, to reach syntax highlighting sub-elements */
+  code,
+  code * {
+    /* force monospace font */
+    font-family: "Source Code Pro", "Courier New", monospace;
+  }
+
+  /* -------------------------------------------------- */
+  /* quotes */
+  /* -------------------------------------------------- */
+
+  /* quoted text */
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 4px solid #bdbdbd;
+    padding-left: 16px;
+    break-inside: avoid;
+  }
+
+  /* -------------------------------------------------- */
+  /* banners */
+  /* -------------------------------------------------- */
+
+  /* info banners */
+  .banner {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* paragraph in banner */
+  .banner > p {
+    margin: 0;
+  }
+
+  /* -------------------------------------------------- */
+  /* highlight colors */
+  /* -------------------------------------------------- */
+
+  .white {
+    background: #ffffff;
+  }
+  .lightgrey {
+    background: #eeeeee;
+  }
+  .grey {
+    background: #757575;
+  }
+  .darkgrey {
+    background: #424242;
+  }
+  .black {
+    background: #000000;
+  }
+  .lightred {
+    background: #ffcdd2;
+  }
+  .lightyellow {
+    background: #ffecb3;
+  }
+  .lightgreen {
+    background: #dcedc8;
+  }
+  .lightblue {
+    background: #e3f2fd;
+  }
+  .lightpurple {
+    background: #f3e5f5;
+  }
+  .red {
+    background: #f44336;
+  }
+  .orange {
+    background: #ff9800;
+  }
+  .yellow {
+    background: #ffeb3b;
+  }
+  .green {
+    background: #4caf50;
+  }
+  .blue {
+    background: #2196f3;
+  }
+  .purple {
+    background: #9c27b0;
+  }
+  .white,
+  .lightgrey,
+  .lightred,
+  .lightyellow,
+  .lightgreen,
+  .lightblue,
+  .lightpurple,
+  .orange,
+  .yellow,
+  .white a,
+  .lightgrey a,
+  .lightred a,
+  .lightyellow a,
+  .lightgreen a,
+  .lightblue a,
+  .lightpurple a,
+  .orange a,
+  .yellow a {
+    color: #000000;
+  }
+  .grey,
+  .darkgrey,
+  .black,
+  .red,
+  .green,
+  .blue,
+  .purple,
+  .grey a,
+  .darkgrey a,
+  .black a,
+  .red a,
+  .green a,
+  .blue a,
+  .purple a {
+    color: #ffffff;
+  }
+
+  /* -------------------------------------------------- */
+  /* buttons */
+  /* -------------------------------------------------- */
+
+  /* class for styling links like buttons */
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: none;
+    color: #2196f3;
+    border: solid 1px #bdbdbd;
+    border-radius: 5px;
+  }
+
+  /* buttons when hovered */
+  .button:hover:not([disabled]),
+  .icon_button:hover:not([disabled]) {
+    cursor: pointer;
+    background: #f5f5f5;
+  }
+
+  /* buttons when disabled */
+  .button[disabled],
+  .icon_button[disabled] {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* class for styling buttons containg only single icon */
+  .icon_button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  /* icon button inner svg image */
+  .icon_button > svg {
+    height: 16px;
+  }
+
+  /* -------------------------------------------------- */
+  /* icons */
+  /* -------------------------------------------------- */
+
+  /* class for styling icons inline with text */
+  .inline_icon {
+    height: 1em;
+    position: relative;
+    top: 0.125em;
+  }
+
+  /* -------------------------------------------------- */
+  /* references */
+  /* -------------------------------------------------- */
+
+  .csl-entry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* -------------------------------------------------- */
+  /* print control */
+  /* -------------------------------------------------- */
+
+  @media print {
+    @page {
+      /* suggested printing margin */
+      margin: 0.5in;
+    }
+
+    /* document and "page" elements */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* "page" element */
+    body {
+      font-size: 11pt !important;
+      line-height: 1.35;
+    }
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 15px 0;
+    }
+
+    /* figures and tables */
+    figure,
+    table {
+      font-size: 0.85em;
+    }
+
+    /* table cells */
+    th,
+    td {
+      padding: 5px;
+    }
+
+    /* shrink font awesome icons */
+    i.fas,
+    i.fab,
+    i.far,
+    i.fal {
+      transform: scale(0.85);
+    }
+
+    /* decrease banner margins */
+    .banner {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    /* class for centering an element vertically on its own page */
+    .page_center {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      break-before: page;
+      break-after: page;
+    }
+
+    /* always insert a page break before the element */
+    .page_break_before {
+      break-before: page;
+    }
+
+    /* always insert a page break after the element */
+    .page_break_after {
+      break-after: page;
+    }
+
+    /* avoid page break before the element */
+    .page_break_before_avoid {
+      break-before: avoid;
+    }
+
+    /* avoid page break after the element */
+    .page_break_after_avoid {
+      break-after: avoid;
+    }
+
+    /* avoid page break inside the element */
+    .page_break_inside_avoid {
+      break-inside: avoid;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* override pandoc css quirks */
+  /* -------------------------------------------------- */
+
+  .sourceCode {
+    /* prevent unsightly overflow in wide code blocks */
+    overflow: auto !important;
+  }
+
+  div.sourceCode {
+    /* prevent background fill on top-most code block  container */
+    background: none !important;
+  }
+
+  .sourceCode * {
+    /* force consistent line spacing */
+    line-height: 1.5 !important;
+  }
+
+  div.sourceCode {
+    /* style code block margins same as <pre> element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tablenos */
+  /* -------------------------------------------------- */
+
+  /* tablenos wrapper */
+  .tablenos {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .tablenos > table {
+    /* move margins from table to table_wrapper to allow margin collapsing */
+    margin: 0;
+  }
+
+  @media only screen {
+    /* tablenos wrapper */
+    .tablenos {
+      /* show scrollbar on tables if necessary to prevent overflow */
+      overflow-x: auto !important;
+    }
+
+    .tablenos th,
+    .tablenos td {
+      overflow-wrap: unset !important;
+      word-break: unset !important;
+    }
+
+    /* table in wrapper */
+    .tablenos table,
+    .tablenos table * {
+      /* don't break table words */
+      overflow-wrap: normal !important;
+    }
+  }
+</style>
+<!-- 
+    Plugin Core
+
+    Functions needed for and shared across all first-party plugins.
+-->
+
+<script>
+  // get element that is target of hash (from link element or url)
+  function getHashTarget(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector(`[id="${id}"]`);
+    if (!target) return;
+
+    // if figure or table, modify target to get expected element
+    if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+    if (id.indexOf("tbl:") === 0) target = target.querySelector("table");
+
+    return target;
+  }
+
+  // get position/dimensions of element or viewport
+  function getRectInView(element) {
+    let rect = {};
+    rect.left = 0;
+    rect.top = 0;
+    rect.right = document.documentElement.clientWidth;
+    rect.bottom = document.documentElement.clientHeight;
+    let style = {};
+
+    if (element instanceof HTMLElement) {
+      rect = element.getBoundingClientRect();
+      style = window.getComputedStyle(element);
+    }
+
+    const margin = {};
+    margin.left = parseFloat(style.marginLeftWidth) || 0;
+    margin.top = parseFloat(style.marginTopWidth) || 0;
+    margin.right = parseFloat(style.marginRightWidth) || 0;
+    margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+    const border = {};
+    border.left = parseFloat(style.borderLeftWidth) || 0;
+    border.top = parseFloat(style.borderTopWidth) || 0;
+    border.right = parseFloat(style.borderRightWidth) || 0;
+    border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+    const newRect = {};
+    newRect.left = rect.left + margin.left + border.left;
+    newRect.top = rect.top + margin.top + border.top;
+    newRect.right = rect.right + margin.right + border.right;
+    newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+    newRect.width = newRect.right - newRect.left;
+    newRect.height = newRect.bottom - newRect.top;
+
+    return newRect;
+  }
+
+  // get position of element relative to page
+  function getRectInPage(element) {
+    const rect = getRectInView(element);
+    const body = getRectInView(document.body);
+
+    const newRect = {};
+    newRect.left = rect.left - body.left;
+    newRect.top = rect.top - body.top;
+    newRect.right = rect.right - body.left;
+    newRect.bottom = rect.bottom - body.top;
+    newRect.width = rect.width;
+    newRect.height = rect.height;
+
+    return newRect;
+  }
+
+  // get closest element before specified element that matches query
+  function firstBefore(element, query) {
+    while (element && element !== document.body && !element.matches(query))
+      element = element.previousElementSibling || element.parentNode;
+
+    return element;
+  }
+
+  // check if element is part of collapsed heading
+  function isCollapsed(element) {
+    while (element && element !== document.body) {
+      if (element.dataset.collapsed === "true") return true;
+      element = element.parentNode;
+    }
+    return false;
+  }
+
+  // expand any collapsed parent containers of element if necessary
+  function expandElement(element) {
+    if (isCollapsed(element)) {
+      // accordion plugin
+      const heading = firstBefore(element, "h2");
+      if (heading) heading.click();
+      // details/summary HTML element
+      const summary = firstBefore(element, "summary");
+      if (summary) summary.click();
+    }
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // get list of elements after a start element up to element matching query
+  function nextUntil(element, query, exclude) {
+    const elements = [];
+    while (((element = element.nextElementSibling), element)) {
+      if (element.matches(query)) break;
+      if (!element.matches(exclude)) elements.push(element);
+    }
+    return elements;
+  }
+</script>
+<!--
+  Accordion Plugin
+
+  Allows sections of content under h2 headings to be collapsible.
+-->
+
+<script type="module">
+  // whether to always start expanded ('false'), always start collapsed
+  // ('true'), or start collapsed when screen small ('auto')
+  const startCollapsed = "auto";
+
+  // start script
+  function start() {
+    // run through each <h2> heading
+    const headings = document.querySelectorAll("h2");
+    for (const heading of headings) {
+      addArrow(heading);
+
+      // start expanded/collapsed based on option
+      if (
+        startCollapsed === "true" ||
+        (startCollapsed === "auto" && isSmallScreen()) ||
+        heading.dataset.collapsed === "true"
+      )
+        collapseHeading(heading);
+      else expandElement(heading);
+    }
+
+    // attach hash change listener to window
+    window.addEventListener("hashchange", onHashChange);
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) goToElement(target);
+  }
+
+  // add arrow to heading
+  function addArrow(heading) {
+    // add arrow button
+    const arrow = document.createElement("button");
+    arrow.innerHTML = document.querySelector(".icon_angle_down").innerHTML;
+    arrow.classList.add("icon_button", "accordion_arrow");
+    heading.insertBefore(arrow, heading.firstChild);
+
+    // attach click listener to heading and button
+    heading.addEventListener("click", onHeadingClick);
+    arrow.addEventListener("click", onArrowClick);
+  }
+
+  // determine if on mobile-like device with small screen
+  function isSmallScreen() {
+    return Math.min(window.innerWidth, window.innerHeight) < 480;
+  }
+
+  // when <h2> heading is clicked
+  function onHeadingClick(event) {
+    // only collapse if <h2> itself is target of click (eg, user did
+    // not click on anchor within <h2>)
+    if (event.target === this) toggleCollapse(this);
+  }
+
+  // when arrow button is clicked
+  function onArrowClick() {
+    toggleCollapse(this.parentNode);
+  }
+
+  // collapse section if expanded, expand if collapsed
+  function toggleCollapse(heading) {
+    if (heading.dataset.collapsed === "false") collapseHeading(heading);
+    else expandElement(heading);
+  }
+
+  // elements to exclude from collapse, such as table of contents panel,
+  // hypothesis panel, etc
+  const exclude = "#toc_panel, div.annotator-frame, #lightbox_overlay";
+
+  // collapse section
+  function collapseHeading(heading) {
+    heading.setAttribute("data-collapsed", "true");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "true");
+  }
+
+  // expand section
+  function expandElement(heading) {
+    heading.setAttribute("data-collapsed", "false");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "false");
+  }
+
+  // get list of elements between this <h2> and next <h2> or <h1>
+  // ("children" of the <h2> section)
+  function getChildren(heading) {
+    return nextUntil(heading, "h2, h1", exclude);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+  <!-- modified from: https://fontawesome.com/icons/angle-down -->
+  <svg width="16" height="16" viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* accordion arrow button */
+    .accordion_arrow {
+      margin-right: 10px;
+    }
+
+    /* arrow icon when <h2> data-collapsed attribute true */
+    h2[data-collapsed="true"] > .accordion_arrow > svg {
+      transform: rotate(-90deg);
+    }
+
+    /* all elements (except <h2>'s) when data-collapsed attribute true */
+    *:not(h2)[data-collapsed="true"] {
+      display: none;
+    }
+
+    /* accordion arrow button when hovered and <h2>'s when hovered */
+    .accordion_arrow:hover,
+    h2[data-collapsed="true"]:hover,
+    h2[data-collapsed="false"]:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always hide accordion arrow button on print */
+  @media only print {
+    .accordion_arrow {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Anchors Plugin
+
+  Adds an anchor next to each of a certain type of element that provides a
+  human-readable url to that specific item/position in the document (e.g.
+  "manuscript.html#abstract"). It also makes it such that scrolling out of view
+  of a target removes its identifier from the url.
+-->
+
+<script type="module">
+  // which types of elements to add anchors next to, in "document.querySelector"
+  // format
+  const typesQuery =
+    'h1, h2, h3, div[id^="fig:"], div[id^="tbl:"], span[id^="eq:"]';
+
+  // start script
+  function start() {
+    // add anchor to each element of specified types
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) addAnchor(element);
+
+    // attach scroll listener to window
+    window.addEventListener("scroll", onScroll);
+  }
+
+  // when window is scrolled
+  function onScroll() {
+    // if url has hash and user has scrolled out of view of hash
+    // target, remove hash from url
+    const tolerance = 100;
+    const target = getHashTarget();
+    if (target) {
+      if (
+        target.getBoundingClientRect().top > window.innerHeight + tolerance ||
+        target.getBoundingClientRect().bottom < 0 - tolerance
+      )
+        history.pushState(null, null, " ");
+    }
+  }
+
+  // add anchor to element
+  function addAnchor(element) {
+    let addTo; // element to add anchor button to
+
+    // if figure or table, modify withId and addTo to get expected
+    // elements
+    if (element.id.indexOf("fig:") === 0) {
+      addTo = element.querySelector("figcaption");
+    } else if (element.id.indexOf("tbl:") === 0) {
+      addTo = element.querySelector("caption");
+    } else if (element.id.indexOf("eq:") === 0) {
+      addTo = element.querySelector(".eqnos-number");
+    }
+
+    addTo = addTo || element;
+    const id = element.id || null;
+
+    // do not add anchor if element doesn't have assigned id.
+    // id is generated by pandoc and is assumed to be unique and
+    // human-readable
+    if (!id) return;
+
+    // create anchor button
+    const anchor = document.createElement("a");
+    anchor.innerHTML = document.querySelector(".icon_link").innerHTML;
+    anchor.title = "Link to this part of the document";
+    anchor.classList.add("icon_button", "anchor");
+    anchor.dataset.ignore = "true";
+    anchor.href = "#" + id;
+    addTo.appendChild(anchor);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- link icon -->
+
+<template class="icon_link">
+  <!-- modified from: https://fontawesome.com/icons/link -->
+  <svg width="16" height="16" viewBox="0 0 512 512">
+    <path
+      fill="currentColor"
+      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* anchor button */
+    .anchor {
+      opacity: 0;
+      margin-left: 5px;
+    }
+
+    /* anchor buttons within <h2>'s */
+    h2 .anchor {
+      margin-left: 10px;
+    }
+
+    /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+    *:hover > .anchor,
+    .anchor:hover,
+    .anchor:focus {
+      opacity: 1;
+    }
+
+    /* anchor button when hovered */
+    .anchor:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always show anchor button on devices with no mouse/hover ability */
+  @media (hover: none) {
+    .anchor {
+      opacity: 1;
+    }
+  }
+
+  /* always hide anchor button on print */
+  @media only print {
+    .anchor {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Attributes Plugin
+
+    Allows arbitrary HTML attributes to be attached to (almost) any element.
+    Place an HTML comment inside or next to the desired element with the content:
+    $attribute="value"
+-->
+
+<script type="module">
+  // start script
+  function start() {
+    // get list of comments in document
+    const comments = findComments();
+
+    for (const comment of comments)
+      if (comment.parentElement)
+        addAttributes(comment.parentElement, comment.nodeValue.trim());
+  }
+
+  // add html attributes to specified element based on string of
+  // html attributes and values
+  function addAttributes(element, text) {
+    // regex's for finding attribute/value pairs in the format of
+    // attribute="value" or attribute='value
+    const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+    const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+    // loop through attribute/value pairs
+    let match;
+    while ((match = text.match(regex2) || text.match(regex1))) {
+      // get attribute and value from regex capture groups
+      let attribute = match[1];
+      let value = match[2];
+
+      // remove from string
+      text = text.substring(match.index + match[0].length);
+
+      if (!attribute || !value) break;
+
+      // set attribute of parent element
+      try {
+        element.setAttribute(attribute, value);
+      } catch (error) {
+        console.log(error);
+      }
+
+      // special case for colspan
+      if (attribute === "colspan") removeTableCells(element, value);
+    }
+  }
+
+  // get list of comment elements in document
+  function findComments() {
+    const comments = [];
+
+    // iterate over comment nodes in document
+    function acceptNode(node) {
+      return NodeFilter.FILTER_ACCEPT;
+    }
+    const iterator = document.createNodeIterator(
+      document.body,
+      NodeFilter.SHOW_COMMENT,
+      acceptNode
+    );
+    let node;
+    while ((node = iterator.nextNode())) comments.push(node);
+
+    return comments;
+  }
+
+  // remove certain number of cells after specified cell
+  function removeTableCells(cell, number) {
+    number = parseInt(number);
+    if (!number) return;
+
+    // remove elements
+    for (; number > 1; number--) {
+      if (cell.nextElementSibling) cell.nextElementSibling.remove();
+    }
+  }
+
+  // start script on DOMContentLoaded instead of load to ensure this plugins
+  // runs before other plugins
+  window.addEventListener("DOMContentLoaded", start);
+</script>
+<!--
+  Jump to First Plugin
+
+  Adds a button next to each reference entry, figure, and table that jumps the
+  page to the first occurrence of a link to that item in the manuscript.
+-->
+
+<script type="module">
+  // whether to add buttons next to reference entries
+  const references = "true";
+  // whether to add buttons next to figures
+  const figures = "true";
+  // whether to add buttons next to tables
+  const tables = "true";
+
+  // start script
+  function start() {
+    if (references !== "false")
+      makeButtons(`div[id^="ref-"]`, ".csl-left-margin", "reference");
+    if (figures !== "false")
+      makeButtons(`div[id^="fig:"]`, "figcaption", "figure");
+    if (tables !== "false") makeButtons(`div[id^="tbl:"]`, "caption", "table");
+  }
+
+  // when jump button clicked
+  function onButtonClick() {
+    const first = getFirstOccurrence(this.dataset.id);
+    if (!first) return;
+
+    // update url hash so navigating "back" in history will return user to button
+    window.location.hash = this.dataset.id;
+    // scroll to link
+    const timeout = function () {
+      goToElement(first, window.innerHeight * 0.5);
+    };
+    window.setTimeout(timeout, 0);
+  }
+
+  // get first occurrence of link to item in document
+  function getFirstOccurrence(id) {
+    let query = "a";
+    query += '[href="#' + id + '"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelector(query);
+  }
+
+  // add button next to each reference entry, figure, or table
+  function makeButtons(query, containerQuery, subject) {
+    const elements = document.querySelectorAll(query);
+    for (const element of elements) {
+      const id = element.id;
+      const buttonContainer = element.querySelector(containerQuery);
+      const first = getFirstOccurrence(id);
+
+      // if can't find link to reference or place to put button, ignore
+      if (!first || !buttonContainer) continue;
+
+      // make jump button
+      let button = document.createElement("button");
+      button.classList.add("icon_button", "jump_arrow");
+      button.title = `Jump to the first occurrence of this ${subject} in the document`;
+      const icon = document.querySelector(".icon_angle_double_up");
+      button.innerHTML = icon.innerHTML;
+      button.dataset.id = id;
+      button.dataset.ignore = "true";
+      button.addEventListener("click", onButtonClick);
+      buttonContainer.prepend(button);
+    }
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+  <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+  <svg width="16" height="16" viewBox="0 0 320 512">
+    <path
+      fill="currentColor"
+      d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* jump button */
+    .jump_arrow {
+      position: relative;
+      top: 0.125em;
+      margin-right: 5px;
+    }
+  }
+
+  /* always hide jump button on print */
+  @media only print {
+    .jump_arrow {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Lightbox Plugin
+
+    Makes it such that when a user clicks on an image, the image fills the
+    screen and the user can pan/drag/zoom the image and navigate between other
+    images in the document.
+-->
+
+<script type="module">
+  // list of possible zoom/scale factors
+  const zooms =
+    "0.1, 0.25, 0.333333, 0.5, 0.666666, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8";
+  // whether to fit image to view ('fit'), display at 100% and shrink if
+  // necessary ('shrink'), or always display at 100% ('100')
+  const defaultZoom = "fit";
+  // whether to zoom in/out toward center of view ('true') or mouse ('false')
+  const centerZoom = "false";
+
+  // start script
+  function start() {
+    // run through each <img> element
+    const imgs = document.querySelectorAll("figure > img");
+    let count = 1;
+    for (const img of imgs) {
+      img.classList.add("lightbox_document_img");
+      img.dataset.number = count;
+      img.dataset.total = imgs.length;
+      img.addEventListener("click", openLightbox);
+      count++;
+    }
+
+    // attach mouse and key listeners to window
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("keyup", onKeyUp);
+  }
+
+  // when mouse is moved anywhere in window
+  function onWindowMouseMove(event) {
+    window.mouseX = event.clientX;
+    window.mouseY = event.clientY;
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("lightbox_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("lightbox_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeLightbox();
+        break;
+    }
+  }
+
+  // open lightbox
+  function openLightbox() {
+    const lightbox = makeLightbox(this);
+    if (!lightbox) return;
+
+    blurBody(lightbox);
+    document.body.appendChild(lightbox);
+  }
+
+  // make lightbox
+  function makeLightbox(img) {
+    // delete lightbox if it exists, start fresh
+    closeLightbox();
+
+    // create screen overlay containing lightbox
+    const overlay = document.createElement("div");
+    overlay.id = "lightbox_overlay";
+
+    // create image info boxes
+    const numberInfo = document.createElement("div");
+    const zoomInfo = document.createElement("div");
+    numberInfo.id = "lightbox_number_info";
+    zoomInfo.id = "lightbox_zoom_info";
+
+    // create container for image
+    const imageContainer = document.createElement("div");
+    imageContainer.id = "lightbox_image_container";
+    const lightboxImg = makeLightboxImg(
+      img,
+      imageContainer,
+      numberInfo,
+      zoomInfo
+    );
+    imageContainer.appendChild(lightboxImg);
+
+    // create bottom container for caption and navigation buttons
+    const bottomContainer = document.createElement("div");
+    bottomContainer.id = "lightbox_bottom_container";
+    const caption = makeCaption(img);
+    const prevButton = makePrevButton(img);
+    const nextButton = makeNextButton(img);
+    bottomContainer.appendChild(prevButton);
+    bottomContainer.appendChild(caption);
+    bottomContainer.appendChild(nextButton);
+
+    // attach top middle and bottom to overlay
+    overlay.appendChild(numberInfo);
+    overlay.appendChild(zoomInfo);
+    overlay.appendChild(imageContainer);
+    overlay.appendChild(bottomContainer);
+
+    return overlay;
+  }
+
+  // make <img> object that is intuitively draggable and zoomable
+  function makeLightboxImg(sourceImg, container, numberInfoBox, zoomInfoBox) {
+    // create copy of source <img>
+    const img = sourceImg.cloneNode(true);
+    img.classList.remove("lightbox_document_img");
+    img.removeAttribute("id");
+    img.removeAttribute("width");
+    img.removeAttribute("height");
+    img.style.position = "unset";
+    img.style.margin = "0";
+    img.style.padding = "0";
+    img.style.width = "";
+    img.style.height = "";
+    img.style.minWidth = "";
+    img.style.minHeight = "";
+    img.style.maxWidth = "";
+    img.style.maxHeight = "";
+    img.id = "lightbox_img";
+
+    // build sorted list of zoomSteps
+    const zoomSteps = zooms.split(/[^0-9.]/).map((step) => parseFloat(step));
+    zoomSteps.sort((a, b) => a - b);
+
+    // <img> object property variables
+    let zoom = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let clickMouseX = undefined;
+    let clickMouseY = undefined;
+    let clickTranslateX = undefined;
+    let clickTranslateY = undefined;
+
+    updateNumberInfo();
+
+    // update image numbers displayed in info box
+    function updateNumberInfo() {
+      numberInfoBox.innerHTML =
+        sourceImg.dataset.number + " of " + sourceImg.dataset.total;
+    }
+
+    // update zoom displayed in info box
+    function updateZoomInfo() {
+      let zoomInfo = zoom * 100;
+      if (!Number.isInteger(zoomInfo)) zoomInfo = zoomInfo.toFixed(2);
+      zoomInfoBox.innerHTML = zoomInfo + "%";
+    }
+
+    // move to closest zoom step above current zoom
+    const zoomIn = function () {
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep > zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      updateTransform();
+    };
+
+    // move to closest zoom step above current zoom
+    const zoomOut = function () {
+      zoomSteps.reverse();
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep < zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      zoomSteps.reverse();
+
+      updateTransform();
+    };
+
+    // update display of <img> based on scale/translate properties
+    const updateTransform = function () {
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      // get new width/height after scale
+      const rect = img.getBoundingClientRect();
+      // limit translate
+      translateX = Math.max(translateX, -rect.width / 2);
+      translateX = Math.min(translateX, rect.width / 2);
+      translateY = Math.max(translateY, -rect.height / 2);
+      translateY = Math.min(translateY, rect.height / 2);
+
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      updateZoomInfo();
+    };
+
+    // fit <img> to container
+    const fit = function () {
+      // no x/y offset, 100% zoom by default
+      translateX = 0;
+      translateY = 0;
+      zoom = 1;
+
+      // widths of <img> and container
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      const containerWidth = parseFloat(
+        window.getComputedStyle(container).width
+      );
+      const containerHeight = parseFloat(
+        window.getComputedStyle(container).height
+      );
+
+      // how much zooming is needed to fit <img> to container
+      const xRatio = imgWidth / containerWidth;
+      const yRatio = imgHeight / containerHeight;
+      const maxRatio = Math.max(xRatio, yRatio);
+      const newZoom = 1 / maxRatio;
+
+      // fit <img> to container according to option
+      if (defaultZoom === "shrink") {
+        if (maxRatio > 1) zoom = newZoom;
+      } else if (defaultZoom === "fit") zoom = newZoom;
+
+      updateTransform();
+    };
+
+    // when mouse wheel is rolled anywhere in container
+    const onContainerWheel = function (event) {
+      if (!event) return;
+
+      // let ctrl + mouse wheel to zoom behave as normal
+      if (event.ctrlKey) return;
+
+      // prevent normal scroll behavior
+      event.preventDefault();
+      event.stopPropagation();
+
+      // point around which to scale img
+      const viewRect = container.getBoundingClientRect();
+      const viewX = (viewRect.left + viewRect.right) / 2;
+      const viewY = (viewRect.top + viewRect.bottom) / 2;
+      const originX = centerZoom === "true" ? viewX : mouseX;
+      const originY = centerZoom === "true" ? viewY : mouseY;
+
+      // get point on image under origin
+      const oldRect = img.getBoundingClientRect();
+      const oldPercentX = (originX - oldRect.left) / oldRect.width;
+      const oldPercentY = (originY - oldRect.top) / oldRect.height;
+
+      // increment/decrement zoom
+      if (event.deltaY < 0) zoomIn();
+      if (event.deltaY > 0) zoomOut();
+
+      // get offset between previous image point and origin
+      const newRect = img.getBoundingClientRect();
+      const offsetX = originX - (newRect.left + newRect.width * oldPercentX);
+      const offsetY = originY - (newRect.top + newRect.height * oldPercentY);
+
+      // translate image to keep image point under origin
+      translateX += offsetX;
+      translateY += offsetY;
+
+      // perform translate
+      updateTransform();
+    };
+
+    // when container is clicked
+    function onContainerClick(event) {
+      // if container itself is target of click, and not other
+      // element above it
+      if (event.target === this) closeLightbox();
+    }
+
+    // when mouse button is pressed on image
+    const onImageMouseDown = function (event) {
+      // store original mouse position relative to image
+      clickMouseX = window.mouseX;
+      clickMouseY = window.mouseY;
+      clickTranslateX = translateX;
+      clickTranslateY = translateY;
+      event.stopPropagation();
+      event.preventDefault();
+    };
+
+    // when mouse button is released anywhere in window
+    const onWindowMouseUp = function (event) {
+      // reset original mouse position
+      clickMouseX = undefined;
+      clickMouseY = undefined;
+      clickTranslateX = undefined;
+      clickTranslateY = undefined;
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mouseup", onWindowMouseUp);
+    };
+
+    // when mouse is moved anywhere in window
+    const onWindowMouseMove = function (event) {
+      if (
+        clickMouseX === undefined ||
+        clickMouseY === undefined ||
+        clickTranslateX === undefined ||
+        clickTranslateY === undefined
+      )
+        return;
+
+      // offset image based on original and current mouse position
+      translateX = clickTranslateX + window.mouseX - clickMouseX;
+      translateY = clickTranslateY + window.mouseY - clickMouseY;
+      updateTransform();
+      event.preventDefault();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mousemove", onWindowMouseMove);
+    };
+
+    // when window is resized
+    const onWindowResize = function (event) {
+      fit();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("resize", onWindowResize);
+    };
+
+    // attach the necessary event listeners
+    img.addEventListener("dblclick", fit);
+    img.addEventListener("mousedown", onImageMouseDown);
+    container.addEventListener("wheel", onContainerWheel);
+    container.addEventListener("mousedown", onContainerClick);
+    container.addEventListener("touchstart", onContainerClick);
+    window.addEventListener("mouseup", onWindowMouseUp);
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("resize", onWindowResize);
+
+    // run fit() after lightbox atttached to document and <img> Loaded
+    // so needed container and img dimensions available
+    img.addEventListener("load", fit);
+
+    return img;
+  }
+
+  // make caption
+  function makeCaption(img) {
+    const caption = document.createElement("div");
+    caption.id = "lightbox_caption";
+    const captionSource = img.nextElementSibling;
+    if (captionSource.tagName.toLowerCase() === "figcaption") {
+      const captionCopy = makeCopy(captionSource);
+      caption.innerHTML = captionCopy.innerHTML;
+    }
+
+    caption.addEventListener("touchstart", function (event) {
+      event.stopPropagation();
+    });
+
+    return caption;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // make button to jump to previous image in document
+  function makePrevButton(img) {
+    const prevButton = document.createElement("button");
+    prevButton.id = "lightbox_prev_button";
+    prevButton.title = "Jump to the previous image in the document [←]";
+    prevButton.classList.add("icon_button", "lightbox_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+
+    // attach click listeners to button
+    prevButton.addEventListener("click", function () {
+      getPrevImg(img).click();
+    });
+
+    return prevButton;
+  }
+
+  // make button to jump to next image in document
+  function makeNextButton(img) {
+    const nextButton = document.createElement("button");
+    nextButton.id = "lightbox_next_button";
+    nextButton.title = "Jump to the next image in the document [→]";
+    nextButton.classList.add("icon_button", "lightbox_button");
+    nextButton.innerHTML = document.querySelector(
+      ".icon_caret_right"
+    ).innerHTML;
+
+    // attach click listeners to button
+    nextButton.addEventListener("click", function () {
+      getNextImg(img).click();
+    });
+
+    return nextButton;
+  }
+
+  // get previous image in document
+  function getPrevImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if < 1
+    if (index - 1 >= 0) index--;
+    else index = imgs.length - 1;
+    return imgs[index];
+  }
+
+  // get next image in document
+  function getNextImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if > total
+    if (index + 1 <= imgs.length - 1) index++;
+    else index = 0;
+    return imgs[index];
+  }
+
+  // close lightbox
+  function closeLightbox() {
+    focusBody();
+
+    const lightbox = document.getElementById("lightbox_overlay");
+    if (lightbox) lightbox.remove();
+  }
+
+  // make all elements behind lightbox non-focusable
+  function blurBody(overlay) {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.tabIndex = -1;
+    document.body.classList.add("body_no_scroll");
+  }
+
+  // make all elements focusable again
+  function focusBody() {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.removeAttribute("tabIndex");
+    document.body.classList.remove("body_no_scroll");
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* regular <img> in document when hovered */
+    img.lightbox_document_img:hover {
+      cursor: pointer;
+    }
+
+    .body_no_scroll {
+      overflow: hidden !important;
+    }
+
+    /* screen overlay */
+    #lightbox_overlay {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 3;
+    }
+
+    /* middle area containing lightbox image */
+    #lightbox_image_container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* bottom area containing caption */
+    #lightbox_bottom_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* image number info text box */
+    #lightbox_number_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      left: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* zoom info text box */
+    #lightbox_zoom_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      right: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* copy of image caption */
+    #lightbox_caption {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      max-height: 100%;
+      padding: 10px 0;
+      text-align: center;
+      overflow-y: auto;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button */
+    .lightbox_button {
+      width: 100px;
+      height: 100%;
+      min-width: 100px;
+      min-height: 100%;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button when hovered */
+    .lightbox_button:hover {
+      background: none !important;
+    }
+
+    /* navigation button icon */
+    .lightbox_button > svg {
+      height: 25px;
+    }
+
+    /* figure auto-number */
+    #lightbox_caption > span:first-of-type {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    /* lightbox image when hovered */
+    #lightbox_img:hover {
+      cursor: grab;
+    }
+
+    /* lightbox image when grabbed */
+    #lightbox_img:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* when on screen < 480px wide */
+  @media only screen and (max-width: 480px) {
+    /* make navigation buttons skinnier on small screens to make more room for caption text */
+    .lightbox_button {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  /* always hide lightbox on print */
+  @media only print {
+    #lightbox_overlay {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Link Highlight Plugin
+
+  Makes it such that when a user hovers or focuses a link, other links that have
+  the same target will be highlighted. It also makes it such that when clicking
+  a link, the target of the link (eg reference, figure, table) is briefly
+  highlighted.
+-->
+
+<script type="module">
+  // whether to also highlight links that go to external urls
+  const externalLinks = "false";
+  // whether user must click off to unhighlight instead of just
+  // un-hovering
+  const clickUnhighlight = "false";
+  // whether to also highlight links that are unique
+  const highlightUnique = "true";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach mouse and focus listeners to link
+      link.addEventListener("mouseenter", onLinkFocus);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("mouseleave", onLinkUnhover);
+    }
+
+    // attach click and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("hashchange", onHashChange);
+
+    // run hash change on window load in case user has navigated
+    // directly to hash
+    onHashChange();
+  }
+
+  // when link is focused (tabbed to) or hovered
+  function onLinkFocus() {
+    highlight(this);
+  }
+
+  // when link is unhovered
+  function onLinkUnhover() {
+    if (clickUnhighlight !== "true") unhighlightAll();
+  }
+
+  // when the mouse is clicked anywhere in window
+  function onClick(event) {
+    unhighlightAll();
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) glowElement(target);
+  }
+
+  // start glow sequence on an element
+  function glowElement(element) {
+    const startGlow = function () {
+      onGlowEnd();
+      element.dataset.glow = "true";
+      element.addEventListener("animationend", onGlowEnd);
+    };
+    const onGlowEnd = function () {
+      element.removeAttribute("data-glow");
+      element.removeEventListener("animationend", onGlowEnd);
+    };
+    startGlow();
+  }
+
+  // highlight link and all others with same target
+  function highlight(link) {
+    // force unhighlight all to start fresh
+    unhighlightAll();
+
+    // get links with same target
+    if (!link) return;
+    const sameLinks = getSameLinks(link);
+
+    // if link unique and option is off, exit and don't highlight
+    if (sameLinks.length <= 1 && highlightUnique !== "true") return;
+
+    // highlight all same links, and "select" (special highlight) this
+    // one
+    for (const sameLink of sameLinks) {
+      if (sameLink === link) sameLink.setAttribute("data-selected", "true");
+      else sameLink.setAttribute("data-highlighted", "true");
+    }
+  }
+
+  // unhighlight all links
+  function unhighlightAll() {
+    const links = getLinks();
+    for (const link of links) {
+      link.setAttribute("data-selected", "false");
+      link.setAttribute("data-highlighted", "false");
+    }
+  }
+
+  // get links with same target
+  function getSameLinks(link) {
+    const results = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        results.push(otherLink);
+    }
+    return results;
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    let query = "a";
+    if (externalLinks !== "true") query += '[href^="#"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelectorAll(query);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<style>
+  @media only screen {
+    /* anything with data-highlighted attribute true */
+    [data-highlighted="true"] {
+      background: #ffeb3b;
+    }
+
+    /* anything with data-selected attribute true */
+    [data-selected="true"] {
+      background: #ff8a65 !important;
+    }
+
+    /* animation definition for glow */
+    @keyframes highlight_glow {
+      0% {
+        background: none;
+      }
+      10% {
+        background: #bbdefb;
+      }
+      100% {
+        background: none;
+      }
+    }
+
+    /* anything with data-glow attribute true */
+    [data-glow="true"] {
+      animation: highlight_glow 2s;
+    }
+  }
+</style>
+<!--
+  Table of Contents Plugin
+
+  Provides a "table of contents" (toc) panel on the side of the document that
+  allows the user to conveniently navigate between sections of the document.
+-->
+
+<script type="module">
+  // which types of elements to add links for, in "document.querySelector" format
+  const typesQuery = "h1, h2, h3";
+  // whether toc starts open. use 'true' or 'false', or 'auto' to
+  // use 'true' behavior when screen wide enough and 'false' when not
+  const startOpen = "false";
+  // whether toc closes when clicking on toc link. use 'true' or
+  // 'false', or 'auto' to use 'false' behavior when screen wide
+  // enough and 'true' when not
+  const clickClose = "auto";
+  // if list item is more than this many characters, text will be
+  // truncated
+  const charLimit = "50";
+  // whether or not to show bullets next to each toc item
+  const bullets = "false";
+
+  // start script
+  function start() {
+    // make toc panel and populate with entries (links to document
+    // sections)
+    const panel = makePanel();
+    if (!panel) return;
+    makeEntries(panel);
+    // attach panel to document after making entries, so 'toc' heading
+    // in panel isn't included in toc
+    document.body.insertBefore(panel, document.body.firstChild);
+
+    // initial panel state
+    if (startOpen === "true" || (startOpen === "auto" && !isSmallScreen()))
+      openPanel();
+    else closePanel();
+
+    // attach click, scroll, and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("hashchange", onScroll);
+    window.addEventListener("keyup", onKeyUp);
+    onScroll();
+
+    // add class to push document body down out of way of toc button
+    document.body.classList.add("toc_body_nudge");
+  }
+
+  // determine if screen wide enough to fit toc panel
+  function isSmallScreen() {
+    // in default theme:
+    // 816px = 8.5in = width of "page" (<body>) element
+    // 260px = min width of toc panel (*2 for both sides of <body>)
+    return window.innerWidth < 816 + 260 * 2;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick() {
+    if (isSmallScreen()) closePanel();
+  }
+
+  // when window is scrolled or hash changed
+  function onScroll() {
+    highlightViewed();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    // close on esc
+    if (event.key === "Escape") closePanel();
+  }
+
+  // find entry of currently viewed document section in toc and highlight
+  function highlightViewed() {
+    const firstId = getFirstInView(typesQuery);
+
+    // get toc entries (links), unhighlight all, then highlight viewed
+    const list = document.getElementById("toc_list");
+    if (!firstId || !list) return;
+    const links = list.querySelectorAll("a");
+    for (const link of links) link.dataset.viewing = "false";
+    const link = list.querySelector('a[href="#' + firstId + '"]');
+    if (!link) return;
+    link.dataset.viewing = "true";
+  }
+
+  // get first or previous toc listed element in top half of view
+  function getFirstInView(query) {
+    // get all elements matching query and with id
+    const elements = document.querySelectorAll(query);
+    const elementsWithIds = [];
+    for (const element of elements) {
+      if (element.id) elementsWithIds.push(element);
+    }
+
+    // get first or previous element in top half of view
+    for (let i = 0; i < elementsWithIds.length; i++) {
+      const element = elementsWithIds[i];
+      const prevElement = elementsWithIds[Math.max(0, i - 1)];
+      if (element.getBoundingClientRect().top >= 0) {
+        if (element.getBoundingClientRect().top < window.innerHeight / 2)
+          return element.id;
+        else return prevElement.id;
+      }
+    }
+  }
+
+  // make panel
+  function makePanel() {
+    // create panel
+    const panel = document.createElement("div");
+    panel.id = "toc_panel";
+    if (bullets === "true") panel.dataset.bullets = "true";
+
+    // create header
+    const header = document.createElement("div");
+    header.id = "toc_header";
+
+    // create toc button
+    const button = document.createElement("button");
+    button.id = "toc_button";
+    button.innerHTML = document.querySelector(".icon_th_list").innerHTML;
+    button.title = "Table of Contents";
+    button.classList.add("icon_button");
+
+    // create header text
+    const text = document.createElement("h4");
+    text.innerHTML = "Table of Contents";
+
+    // create container for toc list
+    const list = document.createElement("div");
+    list.id = "toc_list";
+
+    // attach click listeners
+    panel.addEventListener("click", onPanelClick);
+    header.addEventListener("click", onHeaderClick);
+    button.addEventListener("click", onButtonClick);
+
+    // attach elements
+    header.appendChild(button);
+    header.appendChild(text);
+    panel.appendChild(header);
+    panel.appendChild(list);
+
+    return panel;
+  }
+
+  // create toc entries (links) to each element of the specified types
+  function makeEntries(panel) {
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) {
+      // do not add link if element doesn't have assigned id
+      if (!element.id) continue;
+
+      // create link/list item
+      const link = document.createElement("a");
+      link.classList.add("toc_link");
+      switch (element.tagName.toLowerCase()) {
+        case "h1":
+          link.dataset.level = "1";
+          break;
+        case "h2":
+          link.dataset.level = "2";
+          break;
+        case "h3":
+          link.dataset.level = "3";
+          break;
+        case "h4":
+          link.dataset.level = "4";
+          break;
+      }
+      link.title = element.innerText;
+      let text = element.innerText;
+      if (text.length > charLimit) text = text.slice(0, charLimit) + "...";
+      link.innerHTML = text;
+      link.href = "#" + element.id;
+      link.addEventListener("click", onLinkClick);
+
+      // attach link
+      panel.querySelector("#toc_list").appendChild(link);
+    }
+  }
+
+  // when panel is clicked
+  function onPanelClick(event) {
+    // stop click from propagating to window/document and closing panel
+    event.stopPropagation();
+  }
+
+  // when header itself is clicked
+  function onHeaderClick(event) {
+    togglePanel();
+  }
+
+  // when button is clicked
+  function onButtonClick(event) {
+    togglePanel();
+    // stop header underneath button from also being clicked
+    event.stopPropagation();
+  }
+
+  // when link is clicked
+  function onLinkClick(event) {
+    if (clickClose === "true" || (clickClose === "auto" && isSmallScreen()))
+      closePanel();
+    else openPanel();
+  }
+
+  // open panel if closed, close if opened
+  function togglePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (!panel) return;
+
+    if (panel.dataset.open === "true") closePanel();
+    else openPanel();
+  }
+
+  // open panel
+  function openPanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "true";
+  }
+
+  // close panel
+  function closePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "false";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+  <!-- modified from: https://fontawesome.com/icons/th-list -->
+  <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* toc panel */
+    #toc_panel {
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      z-index: 2;
+    }
+
+    /* toc panel when closed */
+    #toc_panel[data-open="false"] {
+      min-width: 60px;
+      width: 60px;
+      height: 60px;
+      border-right: solid 1px #bdbdbd;
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc panel when open */
+    #toc_panel[data-open="true"] {
+      min-width: 260px;
+      max-width: 480px;
+      /* keep panel edge consistent distance away from "page" edge */
+      width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+      bottom: 0;
+      border-right: solid 1px #bdbdbd;
+    }
+
+    /* toc panel header */
+    #toc_header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* toc panel header when hovered */
+    #toc_header:hover {
+      cursor: pointer;
+    }
+
+    /* toc panel header when panel open */
+    #toc_panel[data-open="true"] > #toc_header {
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc open/close header button */
+    #toc_button {
+      margin-right: 20px;
+    }
+
+    /* hide toc list and header text when closed */
+    #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
+    #toc_panel[data-open="false"] > #toc_list {
+      display: none;
+    }
+
+    /* toc list of entries */
+    #toc_list {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: calc(60px + 1px);
+      bottom: 0;
+      overflow: auto;
+    }
+
+    /* toc entry, link to section in document */
+    .toc_link {
+      display: block;
+      padding: 5px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* toc entry when hovered or when "viewed" */
+    .toc_link:hover,
+    .toc_link[data-viewing="true"] {
+      background: #f5f5f5;
+    }
+
+    /* toc entry, level 1 indentation */
+    .toc_link[data-level="1"] {
+      margin-left: 0;
+    }
+
+    /* toc entry, level 2 indentation */
+    .toc_link[data-level="2"] {
+      margin-left: 20px;
+    }
+
+    /* toc entry, level 3 indentation */
+    .toc_link[data-level="3"] {
+      margin-left: 40px;
+    }
+
+    /* toc entry, level 4 indentation */
+    .toc_link[data-level="4"] {
+      margin-left: 60px;
+    }
+
+    /* toc entry bullets */
+    #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+      position: absolute;
+      left: -15px;
+      top: -1px;
+      font-size: 1.5em;
+    }
+
+    /* toc entry, level 2 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+      content: "\2022";
+    }
+
+    /* toc entry, level 3 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+      content: "\25AB";
+    }
+
+    /* toc entry, level 4 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+      content: "-";
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* push <body> ("page") element down to make room for toc icon */
+    .toc_body_nudge {
+      padding-top: 60px;
+    }
+
+    /* toc icon when panel closed and not hovered */
+    #toc_panel[data-open="false"]:not(:hover) {
+      background: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  /* always hide toc panel on print */
+  @media only print {
+    #toc_panel {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Tooltips Plugin
+
+  Makes it such that when the user hovers or focuses a link to a citation or
+  figure, a tooltip appears with a preview of the reference content, along with
+  arrows to navigate between instances of the same reference in the document.
+-->
+
+<script type="module">
+  // whether user must click off to close tooltip instead of just un-hovering
+  const clickClose = "false";
+  // delay (in ms) between opening and closing tooltip
+  const delay = "100";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach hover and focus listeners to link
+      link.addEventListener("mouseover", onLinkHover);
+      link.addEventListener("mouseleave", onLinkUnhover);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("touchend", onLinkTouch);
+    }
+
+    // attach mouse, key, and resize listeners to window
+    window.addEventListener("mousedown", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("keyup", onKeyUp);
+    window.addEventListener("resize", onResize);
+  }
+
+  // when link is hovered
+  function onLinkHover() {
+    // function to open tooltip
+    const delayOpenTooltip = function () {
+      openTooltip(this);
+    }.bind(this);
+
+    // run open function after delay
+    this.openTooltipTimer = window.setTimeout(delayOpenTooltip, delay);
+  }
+
+  // when mouse leaves link
+  function onLinkUnhover() {
+    // cancel opening tooltip
+    window.clearTimeout(this.openTooltipTimer);
+
+    // don't close on unhover if option specifies
+    if (clickClose === "true") return;
+
+    // function to close tooltip
+    const delayCloseTooltip = function () {
+      // if tooltip open and if mouse isn't over tooltip, close
+      const tooltip = document.getElementById("tooltip");
+      if (tooltip && !tooltip.matches(":hover")) closeTooltip();
+    };
+
+    // run close function after delay
+    this.closeTooltipTimer = window.setTimeout(delayCloseTooltip, delay);
+  }
+
+  // when link is focused (tabbed to)
+  function onLinkFocus(event) {
+    openTooltip(this);
+  }
+
+  // when link is touched on touch screen
+  function onLinkTouch(event) {
+    // attempt to force hover state on first tap always, and trigger
+    // regular link click (and navigation) on second tap
+    if (event.target === document.activeElement) event.target.click();
+    else {
+      document.activeElement.blur();
+      event.target.focus();
+    }
+    if (event.cancelable) event.preventDefault();
+    event.stopPropagation();
+    return false;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick(event) {
+    closeTooltip();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("tooltip_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("tooltip_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeTooltip();
+        break;
+    }
+  }
+
+  // when window is resized or zoomed
+  function onResize() {
+    closeTooltip();
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    const queries = [];
+    // exclude buttons, anchor links, toc links, etc
+    const exclude =
+      ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    queries.push('a[href^="#ref-"]' + exclude); // citation links
+    queries.push('a[href^="#fig:"]' + exclude); // figure links
+    const query = queries.join(", ");
+    return document.querySelectorAll(query);
+  }
+
+  // get links with same target, get index of link in set, get total
+  // same links
+  function getSameLinks(link) {
+    const sameLinks = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        sameLinks.push(otherLink);
+    }
+
+    return {
+      elements: sameLinks,
+      index: sameLinks.indexOf(link),
+      total: sameLinks.length,
+    };
+  }
+
+  // open tooltip
+  function openTooltip(link) {
+    // delete tooltip if it exists, start fresh
+    closeTooltip();
+
+    // make tooltip element
+    const tooltip = makeTooltip(link);
+
+    // if source couldn't be found and tooltip not made, exit
+    if (!tooltip) return;
+
+    // make navbar elements
+    const navBar = makeNavBar(link);
+    if (navBar) tooltip.firstElementChild.appendChild(navBar);
+
+    // attach tooltip to page
+    document.body.appendChild(tooltip);
+
+    // position tooltip
+    const position = function () {
+      positionTooltip(link);
+    };
+    position();
+
+    // if tooltip contains images, position again after they've loaded
+    const imgs = tooltip.querySelectorAll("img");
+    for (const img of imgs) img.addEventListener("load", position);
+  }
+
+  // close (delete) tooltip
+  function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) tooltip.remove();
+  }
+
+  // make tooltip
+  function makeTooltip(link) {
+    // get target element that link points to
+    const source = getSource(link);
+
+    // if source can't be found, exit
+    if (!source) return;
+
+    // create new tooltip
+    const tooltip = document.createElement("div");
+    tooltip.id = "tooltip";
+    const tooltipContent = document.createElement("div");
+    tooltipContent.id = "tooltip_content";
+    tooltip.appendChild(tooltipContent);
+
+    // make copy of source node and put in tooltip
+    const sourceCopy = makeCopy(source);
+    tooltipContent.appendChild(sourceCopy);
+
+    // attach mouse event listeners
+    tooltip.addEventListener("click", onTooltipClick);
+    tooltip.addEventListener("mousedown", onTooltipClick);
+    tooltip.addEventListener("touchstart", onTooltipClick);
+    tooltip.addEventListener("mouseleave", onTooltipUnhover);
+
+    // (for interaction with lightbox plugin)
+    // transfer click on tooltip copied img to original img
+    const sourceImg = source.querySelector("img");
+    const sourceCopyImg = sourceCopy.querySelector("img");
+    if (sourceImg && sourceCopyImg) {
+      const clickImg = function () {
+        sourceImg.click();
+        closeTooltip();
+      };
+      sourceCopyImg.addEventListener("click", clickImg);
+    }
+
+    return tooltip;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+      "class",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // when tooltip is clicked
+  function onTooltipClick(event) {
+    // when user clicks on tooltip, stop click from transferring
+    // outside of tooltip (eg, click off to close tooltip, or eg click
+    // off to unhighlight same refs)
+    event.stopPropagation();
+  }
+
+  // when tooltip is unhovered
+  function onTooltipUnhover(event) {
+    if (clickClose === "true") return;
+
+    // make sure new mouse/touch/focus no longer over tooltip or any
+    // element within it
+    const tooltip = document.getElementById("tooltip");
+    if (!tooltip) return;
+    if (this.contains(event.relatedTarget)) return;
+
+    closeTooltip();
+  }
+
+  // make nav bar to go betwen prev/next instances of same reference
+  function makeNavBar(link) {
+    // find other links to the same source
+    const sameLinks = getSameLinks(link);
+
+    // don't show nav bar when singular reference
+    if (sameLinks.total <= 1) return;
+
+    // find prev/next links with same target
+    const prevLink = getPrevLink(link, sameLinks);
+    const nextLink = getNextLink(link, sameLinks);
+
+    // create nav bar
+    const navBar = document.createElement("div");
+    navBar.id = "tooltip_nav_bar";
+    const text = sameLinks.index + 1 + " of " + sameLinks.total;
+
+    // create nav bar prev/next buttons
+    const prevButton = document.createElement("button");
+    const nextButton = document.createElement("button");
+    prevButton.id = "tooltip_prev_button";
+    nextButton.id = "tooltip_next_button";
+    prevButton.title =
+      "Jump to the previous occurence of this item in the document [←]";
+    nextButton.title =
+      "Jump to the next occurence of this item in the document [→]";
+    prevButton.classList.add("icon_button");
+    nextButton.classList.add("icon_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+    nextButton.innerHTML =
+      document.querySelector(".icon_caret_right").innerHTML;
+    navBar.appendChild(prevButton);
+    navBar.appendChild(document.createTextNode(text));
+    navBar.appendChild(nextButton);
+
+    // attach click listeners to buttons
+    prevButton.addEventListener("click", function () {
+      onPrevNextClick(link, prevLink);
+    });
+    nextButton.addEventListener("click", function () {
+      onPrevNextClick(link, nextLink);
+    });
+
+    return navBar;
+  }
+
+  // get previous link with same target
+  function getPrevLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if < 1
+    let index;
+    if (sameLinks.index - 1 >= 0) index = sameLinks.index - 1;
+    else index = sameLinks.total - 1;
+    return sameLinks.elements[index];
+  }
+
+  // get next link with same target
+  function getNextLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if > total
+    let index;
+    if (sameLinks.index + 1 <= sameLinks.total - 1) index = sameLinks.index + 1;
+    else index = 0;
+    return sameLinks.elements[index];
+  }
+
+  // get element that is target of link or url hash
+  function getSource(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector('[id="' + id + '"]');
+    if (!target) return;
+
+    // if ref or figure, modify target to get expected element
+    if (id.indexOf("ref-") === 0) target = target.querySelector(":nth-child(2)");
+    else if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+
+    return target;
+  }
+
+  // when prev/next arrow button is clicked
+  function onPrevNextClick(link, prevNextLink) {
+    if (link && prevNextLink)
+      goToElement(prevNextLink, window.innerHeight * 0.5);
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // determine position to place tooltip based on link position in
+  // viewport and tooltip size
+  function positionTooltip(link, left, top) {
+    const tooltipElement = document.getElementById("tooltip");
+    if (!tooltipElement) return;
+
+    // get convenient vars for position/dimensions of
+    // link/tooltip/page/view
+    link = getRectInPage(link);
+    const tooltip = getRectInPage(tooltipElement);
+    const view = getRectInPage();
+
+    // horizontal positioning
+    if (left)
+      // use explicit value
+      left = left;
+    else if (link.left + tooltip.width < view.right)
+      // fit tooltip to right of link
+      left = link.left;
+    else if (link.right - tooltip.width > view.left)
+      // fit tooltip to left of link
+      left = link.right - tooltip.width;
+    // center tooltip in view
+    else left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+    // vertical positioning
+    if (top)
+      // use explicit value
+      top = top;
+    else if (link.top - tooltip.height > view.top)
+      // fit tooltip above link
+      top = link.top - tooltip.height;
+    else if (link.bottom + tooltip.height < view.bottom)
+      // fit tooltip below link
+      top = link.bottom;
+    else {
+      // center tooltip in view
+      top = view.top + view.height / 2 - tooltip.height / 2;
+      // nudge off of link to left/right if possible
+      if (link.right + tooltip.width < view.right) left = link.right;
+      else if (link.left - tooltip.width > view.left)
+        left = link.left - tooltip.width;
+    }
+
+    tooltipElement.style.left = left + "px";
+    tooltipElement.style.top = top + "px";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* tooltip container */
+    #tooltip {
+      position: absolute;
+      width: 50%;
+      min-width: 240px;
+      max-width: 75%;
+      z-index: 1;
+    }
+
+    /* tooltip content */
+    #tooltip_content {
+      margin-bottom: 5px;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+      overflow-wrap: break-word;
+    }
+
+    /* tooltip copy of paragraphs and figures */
+    #tooltip_content > p,
+    #tooltip_content > figure {
+      margin: 0;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    /* tooltip copy of <img> */
+    #tooltip_content > figure > img,
+    #tooltip_content > figure > svg {
+      max-height: 260px;
+    }
+
+    /* navigation bar */
+    #tooltip_nav_bar {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* navigation bar previous/next buton */
+    #tooltip_nav_bar > .icon_button {
+      position: relative;
+      top: 3px;
+    }
+
+    /* navigation bar previous button */
+    #tooltip_nav_bar > .icon_button:first-of-type {
+      margin-right: 5px;
+    }
+
+    /* navigation bar next button */
+    #tooltip_nav_bar > .icon_button:last-of-type {
+      margin-left: 5px;
+    }
+  }
+
+  /* always hide tooltip on print */
+  @media only print {
+    #tooltip {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Analytics Plugin (third-party) 
+  
+  Copy and paste code from Google Analytics or similar service here.
+-->
+<!-- 
+  Annotations Plugin
+
+  Allows public annotation of the  manuscript. See https://web.hypothes.is/.
+-->
+
+<script type="module">
+  // configuration
+  window.hypothesisConfig = function () {
+    return {
+      branding: {
+        accentColor: "#2196f3",
+        appBackgroundColor: "#f8f8f8",
+        ctaBackgroundColor: "#f8f8f8",
+        ctaTextColor: "#000000",
+        selectionFontFamily: "Open Sans, Helvetica, sans serif",
+        annotationFontFamily: "Open Sans, Helvetica, sans serif",
+      },
+    };
+  };
+
+  // hypothesis client script
+  const embed = "https://hypothes.is/embed.js";
+  // hypothesis annotation count query url
+  const query = "https://api.hypothes.is/api/search?limit=0&url=";
+
+  // start script
+  function start() {
+    const button = makeButton();
+    document.body.insertBefore(button, document.body.firstChild);
+    insertCount(button);
+  }
+
+  // make button
+  function makeButton() {
+    // create button
+    const button = document.createElement("button");
+    button.id = "hypothesis_button";
+    button.innerHTML = document.querySelector(".icon_hypothesis").innerHTML;
+    button.title = "Hypothesis annotations";
+    button.classList.add("icon_button");
+
+    function onClick(event) {
+      onButtonClick(event, button);
+    }
+
+    // attach click listeners
+    button.addEventListener("click", onClick);
+
+    return button;
+  }
+
+  // insert annotations count
+  async function insertCount(button) {
+    // get annotation count from Hypothesis based on url
+    let count = "-";
+    try {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const location = window.location;
+      const url = encodeURIComponent((canonical || location).href);
+      const response = await fetch(query + url);
+      const json = await response.json();
+      count = json.total || "-";
+    } catch (error) {
+      console.log(error);
+    }
+
+    // put count into button
+    const counter = document.createElement("span");
+    counter.id = "hypothesis_count";
+    counter.innerHTML = count;
+    button.title = "View " + count + " Hypothesis annotations";
+    button.append(counter);
+  }
+
+  // when button is clicked
+  function onButtonClick(event, button) {
+    const script = document.createElement("script");
+    script.src = embed;
+    document.body.append(script);
+    button.remove();
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- hypothesis icon -->
+
+<template class="icon_hypothesis">
+  <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+  <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  /* hypothesis activation button */
+  #hypothesis_button {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 0;
+    border-left: solid 1px #bdbdbd;
+    border-bottom: solid 1px #bdbdbd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  /* hypothesis button svg */
+  #hypothesis_button > svg {
+    position: relative;
+    top: -4px;
+  }
+
+  /* hypothesis annotation count */
+  #hypothesis_count {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+  }
+
+  /* side panel */
+  .annotator-frame {
+    width: 280px !important;
+  }
+
+  /* match highlight color to rest of theme */
+  .annotator-highlights-always-on .annotator-hl {
+    background-color: #ffeb3b !important;
+  }
+
+  /* match focused color to rest of theme */
+  .annotator-hl.annotator-hl-focused {
+    background-color: #ff8a65 !important;
+  }
+
+  /* match bucket bar color to rest of theme */
+  .annotator-bucket-bar {
+    background: #f5f5f5 !important;
+  }
+
+  /* always hide button, toolbar, and tooltip on print */
+  @media only print {
+    #hypothesis_button {
+      display: none;
+    }
+
+    .annotator-frame {
+      display: none !important;
+    }
+
+    hypothesis-adder {
+      display: none !important;
+    }
+  }
+</style>
+<!-- 
+  Mathjax Plugin (third-party) 
+
+  Allows the proper rendering of math/equations written in LaTeX.
+  See https://www.mathjax.org/.
+-->
+
+<script type="text/x-mathjax-config">
+  // configuration
+  MathJax.Hub.Config({
+    "CommonHTML": { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    "fast-preview": { disabled: true }
+  });
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+  crossorigin="anonymous"
+></script>
+
+<style>
+  /* mathjax containers */
+  .math.display > span:not(.MathJax_Preview) {
+    /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  /* right click menu */
+  .MathJax_Menu {
+    border-radius: 5px !important;
+    border: solid 1px #bdbdbd !important;
+    box-shadow: none !important;
+  }
+
+  /* equation auto-number */
+  span[id^="eq:"] > span.math.display + span {
+    font-weight: 600;
+  }
+
+  /* equation */
+  span[id^="eq:"] > span.math.display > span {
+    /* nudge to make room for equation auto-number and anchor */
+    margin-right: 60px !important;
+  }
+</style>
+</body>
+</html>

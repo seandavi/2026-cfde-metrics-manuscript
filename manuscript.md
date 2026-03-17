@@ -1,0 +1,339 @@
+---
+title: 'Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems'
+keywords:
+- markdown
+- publishing
+- manubot
+lang: en-US
+date-meta: '2026-03-17'
+author-meta:
+- Ethan M. Lange
+- Vikram Adithya Ganesh
+- Faisal Alquaddoomi
+- David Mayer
+- Adriana Ivich
+- Vince Rubinetti
+- Casey Greene
+- Sean Davis
+header-includes: |
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
+  <meta name="dc.title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
+  <meta name="dc.date" content="2026-03-17" />
+  <meta name="citation_publication_date" content="2026-03-17" />
+  <meta property="article:published_time" content="2026-03-17" />
+  <meta name="dc.modified" content="2026-03-17T19:28:45+00:00" />
+  <meta property="article:modified_time" content="2026-03-17T19:28:45+00:00" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Ethan M. Lange" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0001-7075-4287" />
+  <meta name="citation_author" content="Vikram Adithya Ganesh" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0009-0009-2056-2696" />
+  <meta name="citation_author" content="Faisal Alquaddoomi" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="David Mayer" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Adriana Ivich" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Vince Rubinetti" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Casey Greene" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="citation_author" content="Sean Davis" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_orcid" content="0000-0002-8991-6458" />
+  <link rel="canonical" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta property="og:url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta property="twitter:url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
+  <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+bibliography:
+- content/manual-references.json
+manubot-output-bibliography: output/references.json
+manubot-output-citekeys: output/citations.tsv
+manubot-requests-cache-path: ci/cache/requests-cache
+manubot-clear-requests-cache: false
+...
+
+
+
+
+
+
+<small><em>
+This manuscript
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b97b444157c0ac17235df20227fb99cca15ddcc5/))
+was automatically generated
+from [seandavi/2026-cfde-metrics-manuscript@b97b444](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/b97b444157c0ac17235df20227fb99cca15ddcc5)
+on March 17, 2026.
+</em></small>
+
+
+
+## Authors
+
+
+
++ **Ethan M. Lange**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-7075-4287](https://orcid.org/0000-0001-7075-4287)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Vikram Adithya Ganesh**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0009-0009-2056-2696](https://orcid.org/0009-0009-2056-2696)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [techvik](https://github.com/techvik)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Faisal Alquaddoomi**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [falquaddoomi](https://github.com/falquaddoomi)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **David Mayer**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [the-mayer](https://github.com/the-mayer)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Adriana Ivich**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [ivichadriana](https://github.com/ivichadriana)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Vince Rubinetti**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [vincerubinetti](https://github.com/vincerubinetti)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Casey Greene**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [cgreene](https://github.com/cgreene)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
++ **Sean Davis**
+  ^[✉](#correspondence)^<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
+    [0000-0002-8991-6458](https://orcid.org/0000-0002-8991-6458)
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [seandavis](https://github.com/seandavis)
+    <br>
+  <small>
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     · Funded by Grant U54OD036472
+  </small>
+
+
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/seandavi/2026-cfde-metrics-manuscript/issues)
+or email to
+Casey Greene \<casey.s.greene@cuanschutz.edu\>, 
+Sean Davis \<seandavi@gmail.com\>.
+
+
+:::
+
+
+## Bigger Picture {.page_break_before}
+
+The U.S. government spends hundreds of millions of dollars every year creating and maintaining large collections of biomedical research data — from genome sequences of hundreds of thousands of people to detailed maps of every cell type in the human body. The goal is to make these datasets openly available to scientists everywhere, accelerating discoveries that no single laboratory could achieve alone.
+
+But how do we know whether this investment is paying off? At present, each funded program tracks its own success metrics — if it tracks them at all — making it nearly impossible to compare programs or to learn from what works. This is a significant missed opportunity. In the business world, organizations use structured "performance frameworks" to evaluate products, adjust strategies, and decide where to invest next. Publicly funded science deserves the same discipline.
+
+In this paper, we describe three frameworks for evaluating biomedical data resources: one focused on how widely the data are used and scientifically cited, one on whether the data are well-documented and reusable by others, and one on whether the underlying infrastructure is reliable and financially sustainable. We argue that different metrics matter more at different stages of a project's life — early on, data quality and infrastructure are paramount; later, scientific impact and long-term cost become critical. Standardizing a common evaluation language across all NIH data programs would enable better decisions about where to invest, how to sustain valuable resources, and when to gracefully retire those that have served their purpose.
+
+## Summary {.page_break_before}
+
+The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments remains fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making. We propose a structured approach built on three complementary prioritization frameworks: *public value* (user engagement, citations, funded grants), *scientific data quality* (metadata completeness, FAIR compliance, data dictionaries), and *operations and finance* (infrastructure reliability, cost sustainability). Critically, we argue that the relative importance of each framework shifts predictably across a data resource's lifecycle — from early infrastructure-building, through active use and impact, to long-term sustainability. Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and propose concrete metrics and tools — including FAIR maturity models, GitHub analytics, and cost-forecasting frameworks — to close them.
+
+## Main text {.page_break_before}
+
+Over the past decade, the U.S. National Institutes of Health (NIH) has made extraordinary investments in large-scale publicly available biomedical data resources. These include the Cancer Research Data Commons [@doi:10.3389/fcell.2017.00083] (CRDC, NCI), the Cancer Genome Atlas (TCGA) <!-- TODO: ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014) - verify paper and add DOI -->, the Trans-Omics for Precision Medicine program [@doi:10.1038/s41586-021-03205-y] (TOPMed, NHLBI), the All of Us Research Program [@doi:10.1056/NEJMsr1809937], and the Common Fund Data Ecosystem [@doi:10.1093/gigascience/giac105] (CFDE) — an umbrella spanning 19 projects including GTEx [@doi:10.1038/ng.2653], the Human Microbiome Project [@doi:10.1038/nature11234; @doi:10.1038/nature11209], HuBMAP [@doi:10.1038/s41586-019-1629-x], and Kids First <!-- TODO: ref 10 (Volchenboum 2018 Kids First) - incomplete citation, needs DOI -->. NIH has complemented these with cloud computing environments — the Cancer Genomics Cloud [@doi:10.1158/0008-5472.CAN-17-0387], BioData Catalyst [@doi:10.5281/zenodo.3822858], and AnVIL [@doi:10.1016/j.xgen.2021.100085] — designed to make analysis at scale accessible to any researcher. The collective ambition is to democratize access to reusable data and accelerate scientific discovery.
+
+But are these investments working? Evaluation is currently fragmented: each program tracks different metrics in different ways, making portfolio-level comparison nearly impossible. The business world has long solved analogous problems with structured prioritization frameworks that combine multiple performance metrics into coherent decision tools. Public science needs equivalent rigor. We contend that the “customer” is the research community, the “product” is reusable data and tools, and the measure of success is scientific discovery and improved human health. We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--and demonstrate them using real evaluation data from the CFDE, showing what these metrics reveal and — just as importantly — where they fall short.  
+
+Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) [@https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/] to qualitative prioritization methods such as MoSCoW (“must-have”, “should-have”, “could-have”, “won’t have”) [@isbn:9780201624328]. Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure [@isbn:9780875846514; @isbn:9780273653349] <!-- TODO: add Dahal 2025 (SAGE Open) - needs DOI -->. In publicly-funded research, the same principles apply: good metrics capture the use and impact of data resources, identify barriers to their success, and inform decisions about where to invest limited resources.
+
+*Three Frameworks, One Lifecycle*. No single metric — and no single framework — can capture the full picture of a data resource's value or trajectory. We organize our approach around three complementary prioritization frameworks: *public value*, *scientific data quality*, and *operations and finance*. These frameworks overlap and sometimes conflict (more scientifically impactful datasets are often more expensive to create and maintain), and weighted composite scoring (*Multi-Criteria Decision Analysis*) can balance them when needed [@isbn:9780471465102; @isbn:9780792375067]. Our central argument is that these frameworks are not equally relevant at all times: metrics are a function of a resource's lifecycle phase. In the **early term** — infrastructure-building and data collection — *scientific data quality* and *operations and finance* dominate. In the **mid term** — active use within a funded period — all three matter, with *public value* taking on increasing importance. In the **late, post-funding term** — sustainability and continued scientific relevance — *operations and finance* and *public value* become the primary lenses. Embedding this lifecycle logic into evaluation design, rather than applying uniform metrics across all phases, is the key practical contribution of this paper. 
+
+![Schematic relative priority of the three metric and evaluation frameworks--public value, scientific data quality, and operations and finance--across the project lifecycle. Note that lower priority does **not** imply unimportant. ](images/figure1_lifecycle_curves.png){#fig:lifecycle_curves}
+
+The *public value* framework captures the outputs and impacts of a data resource: user engagement, data downloads, funded grants, publications, and downstream scientific influence. The *scientific data quality* framework measures reusability and long-term value, guided by the FAIR principles (Findable, Accessible, Interoperable, Reusable) [@doi:10.1038/sdata.2016.18; @doi:10.1038/sdata.2018.118] and encompassing the metadata, documentation, and standardization needed for data to be reliably reused. The *operations and finance* framework covers the infrastructure and cost considerations — from server uptime and compute performance to the sustainability of funding beyond the initial grant period. For each framework, we describe key metrics, their strengths and limitations, and highlight what current measurement approaches are missing.  
+The *public value* framework encompasses user behavior and scientific impact. Website engagement metrics — *page views*, *time on page*, *actions/triggers*, *priority link clicks*, and *new vs. returning users* — are easy to collect and track trends over time, but they provide limited insight into actual data use. Combining *time on page* with *actions/triggers* offers a more informative measure of engagement. A key limitation is that bots can skew counts, and VPN use in academic settings confounds new-versus-returning user tracking. These metrics are typically collected via platforms such as Google Analytics [@https://marketingplatform.google.com/about/analytics/] or Matomo [@https://matomo.org/] (direct measurement) or estimated via Semrush [@https://semrush.com/] or Similarweb [@https://www.similarweb.com/]; note that some European jurisdictions restrict use of US-based analytics platforms.
+
+More direct evidence of data engagement comes from *downloads* and *compute jobs*. Downloads are a simple indicator of interest but cannot distinguish actual usage from passive acquisition, nor track data sharing among multiple users of the same file. Cloud-hosted datasets address these limitations: compute jobs directly measure analysis activity, reduce sharing ambiguity, and can be monitored in near real-time (*trend downloads*, *trend compute jobs*). Projects that include tool development — such as GlyGen [@doi:10.1093/glycob/cwz080] or Bridge2AI [@doi:10.1101/2024.03.11.584478] — also track *tool usage* (online) and *tool downloads*, with online usage being more accurately quantified.
+
+User behavior metrics do not capture scientific impact. The strongest proxies are publications and citations, accessible via PubMed [@https://pubmed.ncbi.nlm.nih.gov/], Scopus [@https://www.scopus.com/], Google Scholar [@https://scholar.google.com/], and Web of Science [@https://webofscience.com/]. *Number citations* is a direct measure of data influence; the initial GTEx paper [@doi:10.1038/ng.2653], for example, had accumulated 8,630 citations as of January 2026. Citation impact can be weighted by the influence of each citing work — either by that paper’s own citation count (*number secondary citations*) or by journal-level metrics (*citing impact score*). A composite score weighted by secondary citations (*citations + secondary citations*) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing [@doi:10.1038/s42254-021-00368-x]. Key limitations of citation-based metrics are that they lack context (a citation does not convey how central the dataset was to a study), and they lag by months to years relative to actual use. Tracking the trend in citations over time (*trend citations*) helps identify whether a resource’s scientific influence is growing, plateauing, or declining.  
+The *scientific data quality* framework addresses whether a resource’s data can actually be found, understood, and reused by others. Poor data quality and poor annotation are leading barriers to data reuse. At the broadest level, metadata metrics document the study — its name, description, dates, funding, contributors, and website — and should be uniform across projects to enable portfolio-level comparisons. At a finer grain, data-level metrics capture storage format, dataset size, data types (clinical, genomic, metabolomic, etc.), measurement platforms (e.g., Olink Explore HT for proteomics), biospecimen handling, and collection conditions (e.g., fasting status). At the finest grain, dataset-level metrics include sample sizes, variable counts, demographic summaries, and QC statistics.
+
+For evaluation purposes, summary metrics spanning all three levels are more tractable than cataloging every study-specific variable. *Metadata completeness* counts the presence of required fields and can be assessed programmatically. *Standardized metadata* assesses whether fields conform to community guidelines — a harder problem that often requires human review. *Quality-control (QC) compliance* and *data uniqueness* are similarly difficult to automate and frequently require trained evaluators. Two additional high-value metrics are the presence (*available data dictionary*) and quality (*quality data dictionary*) of a data dictionary that documents variable definitions, units, timing, and transformations; the former can be detected by script, the latter requires domain expertise.
+
+A structured approach to assessing these qualities is provided by FAIR maturity models. The FAIRplus Dataset Maturity (FAIRplus-DSM) model <!-- TODO: ref 13 here is wrong - cites AnVIL (Schatz 2022) but should cite FAIRplus-DSM source -->, developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management). Levels 1–2 cover persistent identifiers and indexed metadata; Levels 3–4 require adherence to community reporting standards (e.g., MIAME) and semantic representation using linked data. The Research Data Alliance (RDA) further classifies FAIR indicators by priority — Essential (globally unique persistent identifiers, open access protocols), Important (machine-understandable knowledge representation), and Useful (automated data access by software agents) — providing a tiered roadmap for incremental improvement. Automated tools such as the FAIR Evaluator can test digital resources against these indicators at scale, making continuous *FAIR compliance* monitoring feasible for large portfolios.  
+The *operations and finance* framework addresses whether the infrastructure supporting a data resource is reliable, performant, and sustainable. On the operations side, server-level metrics — *uptime*, *page load time*, *latency*, *server errors*, and *client errors* — can be captured via analytics platforms and log-file scripts. Compute-level metrics (*download speed*, *cpu/gpu usage*, *memory usage*, *client queue times*, *job run times*) identify performance bottlenecks. These metrics carry inherent variability due to time-of-day load, job size, and client-side network conditions, so monitoring trends rather than point-in-time values is most informative.
+
+For projects built on open-source software — as many CFDE components are — GitHub repository analytics provide an additional operational window. Development velocity (commit frequency, pull-request review latency, merge frequency) reflects team capacity and responsiveness to community contributions. Codebase health can be assessed by tracking stale pull requests and unresolved issues, which can signal declining institutional support or funding gaps. Contributor dynamics — distinguishing core team commits from external community contributions — indicate whether training and outreach efforts are successfully broadening adoption.
+
+On the finance side, *funding cost* is the most accessible metric, but a full cost picture requires decomposing it into components: *sample collection*, *sample measurement*, *QC*, *data storage*, *data preservation* (beyond the grant period), *computing hardware*, *server maintenance*, *cloud-based computing*, and *personnel* costs. The National Academies framework for forecasting biomedical information resource costs identifies six cost-driver categories — data content, metadata, labor, infrastructure, compliance, and governance — and notes that labor (curation and user support) consistently represents the largest single cost element. A critical but often overlooked question is the break-even point for data sharing: mathematical models suggest that the efficiency gains to the research community from reusing shared data do not always outweigh the curation costs borne by generators, highlighting the need for selective investment in high-value datasets. Cloud computing introduces additional complexity, as costs are provider-specific, usage-dependent, and subject to change unpredictably. A summary of all metrics across frameworks is provided in Table 1. 
+
+Table 1\. Quick summary of included metrics and 	
+
+| Metric | Difficulty | How Collected | Value | Lifecycle Phase | Notes |
+| :---- | :---- | :---- | :---- | :---- | :---- |
+| **User Behavior Framework** |  |  |  |  |  |
+|  *page views*  |  Easy  |  Google Analytics  |  Low  | Mid |  A minimum indicator of interest.   |
+|  *time on page*  |  Easy  |  Google Analytics  |  Low  | Mid |  A minimum indicator of interest.  |
+|  *actions/triggers*  |  Easy  |  Google Analytics (Tag Manager)  |  Medium  | Mid |  A moderate indicator of interest.   |
+|  *priority link clicks*  |  Easy  |  Google Analytics (Tag Manager)  |  Medium  | Mid |  A moderate indicator of interest.  |
+|  *new vs returning users*  |  Medium  |  Google Analytics  |  Medium  | Mid |  A moderate indicator of continuing interest.  |
+|  *downloads*  |  Easy  |  Google Analytics or Server-side logs  |  Medium-High  | Mid |  A strong indicator of interest. Downloading not equivalent to usage.  |
+|  *compute jobs*  |  Easy  |  Compute scheduler logs or cloud environment logs  |  High  | Mid |  A direct indicator of interest.  |
+|  *tool downloads*  |  Easy  |  Google Analytics or server-side logs  |  Medium-High  | Mid |  A strong indicator of interest.  |
+|  *tool usage*  |  Easy  |  Google Analytics or API logs  |  High  | Mid |  A direct indicator of interest.  |
+|  *trend downloads*  |  Medium  |  Google Analytics or server-side logs BI tools for visualization  |  Medium-High  | Mid–Late |  A strong indicator of change in interest over time.  |
+|  *trend compute jobs*  |  Medium  |  Compute scheduler logs or cloud environment logs BI tools for visualization  |  High  | Mid–Late |  A direct indicator of change in interest over time.  |
+|  *number grants*  |  Hard  |  NIH RePORTER Self-reporting  |  High  | Mid–Late |  Relevant grant data not publicly available.  |
+|  *number presentations*  |  Hard  |  Self-reporting  |  Medium  | Mid–Late |  Data difficult to track and often not available in sufficient detail.  |
+|  *number citations*  |  Easy  |  Google Scholar or CrossRef or other similar platforms  |  High  | Mid–Late |  A direct indicator of data value. Can miss downstream cumulative value.  |
+|  *number secondary citations*  |  Medium  |    |  High  | Late |  An indirect measure of “downstream” value of initial publications.  |
+|  *citations \+ secondary citations*  |  Medium  |    |  High  | Late |  A measure of cumulative impact over time of study data.  |
+|  *trend citations*  |  Medium  |    |  High  | Late |  Measures change in impact of data over time. Subject to time lag in publications.  |
+|  |  |  |  |  |  |
+| **Scientific Data Quality Framework** |  |  |  |  |  |
+|  *metadata completeness*  |  Medium  |  Metadata validator, Schema validator  |  Medium-High  | Early |  Critical for drawing initial interest in study.  |
+|  *standardized metadata*  |  Hard  |  Requires human-in-the-loop evaluation.  |  High  | Early |  Study-specific requirements.   |
+|  *quality-control (QC) compliance*  |  Hard  |  Requires human-in-the-loop evaluation.  |  High  | Early |  Study-specific requirements.   |
+|  *data uniqueness*  |  Hard  |  Requires human-in-the-loop evaluation.  |  Medium  | Early |  Subjective measure.   |
+|  *FAIR compliance*  |  Hard  |  Requires human-in-the-loop evaluation.  |  High  | All |  Subjective measure.  |
+|  *available data dictionary*  |  Medium  |  Checks on repository or documentation  |  Medium  | Early |  An essential component for a study to have. Does not guarantee quality.  |
+|  *quality data dictionary*  |  Hard  |  Requires human-in-the-loop evaluation.  |  High  | Early |  A metric of quality of the data dictionary.   |
+|  |  |  |  |  |  |
+| ***Operations and Finance*** **Framework** |  |  |  |  |  |
+|  *uptime*  |  Easy  |  Uptime monitoring tool based on infrastructure/cloud used  |  Medium-Low  | Mid–Late |  Measure of server stability.  |
+|  *page load time*  |  Easy  |  Google Analytics  |  Medium  | Mid–Late |  Measure of server performance.   |
+|  *latency*  |  Easy  |  Google Analytics ( not real-time)  |  Medium  | Mid–Late |  Measure of server performance.  |
+|  *server errors*  |  Easy  |  Server-side logs or Application Performance Monitoring (APM) tools  |  Medium  | Mid–Late |  Measure of server stability and performance.  |
+|  *client errors*  |  Medium  |  Application logs or Application Performance Monitoring (APM) tools  |  Low  | Mid–Late |  Measure of errors on client end. Possible not addressable.  |
+|  *download speed*  |  Easy  |  Server-side logs or Application Performance Monitoring (APM) tools  |  Low-Medium  | Mid–Late |  Download times can be function of client connection speeds.  |
+|  *cpu/gpu usage*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
+|  *memory usage*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
+|  *number of users*  |  Easy  |  Google Analytics or IAM logs for granular details (if available)  |  Medium  | Mid–Late |  Indirect measure of computational load/burden.  |
+|  *client queue times*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  Medium-High  | Mid–Late |  Long queue times can result in less usage.  |
+|  *job run times*  |  Easy  |  Cloud/infrastructure compute logs or dashboards  |  Medium  | Mid–Late |  Excessive long job run times can result in less usage.  |
+|  *funding cost*  |  Easy  |    |  High  | All |  Total cost of study. Critical element in evaluating study feasibility and sustainability.  |
+|  *sample collection costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
+|  *sample measurement costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
+|  *QC costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
+|  *data storage costs*  |  Hard  |    |  High  | All |  Costs and requirements can fluctuate over study.  |
+|  *data preservation costs*  |  Hard  |    |  High  | Late |  Costs and requirements can fluctuate over study. Difficult to assess years in advance.  |
+|  *computing hardware costs*  |  Medium  |    |  Medium  | Early |  Costs often associated with initial study period, but replacement costs are possible.  |
+|  *server maintenance costs*  |  Hard  |    |  High  | Mid–Late |  Costs can fluctuate. Major source of cost in sustainability period.   |
+|  *cloud-based computing costs*  |  Hard  |  Cloud Cost Explorer tools or  |  High  | Mid–Late |  Costs are highly variable and subject to constant change (for both host and clients). Especially difficult to assess years in advance.  |
+|  *personnel costs*  |  Medium  |    |  High  | All |  Can be measured in money or time. Requires committed time with relevant expertise.  |
+
+## Synthesis and Recommendations
+
+The three frameworks described here — *public value*, *scientific data quality*, and *operations & finance* — are complementary rather than competing, and their relative importance shifts predictably across the data resource lifecycle. Early-phase investments should prioritize the scientific data quality and operations frameworks: getting metadata right, establishing FAIR-compliant structures, and standing up reliable infrastructure are prerequisites for everything that follows. Mid-phase evaluation should expand to all three frameworks, with particular attention to public value metrics as user communities engage with the data. Late-phase and sustainability-focused evaluation should center on the public value and operations & finance frameworks, asking whether the resource continues to generate scientific impact and whether its costs can be justified in the absence of original funding.
+
+No framework operates in isolation, and quantitative metrics alone cannot capture the full picture. Mixed-method approaches — combining usage statistics and citation data with structured user interviews, focus groups, and surveys — are essential for understanding *why* certain resources succeed or fail, not just *what* is happening [@doi:10.1007/s10488-013-0528-y]. Logic models that explicitly connect inputs (funding, data, personnel) to activities (harmonization, training, curation), outputs (portals, trained users, tools), and outcomes (publications, funded grants, practice change) [@https://www.wkkf.org/resource-directory/resources/2004/01/logic-model-development-guide] provide the evaluative scaffolding needed to identify which elements of an ecosystem are working. These models should be treated as living documents, revised as programs transition from pilot to full implementation.
+
+A critical long-term challenge is closing the "know-do gap" — the distance between the information provided by metrics and actual decision-making. Evidence from healthcare quality improvement suggests that the act of repeated, structured measurement itself drives behavioral change among data producers and managers, encouraging improved metadata practices and FAIR compliance [@https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html]. NIH's 2023 Data Management and Sharing Policy creates a structural opportunity to establish pre-policy baselines for sharing and reuse, enabling rigorous before-and-after assessment of whether mandates translate into measurable ecosystem improvements.
+
+Looking forward, the field needs shared dashboards that integrate technical health indicators (FAIR scores, GitHub analytics, uptime), impact metrics (citation trends, compute job volumes), and financial sustainability projections into a coherent, real-time view of portfolio performance. Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — would enable the portfolio-level comparisons that are currently impossible. The frameworks presented here, grounded in real evaluation data from the CFDE, offer a starting point for that standardization.
+
+<!--
+  OLD REFERENCES SECTION REMOVED - Manubot auto-generates references from citation keys.
+
+  TODOs remaining:
+  - Ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014): verify correct paper and add DOI
+  - Ref 10 (Volchenboum 2018 Kids First): incomplete citation, needs DOI
+  - Ref 13 reused for FAIRplus-DSM model: original ref 13 is AnVIL (Schatz 2022), need correct FAIRplus-DSM citation
+  - Ref 16 (Dahal 2025, SAGE Open): needs DOI
+  - Refs 29-32, 36, 37: existed in old reference list but were never cited in text
+  - ISBN-based citations (refs 14, 15, 18, 19, 20) should be verified:
+    - @isbn:9780875846514 (Kaplan & Norton, Balanced Scorecard)
+    - @isbn:9780273653349 (Neely, Performance Prism)
+    - @isbn:9780201624328 (Clegg & Barker, Case Method Fast-Track / MoSCoW)
+    - @isbn:9780471465102 (Keeney & Raiffa, Decisions with Multiple Objectives)
+    - @isbn:9780792375067 (Belton & Stewart, Multiple Criteria Decision Analysis)
+-->
+
+
+## References {.page_break_before}
+
+<!-- Explicitly insert bibliography here -->
+<div id="refs"></div>
+
