@@ -139,20 +139,11 @@ ax.legend(handles=handles, loc="upper center", bbox_to_anchor=(0.5, 1.01),
           ncol=3, frameon=False, fontsize=9,
           handlelength=1.5, handleheight=1.0)
 
-# ---------------------------------------------------------------------------
-# 6. Figure caption note (as a figure text, not a title)
-# ---------------------------------------------------------------------------
-
-fig.text(0.5, -0.04,
-         "Figure 1. Relative priority of each evaluation framework shifts across lifecycle phases.\n"
-         "Anchor points (markers) represent expert judgment; curves are monotone cubic interpolations.",
-         ha="center", va="top", fontsize=8, color="#6c757d",
-         wrap=True)
 
 plt.tight_layout()
 
 # ---------------------------------------------------------------------------
-# 7. Save
+# 6. Save
 # ---------------------------------------------------------------------------
 
 for ext in ("png", "pdf"):
