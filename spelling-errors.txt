@@ -2,7 +2,7 @@ Adithya
 Alquaddoomi
 Anschutz
 APM
-Bibliometric
+bibliometric
 BioData
 bioinformatics
 BioProject
@@ -38,9 +38,8 @@ ISSM
 Ivich
 ivichadriana
 KPI
-KPIs
 Lange
-Lifecycle
+lifecycle
 linkability
 Matomo
 metabolomic
@@ -69,14 +68,16 @@ Scopus
 seandavis
 Semrush
 Similarweb
+TBD
 TCGA
 techvik
 TOPMed
 unshared
-Uptime
+uptime
 validator
 Vikram
 vincerubinetti
 VPN
+VPNs
 workspaces
 XXXX

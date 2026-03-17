@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-17" />
   <meta name="citation_publication_date" content="2026-03-17" />
   <meta property="article:published_time" content="2026-03-17" />
-  <meta name="dc.modified" content="2026-03-17T22:54:41+00:00" />
-  <meta property="article:modified_time" content="2026-03-17T22:54:41+00:00" />
+  <meta name="dc.modified" content="2026-03-17T23:15:11+00:00" />
+  <meta property="article:modified_time" content="2026-03-17T23:15:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/23cc13471b58f0c3db3478ab523d073f902340eb/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/23cc13471b58f0c3db3478ab523d073f902340eb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/23cc13471b58f0c3db3478ab523d073f902340eb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/23cc13471b58f0c3db3478ab523d073f902340eb/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@e9e3dbe](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/e9e3dbe8728d75f106d084f3bd8d6e71d0c8ed2e)
+from [seandavi/2026-cfde-metrics-manuscript@23cc134](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/23cc13471b58f0c3db3478ab523d073f902340eb)
 on March 17, 2026.
 </em></small>
 
@@ -248,17 +248,17 @@ The Council of Councils Working Group identified "facilitation of new scientific
 
 The CFDE recently transitioned from its three-year pilot phase, which focused on establishing a coordination center and building the initial portal infrastructure [@https://commonfund.nih.gov/sites/default/files/OTA-23-004.pdf], to a full-scale implementation phase emphasizing outreach, skills development, and community-wide adoption [@https://commonfund.nih.gov/sites/default/files/OTA-24-004.pdf].
 Evaluation frameworks must now adapt to capture this shift toward "use and reuse" as the primary drivers of impact.
-Each center carries a distinct evaluative focus, as summarized in Table {@tbl:center-eval}.
+Each center carries a distinct focus, as summarized in Table {@tbl:center-eval}.
 
-| Center | Core Evaluative Focus | Significance in the Ecosystem |
-| :---- | :---- | :---- |
-| Data Resource Center (DRC) | Ingestion rates, portal performance, data accessibility | Primary entry point for researchers to query datasets |
-| Knowledge Center (KC) | Knowledge network density, integration across omics | Cross-cutting biological insights through knowledge graphs |
-| Training Center (TC) | Training attendance, skill acquisition, long-term behavioral impact | Addresses the cultural shift required for cloud-based computing |
-| Cloud Workspace (CWIC) | Utilization rates, cloud computing efficiency, tool interoperability | Computational power to analyze massive datasets in situ |
-| Integration & Coordination (ICC) | Program-wide cohesion, sustainability metrics, annual evaluation | Ensures disparate centers function as a unified ecosystem |
+| Center | Significance in the Ecosystem |
+| :---- | :---- |
+| Data Resource Center (DRC) | Primary entry point for researchers to query datasets |
+| Knowledge Center (KC) | Cross-cutting biological insights through knowledge graphs |
+| Training Center (TC) | Addresses the cultural shift required for cloud-based computing |
+| Cloud Workspace (CWIC) | Computational power to analyze massive datasets in situ |
+| Integration & Coordination (ICC) | Ensures disparate centers function as a unified ecosystem |
 
-Table: Center-specific evaluative focus areas across the five CFDE centers. {#tbl:center-eval}
+Table: Center-specific focus areas across the five CFDE centers. {#tbl:center-eval}
 
 With five centers and 19 projects, the CFDE is a microcosm of the broader NIH data ecosystem, making it an ideal case study for developing and testing federated evaluation frameworks.
 
@@ -444,6 +444,16 @@ Table 1\. Quick summary of included metrics and
 |  *cloud-based computing costs*  |  Hard  |  Cloud Cost Explorer tools or  |  High  | Mid–Late |  Costs are highly variable and subject to constant change (for both host and clients). Especially difficult to assess years in advance.  |
 |  *personnel costs*  |  Medium  |    |  High  | All |  Can be measured in money or time. Requires committed time with relevant expertise.  |
 
+## Some implementation progress and challenges
+
+TBD
+
+* Collection approach
+* Metrics collected and how
+* Dashboard implementation
+* Challenges: data collection, data quality (e.g., bots, VPNs), data sharing (e.g., citation gap), sustainability (e.g., cost variability, break-even point for sharing), project privacy concerns (e.g., public dashboards), and more.
+
+
 ## Synthesis and Recommendations
 
 The three frameworks described here — *public value*, *scientific data quality*, and *operations & finance* — are complementary rather than competing, and their relative importance shifts predictably across the data resource lifecycle.
@@ -468,20 +478,6 @@ NIH's 2023 Data Management and Sharing Policy creates a structural opportunity t
 Implementation of these evaluation frameworks can be accelerated through pilot "Driver Projects" — an approach pioneered by the Global Alliance for Genomics and Health (GA4GH) [@https://www.ga4gh.org/about-us/strategic-road-map/], in which selected projects test new standards and metrics in real-world settings and provide deep qualitative feedback on their utility.
 For the CFDE, identifying Driver Projects across centers would generate practical evidence about which metrics are most informative and feasible before committing to portfolio-wide deployment.
 Ultimately, the long-term measure of evaluation success is whether the ecosystem achieves practice change: a measurable shift toward data-driven discovery, broader cross-disciplinary collaboration, and more equitable access to computational resources.
-
-Looking forward, the field needs shared dashboards that integrate technical health indicators (FAIR scores, GitHub analytics, software good practices scores, uptime), impact metrics (citation trends, compute job volumes, perceived value surveys), and financial sustainability projections into a coherent, real-time view of portfolio performance.
-A concrete starting point for such a dashboard would prioritize one high-impact KPI per evaluation category, as illustrated in Table 2.
-
-Table 2\. Proposed dashboard KPIs for portfolio-level monitoring of the CFDE.
-
-| Metric Category | Primary KPI | Tool / Method |
-| :---- | :---- | :---- |
-| FAIR Properties | Semantic Maturity (Level 4/5) | FAIR Evaluator (Maturity Indicators) |
-| Utilization | Unique Cross-Program Queries | CFDE Portal Web Analytics |
-| Operations | PR Review Latency & Merge Frequency | GitHub API |
-| Cost / Sustainability | Cost per Data Reuse Event | ROI Formulas / Forecasting Framework |
-| Impact | Accession Number Mentions in Full Text | Text-Mining / Google Scholar Tracking |
-| Qualitative | Perceived Usefulness / Uniqueness | User Surveys / Delphi Consensus |
 
 Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — would enable the portfolio-level comparisons that are currently impossible.
 The frameworks presented here, grounded in real evaluation data from the CFDE, offer a starting point for that standardization.
