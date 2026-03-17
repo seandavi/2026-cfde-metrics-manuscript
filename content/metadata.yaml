@@ -7,10 +7,17 @@ keywords:
   - manubot
 lang: en-US
 authors:
+  - name: Ethan M. Lange
+    initials: EL
+    orcid: 0000-0001-7075-4287
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant
   - github: techvik
     name: Vikram Adithya Ganesh
     initials: VG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0009-0009-2056-2696
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
@@ -33,10 +40,27 @@ authors:
     funders:
       - Grant 
     corresponding: false
+  - name: Adriana Ivich
+    initials: AI
+    orcid: XXXX-XXXX-XXXX-XXXX
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
+    corresponding: false
+  - github: vincerubinetti
+    name: Vince Rubinetti
+    initials: VR
+    orcid: XXXX-XXXX-XXXX-XXXX
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
+    corresponding: false
   - github: cgreene
     name: Casey Greene
     initials: CG
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0001-8713-9213
     email: casey.s.greene@cuanschutz.edu
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
@@ -46,7 +70,7 @@ authors:
   - github: seandavis
     name: Sean Davis
     initials: SD
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0002-8991-6458
     email: seandavi@gmail.com
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
