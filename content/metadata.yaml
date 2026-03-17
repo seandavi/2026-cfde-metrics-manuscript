@@ -7,24 +7,49 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
+  - github: techvik
+    name: Vikram Adithya Ganesh
+    initials: VG
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
+      - Grant 
+  - github: falquaddoomi
+    name: Faisal Alquaddoomi
+    initials: FA
     orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
+    corresponding: false
+  - github: the-mayer
+    name: David Mayer
+    initials: DM
+    orcid: XXXX-XXXX-XXXX-XXXX
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
+    corresponding: false
+  - github: cgreene
+    name: Casey Greene
+    initials: CG
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: casey.s.greene@cuanschutz.edu
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
+    corresponding: true
+  - github: seandavis
+    name: Sean Davis
+    initials: SD
+    orcid: XXXX-XXXX-XXXX-XXXX
+    email: seandavi@gmail.com
+    affiliations:
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+    funders:
+      - Grant 
     corresponding: true
