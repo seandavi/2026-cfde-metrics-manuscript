@@ -3,7 +3,7 @@ Alquaddoomi
 Anschutz
 APM
 backend
-Bibliometric
+bibliometric
 BioData
 bioinformatics
 BioProject
@@ -45,7 +45,7 @@ Ivich
 ivichadriana
 KPI
 Lange
-Lifecycle
+lifecycle
 linkability
 Matomo
 metabolomic
@@ -57,7 +57,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-omics
+Omics
 onboarded
 OpenAlex
 operationalize

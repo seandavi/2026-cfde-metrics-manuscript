@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T14:40:52+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T14:40:52+00:00" />
+  <meta name="dc.modified" content="2026-03-18T14:48:53+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T14:48:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@f7c21ca](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98)
+from [seandavi/2026-cfde-metrics-manuscript@5304c23](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/5304c236ff306ea62298f129a332294aa46b4c0e)
 on March 18, 2026.
 </em></small>
 
@@ -221,15 +221,16 @@ Publicly funded science deserves the same discipline.
 
 In this paper, we describe three frameworks for evaluating biomedical data resources: one focused on how widely the data are used and scientifically cited, one on whether the data are well-documented and reusable by others, and one on whether the underlying infrastructure is reliable and financially sustainable.
 We argue that different metrics matter more at different stages of a project's life — early on, data quality and infrastructure are paramount; later, scientific impact and long-term cost become critical.
+We also report on the NIH Common Fund Data Ecosystem's first steps toward putting these ideas into practice — a centralized dashboard that automatically collects and visualizes metrics across 19 programs, giving program managers a portfolio-wide view for the first time.
 Standardizing a common evaluation language across all NIH data programs would enable better decisions about where to invest, how to sustain valuable resources, and when to gracefully retire those that have served their purpose.
 
 
 ## Summary {.page_break_before}
 
-The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments remains fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making.
+The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments has historically been fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making.
 We propose a structured approach built on three complementary prioritization frameworks: *public value* (user engagement, citations, funded grants), *scientific data quality* (metadata completeness, FAIR compliance, data dictionaries), and *operations and finance* (infrastructure reliability, cost sustainability).
 Critically, we argue that the relative importance of each framework shifts predictably across a data resource's lifecycle — from early infrastructure-building, through active use and impact, to long-term sustainability.
-Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and propose concrete metrics and tools — including FAIR maturity models, GitHub analytics, and cost-forecasting frameworks — to close them.
+Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and describe the ICC's ongoing effort to close them through a centralized dashboard that integrates publication, citation, GitHub, and web analytics data across the portfolio.
 
 
 ## Main text {.page_break_before}
@@ -266,12 +267,12 @@ Evaluation across the CFDE has historically been somewhat fragmented: each progr
 The business world has long solved analogous problems with structured prioritization frameworks that combine multiple performance metrics into coherent decision tools.
 Public science needs equivalent rigor.
 We contend that the "customer" is the research community, the "product" is reusable data and tools, and the measure of success is scientific discovery and improved human health.
-We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--and suggest that their importance and prioritization should vary over a project lifecycle.
+We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--suggest that their importance and prioritization should vary over a project lifecycle, and report on the ICC's initial implementation of a centralized dashboard for portfolio-wide metric collection.
 
 Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) [@https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers] to qualitative prioritization methods such as MoSCoW ("must-have", "should-have", "could-have", "won't have") [@isbn:9780201624328].
 Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure [@isbn:9780875846514; @isbn:9780273653349].
 In publicly-funded research, the same principles apply: good metrics capture the use and impact of data resources, identify barriers to their success, and inform decisions about where to invest limited resources while being feasible to collect and not overly burdensome for project owners.
-Furthermore, we show how centralization and automation can make the collection of these metrics more efficient, reducing the burden on individual projects and enabling real-time monitoring of portfolio performance.
+Furthermore, we show how centralization and automation can make the collection of these metrics more efficient, and describe the ICC's implementation of an automated dashboard that reduces the burden on individual projects while enabling real-time monitoring of portfolio performance.
 
 ### Three Frameworks, One Lifecycle
 

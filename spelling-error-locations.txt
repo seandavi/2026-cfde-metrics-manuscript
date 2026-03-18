@@ -1,5 +1,6 @@
 content/02.summary.md:5:lifecycle
 content/02.summary.md:6:CFDE
+content/02.summary.md:6:ICC's
 content/05.cfde-metrics-paper.md:4:CRDC
 content/05.cfde-metrics-paper.md:4:NCI
 content/05.cfde-metrics-paper.md:4:NHLBI
@@ -27,7 +28,9 @@ content/05.cfde-metrics-paper.md:27:CFDE
 content/05.cfde-metrics-paper.md:27:eval
 content/05.cfde-metrics-paper.md:29:CFDE
 content/05.cfde-metrics-paper.md:31:CFDE
+content/05.cfde-metrics-paper.md:35:ICC's
 content/05.cfde-metrics-paper.md:35:lifecycle
+content/05.cfde-metrics-paper.md:40:ICC's
 content/05.cfde-metrics-paper.md:42:Lifecycle
 content/05.cfde-metrics-paper.md:46:impactful
 content/05.cfde-metrics-paper.md:47:lifecycle

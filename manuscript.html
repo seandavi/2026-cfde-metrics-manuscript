@@ -60,8 +60,8 @@
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T14:40:52+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T14:40:52+00:00" />
+  <meta name="dc.modified" content="2026-03-18T14:48:53+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T14:48:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -98,9 +98,9 @@
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -117,9 +117,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98/">permalink</a>)
+(<a href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/f7c21cabe80c80cd2f1aabbf2dcf29017fb25e98">seandavi/2026-cfde-metrics-manuscript@f7c21ca</a>
+from <a href="https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/5304c236ff306ea62298f129a332294aa46b4c0e">seandavi/2026-cfde-metrics-manuscript@5304c23</a>
 on March 18, 2026.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -227,12 +227,13 @@ In the business world, organizations use structured “performance frameworks”
 Publicly funded science deserves the same discipline.</p>
 <p>In this paper, we describe three frameworks for evaluating biomedical data resources: one focused on how widely the data are used and scientifically cited, one on whether the data are well-documented and reusable by others, and one on whether the underlying infrastructure is reliable and financially sustainable.
 We argue that different metrics matter more at different stages of a project’s life — early on, data quality and infrastructure are paramount; later, scientific impact and long-term cost become critical.
+We also report on the NIH Common Fund Data Ecosystem’s first steps toward putting these ideas into practice — a centralized dashboard that automatically collects and visualizes metrics across 19 programs, giving program managers a portfolio-wide view for the first time.
 Standardizing a common evaluation language across all NIH data programs would enable better decisions about where to invest, how to sustain valuable resources, and when to gracefully retire those that have served their purpose.</p>
 <h2 class="page_break_before" id="summary">Summary</h2>
-<p>The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments remains fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making.
+<p>The U.S. National Institutes of Health has invested billions of dollars in large-scale biomedical data resources, yet evaluation of these investments has historically been fragmented — each program tracks different metrics in different ways, preventing portfolio-level comparison and informed decision-making.
 We propose a structured approach built on three complementary prioritization frameworks: <em>public value</em> (user engagement, citations, funded grants), <em>scientific data quality</em> (metadata completeness, FAIR compliance, data dictionaries), and <em>operations and finance</em> (infrastructure reliability, cost sustainability).
 Critically, we argue that the relative importance of each framework shifts predictably across a data resource’s lifecycle — from early infrastructure-building, through active use and impact, to long-term sustainability.
-Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and propose concrete metrics and tools — including FAIR maturity models, GitHub analytics, and cost-forecasting frameworks — to close them.</p>
+Drawing on data from the NIH Common Fund Data Ecosystem (CFDE), we identify gaps in current measurement practice and describe the ICC’s ongoing effort to close them through a centralized dashboard that integrates publication, citation, GitHub, and web analytics data across the portfolio.</p>
 <h2 class="page_break_before" id="main-text">Main text</h2>
 <p>Over the past decade, the U.S. National Institutes of Health (NIH) has made extraordinary investments in large-scale publicly available biomedical data resources.
 These include the Cancer Research Data Commons <span class="citation" data-cites="15OJrQCGY">[<a href="#ref-15OJrQCGY" role="doc-biblioref">1</a>]</span> (CRDC, NCI), the Cancer Genome Atlas (TCGA) <span class="citation" data-cites="c7xrdq5p">[<a href="#ref-c7xrdq5p" role="doc-biblioref">2</a>]</span>, the Trans-Omics for Precision Medicine program <span class="citation" data-cites="1GK86kFwS">[<a href="#ref-1GK86kFwS" role="doc-biblioref">3</a>]</span> (TOPMed, NHLBI), the All-of-Us Research Program <span class="citation" data-cites="1BFZlJUIL">[<a href="#ref-1BFZlJUIL" role="doc-biblioref">4</a>]</span>. and .
@@ -289,11 +290,11 @@ Each center carries a distinct focus, as summarized in Table <a href="#tbl:cente
 The business world has long solved analogous problems with structured prioritization frameworks that combine multiple performance metrics into coherent decision tools.
 Public science needs equivalent rigor.
 We contend that the “customer” is the research community, the “product” is reusable data and tools, and the measure of success is scientific discovery and improved human health.
-We describe three complementary prioritization frameworks–<em>public value</em>, <em>scientific data quality</em>, <em>operations and finance</em>–and suggest that their importance and prioritization should vary over a project lifecycle.</p>
+We describe three complementary prioritization frameworks–<em>public value</em>, <em>scientific data quality</em>, <em>operations and finance</em>–suggest that their importance and prioritization should vary over a project lifecycle, and report on the ICC’s initial implementation of a centralized dashboard for portfolio-wide metric collection.</p>
 <p>Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) <span class="citation" data-cites="GJHOUHBZ">[<a href="#ref-GJHOUHBZ" role="doc-biblioref">14</a>]</span> to qualitative prioritization methods such as MoSCoW (“must-have”, “should-have”, “could-have”, “won’t have”) <span class="citation" data-cites="ON0n6tcT">[<a href="#ref-ON0n6tcT" role="doc-biblioref">15</a>]</span>.
 Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure <span class="citation" data-cites="qjmp3FJw F270ouIW">[<a href="#ref-qjmp3FJw" role="doc-biblioref">16</a>,<a href="#ref-F270ouIW" role="doc-biblioref">17</a>]</span>.
 In publicly-funded research, the same principles apply: good metrics capture the use and impact of data resources, identify barriers to their success, and inform decisions about where to invest limited resources while being feasible to collect and not overly burdensome for project owners.
-Furthermore, we show how centralization and automation can make the collection of these metrics more efficient, reducing the burden on individual projects and enabling real-time monitoring of portfolio performance.</p>
+Furthermore, we show how centralization and automation can make the collection of these metrics more efficient, and describe the ICC’s implementation of an automated dashboard that reduces the burden on individual projects while enabling real-time monitoring of portfolio performance.</p>
 <h3 id="three-frameworks-one-lifecycle">Three Frameworks, One Lifecycle</h3>
 <p>No single metric — and no single framework — can capture the full picture of a data resource’s value or trajectory.
 We organize our approach around three complementary prioritization frameworks: <em>public value</em>, <em>scientific data quality</em>, and <em>operations and finance</em>.
@@ -1052,7 +1053,7 @@ The ICC’s dashboard and metric collection infrastructure demonstrate that such
 <div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Matomo - The Google Analytics alternative that protects your data</strong> <div class="csl-block">Analytics Platform - Matomo</div> <a href="https://matomo.org/">https://matomo.org/</a></div>
 </div>
 <div id="ref-5PCcOebO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Semrush: Your Unfair Advantage for Growing Brand Visibility</strong> <div class="csl-block">Semrush</div> <a href="https://www.semrush.com/">https://www.semrush.com/</a></div>
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Semrush: Data-Driven Marketing Tools to Grow Your Business</strong> <div class="csl-block">Semrush</div> <a href="https://www.semrush.com/">https://www.semrush.com/</a></div>
 </div>
 <div id="ref-HskcoXGD" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Similarweb: AI-Powered Digital Data Intelligence Solutions</strong> <div class="csl-block">Similarweb</div> <a href="https://www.similarweb.com/">https://www.similarweb.com/</a></div>
