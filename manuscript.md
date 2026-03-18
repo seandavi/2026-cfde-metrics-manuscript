@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T15:51:44+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T15:51:44+00:00" />
+  <meta name="dc.modified" content="2026-03-18T15:56:29+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T15:56:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/0484a5e85e13324f7713f9eeffe2f6336ba2daad/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/0484a5e85e13324f7713f9eeffe2f6336ba2daad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/0484a5e85e13324f7713f9eeffe2f6336ba2daad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/0484a5e85e13324f7713f9eeffe2f6336ba2daad/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@b42c5d5](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/b42c5d5176083182af90d24ce63d64c5ce8daf17)
+from [seandavi/2026-cfde-metrics-manuscript@0484a5e](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/0484a5e85e13324f7713f9eeffe2f6336ba2daad)
 on March 18, 2026.
 </em></small>
 
@@ -475,7 +475,7 @@ The resulting data are presented in a dashboard that allows users to explore met
 We have implemented authentication and role-based access controls (based on ORCID [@url:https://orcid.org] login) to allow project teams to view their own data while providing program managers with a portfolio-wide view, balancing transparency with privacy concerns. 
 See @fig:dashboard for some screenshots of the dashboard interface, implemented as a standard web application with a TypeScript frontend and Python/Django backend, with data stored in a PostgreSQL database. 
 
-![Screenshot of the CFDE ICC dashboard showing project-level and portfolio-level metrics. Note that this is a prototype and subject to change as we iterate on design and functionality.](images/dashboard_screenshot.png){#fig:dashboard}
+![Screenshot of the CFDE ICC dashboard showing project-level and portfolio-level metrics. The dashboard is expected evolve over time. Authentication and authorization controls are implemented in accordance with CFDE community consensus on data access (private vs public).](images/dashboard_screenshot.png){#fig:dashboard}
 
 As we embarked on this implementation, we found that several other groups are engaged in related efforts.
 Furthermore, we have identified partners in helping to define valuable metrics and how they are collected. 
