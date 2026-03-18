@@ -47,6 +47,8 @@ content/05.cfde-metrics-paper.md:66:Semrush
 content/05.cfde-metrics-paper.md:66:similarweb
 content/05.cfde-metrics-paper.md:66:Similarweb
 content/05.cfde-metrics-paper.md:71:GlyGen
+content/05.cfde-metrics-paper.md:74:clarivate
+content/05.cfde-metrics-paper.md:74:Clarivate
 content/05.cfde-metrics-paper.md:74:ncbi
 content/05.cfde-metrics-paper.md:74:openalex
 content/05.cfde-metrics-paper.md:74:OpenAlex

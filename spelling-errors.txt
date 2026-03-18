@@ -3,7 +3,7 @@ Alquaddoomi
 Anschutz
 APM
 backend
-bibliometric
+Bibliometric
 BioData
 bioinformatics
 BioProject
@@ -11,6 +11,7 @@ biospecimen
 CFDE
 CFDE’s
 cgreene
+Clarivate
 Codebase
 collectiong
 CRDC
@@ -57,7 +58,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-omics
+Omics
 onboarded
 OpenAlex
 operationalize
@@ -81,7 +82,7 @@ TCGA
 techvik
 TOPMed
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti
