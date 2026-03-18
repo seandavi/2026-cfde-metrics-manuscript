@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T16:02:00+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T16:02:00+00:00" />
+  <meta name="dc.modified" content="2026-03-18T16:07:33+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T16:07:33+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@84e12d2](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/84e12d2754df8431f7b41fcab9922fe799683b29)
+from [seandavi/2026-cfde-metrics-manuscript@d780cb0](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/d780cb087acffff7064ff1b5b1a9c91c6b064bbd)
 on March 18, 2026.
 </em></small>
 
@@ -490,7 +490,7 @@ Hierarchical narrative summaries of GitHub repositories using AI are also being 
 Finally, we are exploring opportunities to leverage generative AI to enhance our metric collection and analysis capabilities, including automated qualitative feedback solicitation through virtual or augmented structured interviews [@doi:10.48550/arXiv.2509.12709]. 
 
 
-## Synthesis and Recommendations
+## Conclusion
 
 The three frameworks described here — *public value*, *scientific data quality*, and *operations & finance* — are complementary rather than competing, and their relative importance shifts predictably across the data resource lifecycle.
 Early-phase investments should prioritize the scientific data quality and operations frameworks: getting metadata right, establishing FAIR-compliant structures, and standing up reliable infrastructure are prerequisites for everything that follows.
