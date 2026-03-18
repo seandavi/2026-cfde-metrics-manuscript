@@ -2,7 +2,7 @@ Adithya
 Alquaddoomi
 Anschutz
 APM
-Bibliometric
+bibliometric
 BioData
 bioinformatics
 BioProject
@@ -32,6 +32,7 @@ GTEx
 HIPAA
 HuBMAP
 IAM
+iCite
 impactful
 implementability
 ISSM
@@ -52,6 +53,7 @@ NHLBI
 NIH’s
 Olink
 omics
+onboarded
 performant
 PIsCO
 pre
@@ -68,12 +70,12 @@ Scopus
 seandavis
 Semrush
 Similarweb
-TBD
 TCGA
 techvik
 TOPMed
+underreporting
 unshared
-Uptime
+uptime
 validator
 Vikram
 vincerubinetti

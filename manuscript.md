@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T13:40:36+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T13:40:36+00:00" />
+  <meta name="dc.modified" content="2026-03-18T14:07:59+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T14:07:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@d0d49d2](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b)
+from [seandavi/2026-cfde-metrics-manuscript@fe3ae46](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/fe3ae46973d3f765692fe00702a5d3439a8b1288)
 on March 18, 2026.
 </em></small>
 
@@ -380,9 +380,7 @@ A critical but often overlooked question is the break-even point for data sharin
 Framing sustainability in terms of *cost per data reuse event* — dividing total curation and hosting costs by the number of documented reuse instances — provides a concrete, comparable KPI for portfolio-level evaluation.
 More broadly, evaluating the return on investment (ROI) of a data ecosystem requires distinguishing between direct benefits (cost savings from economies of scale in data generation and curation) and extended benefits (scientific discoveries and improved clinical outcomes enabled by data reuse).
 Cloud computing introduces additional complexity, as costs are provider-specific, usage-dependent, and subject to change unpredictably [@doi:10.1093/jamia/ocab278].
-A summary of all metrics across frameworks is provided in Table 1.
-
-Table 1\. Quick summary of included metrics and
+A summary of all metrics across frameworks is provided in Table {@tbl:metrics-summary}.
 
 | Metric | Difficulty | How Collected | Value | Lifecycle Phase | Notes |
 | :---- | :---- | :---- | :---- | :---- | :---- |
@@ -445,9 +443,39 @@ Table 1\. Quick summary of included metrics and
 |  *cloud-based computing costs*  |  Hard  |  Cloud Cost Explorer tools or  |  High  | Mid–Late |  Costs are highly variable and subject to constant change (for both host and clients). Especially difficult to assess years in advance.  |
 |  *personnel costs*  |  Medium  |    |  High  | All |  Can be measured in money or time. Requires committed time with relevant expertise.  |
 
+Table: Summary of metrics across the three frameworks, organized by difficulty of collection, value for evaluation, relevant lifecycle phase, and notes on interpretation. {#tbl:metrics-summary}
+
 ## Some implementation progress and challenges
 
-TBD
+The CFDE presents some challenges to implementation of these frameworks, but also some opportunities.
+The CFDE Integration and Coordination Center (ICC) has taken on the task of collecting and centralizing metrics across the portfolio, which is a critical step toward enabling real-time monitoring and standardized metrics.
+Because there are so many projects, data coordinating centers, and five CFDE centers, the ICC has prioritized a subset of metrics that are both informative and feasible to collect across all projects, with the intention of expanding over time.
+The ICC has also developed a dashboard to visualize these metrics at the project and portfolio level, providing actionable insights for program managers and project teams. 
+
+| Source | Metrics collected |
+| :---- | :---- |
+| NIH CFDE Website | Funding Opportunities, ID, Activity Codes |
+| NIH RePORTER | Project name, funding amounts, project descriptions, project start/end dates, PI names and affiliations, project keywords |
+| NIH RePORTER (self-reported) | Publications, presentations, grants |
+| Pubmed | Publications details, citations |
+| NIH iCite | Citation details, citation metrics (e.g., Relative Citation Ratio) |
+| GitHub | Repository activity (commits, pull requests, languages, etc.) |
+| GitHub | GitHub repository and project narrative summaries using AI |
+| Google Analytics | Website engagement metrics (page views, new vs. returning users, top countries, etc.) |
+
+Table: Summary of data sources and metrics collected by the CFDE ICC dashboard as of January 2026. 
+Note that this is a subset of the full set of metrics described in this paper, selected for feasibility and informativeness across the portfolio. {#tbl:metrics-summary}
+
+Collection of public value metrics is relatively straightforward, as many of these data are already collected by projects for their own reporting purposes (e.g., publications, presentations, grants) or are accessible via public databases (e.g., PubMed, NIH RePORTER).
+However, the collection of GitHub and Google Analytics data requires coordination with project teams to ensure that the ICC has access to these data sources. 
+With the support of NIH program staff, the ICC has "onboarded" projects to share these data, which has involved addressing technical challenges (e.g., API access, data formatting) and building trust with project teams around data sharing and privacy concerns. 
+
+The resulting data are presented in a dashboard that allows users to explore metrics at the project level (e.g., publications, citations, GitHub activity) and at the portfolio level (e.g., trends in publications and citations across all projects). 
+We have implemented authentication and role-based access controls (based on ORCID [@url:https://orcid.org/] login) to allow project teams to view their own data while providing program managers with a portfolio-wide view, balancing transparency with privacy concerns.
+
+While this centralized approach has many advantages, it also faces challenges. 
+For example, the reliance on self-reported data from projects (e.g., publications, presentations, grants) can lead to underreporting and data quality issues.
+
 
 * Collection approach
 * Metrics collected and how
