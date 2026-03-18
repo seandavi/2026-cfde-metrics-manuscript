@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T14:48:53+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T14:48:53+00:00" />
+  <meta name="dc.modified" content="2026-03-18T15:10:03+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T15:10:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/a1ddd9acd23b3278db91afd40fb687076bc0c98b/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/a1ddd9acd23b3278db91afd40fb687076bc0c98b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/a1ddd9acd23b3278db91afd40fb687076bc0c98b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/5304c236ff306ea62298f129a332294aa46b4c0e/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/a1ddd9acd23b3278db91afd40fb687076bc0c98b/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@5304c23](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/5304c236ff306ea62298f129a332294aa46b4c0e)
+from [seandavi/2026-cfde-metrics-manuscript@a1ddd9a](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/a1ddd9acd23b3278db91afd40fb687076bc0c98b)
 on March 18, 2026.
 </em></small>
 
