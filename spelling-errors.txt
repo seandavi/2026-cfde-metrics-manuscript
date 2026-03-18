@@ -57,7 +57,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-Omics
+omics
 onboarded
 OpenAlex
 operationalize
