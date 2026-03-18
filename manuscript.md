@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T13:23:02+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T13:23:02+00:00" />
+  <meta name="dc.modified" content="2026-03-18T13:40:36+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T13:40:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/316c1bf1ee738a75b193ef0d16dfca2c1a62debc/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/316c1bf1ee738a75b193ef0d16dfca2c1a62debc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/316c1bf1ee738a75b193ef0d16dfca2c1a62debc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/316c1bf1ee738a75b193ef0d16dfca2c1a62debc/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@316c1bf](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/316c1bf1ee738a75b193ef0d16dfca2c1a62debc)
+from [seandavi/2026-cfde-metrics-manuscript@d0d49d2](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/d0d49d28d884ea9a24f5aa64aa31aa8c67cc4d2b)
 on March 18, 2026.
 </em></small>
 
@@ -308,7 +308,8 @@ User behavior metrics do not capture scientific impact.
 The strongest proxies are publications and citations, accessible via PubMed [@https://pubmed.ncbi.nlm.nih.gov/], Scopus [@https://www.scopus.com/], Google Scholar [@https://scholar.google.com/], and Web of Science [@https://webofscience.com/].
 *Number citations* is a direct measure of data influence; the initial GTEx paper [@doi:10.1038/ng.2653], for example, had accumulated 8,630 citations as of January 2026.
 Citation impact can be weighted by the influence of each citing work — either by that paper's own citation count (*number secondary citations*) or by journal-level metrics (*citing impact score*).
-A composite score weighted by secondary citations (*citations + secondary citations*) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing [@doi:10.1038/s42254-021-00368-x].
+A composite score weighted by secondary citations (*citations + secondary citations*) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing.
+In fact, successful and visible data sharing can lead to a "citation boost" for the original data generators [@doi:10.1371/journal.pone.0311493].
 More sophisticated journal-level alternatives to simple impact factors include the Eigenfactor Score, which weights citations by the quality of the citing journal using a network-based algorithm, and the Article Influence Score, which measures the average influence per article — both better capture the prestige and subject-specific impact of data repositories than raw citation counts [@doi:10.4103/1008-682X.171582].
 Key limitations of citation-based metrics are that they lack context (a citation does not convey how central the dataset was to a study), and they lag by months to years relative to actual use [@doi:10.1038/520429a].
 Tracking the trend in citations over time (*trend citations*) helps identify whether a resource's scientific influence is growing, plateauing, or declining.
