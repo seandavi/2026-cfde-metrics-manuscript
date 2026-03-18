@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T15:37:04+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T15:37:04+00:00" />
+  <meta name="dc.modified" content="2026-03-18T15:51:44+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T15:51:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -38,28 +38,28 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Ethan M. Lange" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0001-7075-4287" />
   <meta name="citation_author" content="Vikram Adithya Ganesh" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0009-0009-2056-2696" />
   <meta name="citation_author" content="Faisal Alquaddoomi" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0003-4297-8747" />
   <meta name="citation_author" content="David Mayer" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0002-6056-9771" />
   <meta name="citation_author" content="Adriana Ivich" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Vince Rubinetti" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Casey Greene" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
   <meta name="citation_author" content="Sean Davis" />
-  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
+  <meta name="citation_author_institution" content="Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0002-8991-6458" />
   <link rel="canonical" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta property="og:url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/b42c5d5176083182af90d24ce63d64c5ce8daf17/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@814027c](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/814027cd34e4548cd2ba85ebf047851bc4e182b5)
+from [seandavi/2026-cfde-metrics-manuscript@b42c5d5](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/b42c5d5176083182af90d24ce63d64c5ce8daf17)
 on March 18, 2026.
 </em></small>
 
@@ -109,7 +109,7 @@ on March 18, 2026.
     [0000-0001-7075-4287](https://orcid.org/0000-0001-7075-4287)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -121,7 +121,7 @@ on March 18, 2026.
     [techvik](https://github.com/techvik)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -133,7 +133,7 @@ on March 18, 2026.
     [falquaddoomi](https://github.com/falquaddoomi)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -145,7 +145,7 @@ on March 18, 2026.
     [the-mayer](https://github.com/the-mayer)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -157,7 +157,7 @@ on March 18, 2026.
     [ivichadriana](https://github.com/ivichadriana)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -169,7 +169,7 @@ on March 18, 2026.
     [vincerubinetti](https://github.com/vincerubinetti)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -181,7 +181,7 @@ on March 18, 2026.
     [cgreene](https://github.com/cgreene)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
@@ -193,7 +193,7 @@ on March 18, 2026.
     [seandavis](https://github.com/seandavis)
     <br>
   <small>
-     Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+     Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
      · Funded by Grant U54OD036472
   </small>
 
