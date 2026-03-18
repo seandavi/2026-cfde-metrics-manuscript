@@ -2,7 +2,7 @@ Adithya
 Alquaddoomi
 Anschutz
 APM
-bibliometric
+Bibliometric
 BioData
 bioinformatics
 BioProject
@@ -39,7 +39,7 @@ Ivich
 ivichadriana
 KPI
 Lange
-lifecycle
+Lifecycle
 linkability
 Matomo
 metabolomic
@@ -51,7 +51,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-Omics
+omics
 performant
 PIsCO
 pre
@@ -73,7 +73,7 @@ TCGA
 techvik
 TOPMed
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti

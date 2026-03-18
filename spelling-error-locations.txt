@@ -49,14 +49,12 @@ content/05.cfde-metrics-paper.md:74:scopus
 content/05.cfde-metrics-paper.md:74:Scopus
 content/05.cfde-metrics-paper.md:75:GTEx
 content/05.cfde-metrics-paper.md:78:Eigenfactor
-content/05.cfde-metrics-paper.md:78:ncbi
 content/05.cfde-metrics-paper.md:84:bibliometric
 content/05.cfde-metrics-paper.md:85:BioProject
 content/05.cfde-metrics-paper.md:85:NCBI
 content/05.cfde-metrics-paper.md:86:Bibliometric
 content/05.cfde-metrics-paper.md:86:NeuroMorpho
 content/05.cfde-metrics-paper.md:87:CFDE
-content/05.cfde-metrics-paper.md:93:ncbi
 content/05.cfde-metrics-paper.md:94:workspaces
 content/05.cfde-metrics-paper.md:102:biospecimen
 content/05.cfde-metrics-paper.md:102:genomic
@@ -122,7 +120,6 @@ content/05.cfde-metrics-paper.md:220:VPNs
 content/05.cfde-metrics-paper.md:225:lifecycle
 content/05.cfde-metrics-paper.md:235:curation
 content/05.cfde-metrics-paper.md:236:CFDE
-content/05.cfde-metrics-paper.md:240:ncbi
 content/05.cfde-metrics-paper.md:242:NIH's
 content/05.cfde-metrics-paper.md:242:pre
 content/05.cfde-metrics-paper.md:245:CFDE
