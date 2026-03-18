@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T15:15:42+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T15:15:42+00:00" />
+  <meta name="dc.modified" content="2026-03-18T15:37:04+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T15:37:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,10 +45,10 @@ header-includes: |
   <meta name="citation_author_orcid" content="0009-0009-2056-2696" />
   <meta name="citation_author" content="Faisal Alquaddoomi" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0003-4297-8747" />
   <meta name="citation_author" content="David Mayer" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-6056-9771" />
   <meta name="citation_author" content="Adriana Ivich" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus" />
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/94c2ecbf4f6e5eb75e23612bc33c2b7626f518b6/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/94c2ecbf4f6e5eb75e23612bc33c2b7626f518b6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/94c2ecbf4f6e5eb75e23612bc33c2b7626f518b6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/94c2ecbf4f6e5eb75e23612bc33c2b7626f518b6/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/814027cd34e4548cd2ba85ebf047851bc4e182b5/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@94c2ecb](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/94c2ecbf4f6e5eb75e23612bc33c2b7626f518b6)
+from [seandavi/2026-cfde-metrics-manuscript@814027c](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/814027cd34e4548cd2ba85ebf047851bc4e182b5)
 on March 18, 2026.
 </em></small>
 
@@ -128,7 +128,7 @@ on March 18, 2026.
 + **Faisal Alquaddoomi**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-4297-8747](https://orcid.org/0000-0003-4297-8747)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [falquaddoomi](https://github.com/falquaddoomi)
     <br>
@@ -140,7 +140,7 @@ on March 18, 2026.
 + **David Mayer**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-6056-9771](https://orcid.org/0000-0002-6056-9771)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [the-mayer](https://github.com/the-mayer)
     <br>
