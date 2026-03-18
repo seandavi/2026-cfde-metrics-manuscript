@@ -2,6 +2,7 @@ Adithya
 Alquaddoomi
 Anschutz
 APM
+backend
 bibliometric
 BioData
 bioinformatics
@@ -11,6 +12,7 @@ CFDE
 CFDE’s
 cgreene
 Codebase
+collectiong
 CRDC
 CrossRef
 curation
@@ -24,6 +26,7 @@ FAIRplus
 falquaddoomi
 Findable
 FISMA
+frontend
 Ganesh
 genomic
 GH
@@ -54,6 +57,7 @@ NIH’s
 Olink
 omics
 onboarded
+OpenAlex
 performant
 PIsCO
 pre
@@ -73,13 +77,11 @@ Similarweb
 TCGA
 techvik
 TOPMed
-underreporting
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti
 VPN
-VPNs
 workspaces
 XXXX

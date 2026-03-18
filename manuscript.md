@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T14:07:59+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T14:07:59+00:00" />
+  <meta name="dc.modified" content="2026-03-18T14:36:41+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T14:36:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/efa3655e333889941e24a90657f764803b79b468/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/efa3655e333889941e24a90657f764803b79b468/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/efa3655e333889941e24a90657f764803b79b468/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/fe3ae46973d3f765692fe00702a5d3439a8b1288/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/efa3655e333889941e24a90657f764803b79b468/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@fe3ae46](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/fe3ae46973d3f765692fe00702a5d3439a8b1288)
+from [seandavi/2026-cfde-metrics-manuscript@efa3655](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/efa3655e333889941e24a90657f764803b79b468)
 on March 18, 2026.
 </em></small>
 
@@ -244,9 +244,9 @@ Building upon the data coordinating centers spanning 19 projects including GTEx 
 The CFDE's mission is to create a scalable, sustainable infrastructure that enables researchers to find and reuse data across the Common Fund portfolio, with the ultimate goal of accelerating scientific discovery and improving human health.
 The ecosystem is organized into five specialized centers: the Data Resource Center (DRC), the Knowledge Center (KC), the Training Center (TC), the Cloud Workspace Implementation Center (CWIC), and the Integration and Coordination Center (ICC).
 The ICC bears primary responsibility for leading annual program-wide metric collection and facilitating evaluation efforts in partnership with NIH program staff, ensuring a continuous improvement cycle and building the evidence base for future science investments.
-The Council of Councils Working Group identified "facilitation of new scientific discovery" as the chief metric of CFDE success — specifically, the extent to which researchers can use Common Fund data to generate and validate novel hypotheses that were previously unattainable through isolated datasets [@https://dpcpsi.nih.gov/sites/default/files/Day2-1225PM-Final-Report-CFDE-CoC-WG-HorwitzWilder_.pdf].
+The Council of Councils Working Group identified "facilitation of new scientific discovery" as the chief metric of CFDE success — specifically, the extent to which researchers can use Common Fund data to generate and validate novel hypotheses that were previously unattainable through isolated datasets [@url:https://dpcpsi.nih.gov/sites/default/files/Day2-1225PM-Final-Report-CFDE-CoC-WG-HorwitzWilder_.pdf].
 
-The CFDE recently transitioned from its three-year pilot phase, which focused on establishing a coordination center and building the initial portal infrastructure [@https://commonfund.nih.gov/sites/default/files/OTA-23-004.pdf], to a full-scale implementation phase emphasizing outreach, skills development, and community-wide adoption [@https://commonfund.nih.gov/sites/default/files/OTA-24-004.pdf].
+The CFDE recently transitioned from its three-year pilot phase, which focused on establishing a coordination center and building the initial portal infrastructure, to a full-scale implementation phase emphasizing outreach, skills development, and community-wide adoption.
 Evaluation frameworks must now adapt to capture this shift toward "use and reuse" as the primary drivers of impact.
 Each center carries a distinct focus, as summarized in Table {@tbl:center-eval}.
 
@@ -268,7 +268,7 @@ Public science needs equivalent rigor.
 We contend that the "customer" is the research community, the "product" is reusable data and tools, and the measure of success is scientific discovery and improved human health.
 We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--and suggest that their importance and prioritization should vary over a project lifecycle.
 
-Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) [@https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/] to qualitative prioritization methods such as MoSCoW ("must-have", "should-have", "could-have", "won't have") [@isbn:9780201624328].
+Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) [@https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers] to qualitative prioritization methods such as MoSCoW ("must-have", "should-have", "could-have", "won't have") [@isbn:9780201624328].
 Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure [@isbn:9780875846514; @isbn:9780273653349].
 In publicly-funded research, the same principles apply: good metrics capture the use and impact of data resources, identify barriers to their success, and inform decisions about where to invest limited resources while being feasible to collect and not overly burdensome for project owners.
 Furthermore, we show how centralization and automation can make the collection of these metrics more efficient, reducing the burden on individual projects and enabling real-time monitoring of portfolio performance.
@@ -297,7 +297,7 @@ The *public value* framework encompasses user behavior and scientific impact.
 Website engagement metrics — *page views*, *time on page*, *actions/triggers*, *priority link clicks*, and *new vs. returning users* — are easy to collect and track trends over time, but they provide limited insight into actual data use.
 Combining *time on page* with *actions/triggers* offers a more informative measure of engagement.
 A key limitation is that bots can skew counts, and VPN use in academic settings confounds new-versus-returning user tracking.
-These metrics are typically collected via platforms such as Google Analytics [@https://marketingplatform.google.com/about/analytics/] or Matomo [@https://matomo.org/] (direct measurement) or estimated via Semrush [@https://semrush.com/] or Similarweb [@https://www.similarweb.com/]; note that some European jurisdictions restrict use of US-based analytics platforms.
+These metrics are typically collected via platforms such as Google Analytics [@https://marketingplatform.google.com/about/analytics] or Matomo [@https://matomo.org] (direct measurement) or estimated via Semrush [@https://semrush.com] or Similarweb [@https://www.similarweb.com]; note that some European jurisdictions restrict use of US-based analytics platforms.
 
 More direct evidence of data engagement comes from *downloads* and *compute jobs*.
 Downloads are a simple indicator of interest but cannot distinguish actual usage from passive acquisition, nor track data sharing among multiple users of the same file.
@@ -305,7 +305,7 @@ Cloud-hosted datasets address these limitations: compute jobs directly measure a
 Projects that include tool development — such as GlyGen [@doi:10.1093/glycob/cwz080] or Bridge2AI [@doi:10.1101/2024.03.11.584478] — also track *tool usage* (online) and *tool downloads*, with online usage being more accurately quantified.
 
 User behavior metrics do not capture scientific impact.
-The strongest proxies are publications and citations, accessible via PubMed [@https://pubmed.ncbi.nlm.nih.gov/], Scopus [@https://www.scopus.com/], Google Scholar [@https://scholar.google.com/], and Web of Science [@https://webofscience.com/].
+The strongest proxies are publications and citations, accessible via sites like PubMed [@https://pubmed.ncbi.nlm.nih.gov], Scopus [@https://www.scopus.com], Google Scholar [@https://scholar.google.com], Web of Science [@https://webofscience.com], and OpenAlex [@https://openalex.org].
 *Number citations* is a direct measure of data influence; the initial GTEx paper [@doi:10.1038/ng.2653], for example, had accumulated 8,630 citations as of January 2026.
 Citation impact can be weighted by the influence of each citing work — either by that paper's own citation count (*number secondary citations*) or by journal-level metrics (*citing impact score*).
 A composite score weighted by secondary citations (*citations + secondary citations*) captures cumulative downstream impact that simple citation counts miss, and citation networks can also reveal new cross-disciplinary collaborations enabled by data sharing.
@@ -347,12 +347,11 @@ Two attributes from this framework are particularly relevant for federated ecosy
 
 A structured approach to assessing these qualities is provided by FAIR maturity models.
 The evolution from first-generation ("Gen1") FAIR metrics — which relied on manual, human-assessed compliance — to second-generation ("Gen2") maturity indicators that are automated and machine-measurable [@doi:10.1038/sdata.2018.118] is essential for the CFDE, where the volume of metadata prevents manual auditing of every record.
-The FAIRplus Dataset Maturity (FAIRplus-DSM) model [@https://fairplus.github.io/Data-Maturity/docs/Indicators/], developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management).
+The FAIRplus Dataset Maturity (FAIRplus-DSM) model [@https://fairplus.github.io/Data-Maturity/docs/Indicators], developed for the life sciences, defines six levels ranging from Level 0 (no unique identifiers, unshared local storage) through Level 5 (provenance encoded in cross-community languages, enterprise-grade lifecycle management).
 Levels 1–2 cover persistent identifiers and indexed metadata; Levels 3–4 require adherence to community reporting standards (e.g., MIAME) and semantic representation using linked data.
 Ontology standardization at these higher maturity levels is particularly important for the CFDE's Knowledge Center, which relies on controlled terminologies to build integrated knowledge graphs that enable cross-omics queries.
 The Research Data Alliance (RDA) further classifies FAIR indicators by priority — Essential (globally unique persistent identifiers, open access protocols), Important (machine-understandable knowledge representation), and Useful (automated data access by software agents) — providing a tiered roadmap for incremental improvement.
 Automated tools such as the FAIR Evaluator can test digital resources against these indicators at scale using small web applications ("Compliance Tests") that programmatically assess each maturity indicator, making continuous *FAIR compliance* monitoring feasible for large portfolios [@doi:10.1038/sdata.2018.118].
-The ICC is mandated by program funding announcements to leverage these automated assessments to monitor changes in the FAIRness of digital resources over time [@https://commonfund.nih.gov/sites/default/files/OTA-24-004.pdf].
 
 ### Operations and finance
 
@@ -468,19 +467,26 @@ Note that this is a subset of the full set of metrics described in this paper, s
 
 Collection of public value metrics is relatively straightforward, as many of these data are already collected by projects for their own reporting purposes (e.g., publications, presentations, grants) or are accessible via public databases (e.g., PubMed, NIH RePORTER).
 However, the collection of GitHub and Google Analytics data requires coordination with project teams to ensure that the ICC has access to these data sources. 
+In particular, we ask projects to "label" their GitHub repositories with their NIH core project number (e.g., "R01AG123456") to enable automated tracking of repository activity, and we ask projects to add our service account email to their Google Analytics, allowing us to automatically collect website metrics.
 With the support of NIH program staff, the ICC has "onboarded" projects to share these data, which has involved addressing technical challenges (e.g., API access, data formatting) and building trust with project teams around data sharing and privacy concerns. 
 
 The resulting data are presented in a dashboard that allows users to explore metrics at the project level (e.g., publications, citations, GitHub activity) and at the portfolio level (e.g., trends in publications and citations across all projects). 
-We have implemented authentication and role-based access controls (based on ORCID [@url:https://orcid.org/] login) to allow project teams to view their own data while providing program managers with a portfolio-wide view, balancing transparency with privacy concerns.
+We have implemented authentication and role-based access controls (based on ORCID [@url:https://orcid.org] login) to allow project teams to view their own data while providing program managers with a portfolio-wide view, balancing transparency with privacy concerns. 
+See @fig:dashboard for some screenshots of the dashboard interface, implemented as a standard web application with a TypeScript frontend and Python/Django backend, with data stored in a PostgreSQL database. 
 
-While this centralized approach has many advantages, it also faces challenges. 
-For example, the reliance on self-reported data from projects (e.g., publications, presentations, grants) can lead to underreporting and data quality issues.
+![Screenshot of the CFDE ICC dashboard showing project-level and portfolio-level metrics. Note that this is a prototype and subject to change as we iterate on design and functionality.](images/dashboard_screenshot.png){#fig:dashboard}
 
+As we embarked on this implementation, we found that several other groups are engaged in related efforts.
+Furthermore, we have identified partners in helping to define valuable metrics and how they are collected. 
+In response, we established a "Metrics Working Group" within the CFDE ICC, which includes representatives from several CFDE centers, as well as NIH program staff. 
+This group meets regularly to review the metrics being collected, discuss challenges and opportunities, and plan for future iterations of the dashboard and metric collection processes.
 
-* Collection approach
-* Metrics collected and how
-* Dashboard implementation
-* Challenges: data collection, data quality (e.g., bots, VPNs), data sharing (e.g., citation gap), sustainability (e.g., cost variability, break-even point for sharing), project privacy concerns (e.g., public dashboards), and more.
+With the support of the Metrics Working Group, we are also exploring opportunities to pilot additional metrics that are not currently collected across the portfolio but could provide valuable insights into ecosystem performance. 
+Our technical implementation is quite flexible, allowing us to add new data sources and metrics as needed, but we are mindful of the burden on project teams and the need to prioritize metrics that are both informative and feasible to collect.
+For example, we are considering piloting the collection of *data citation rates* by implementing a full-text search for dataset accession numbers in publications, which would provide a more accurate measure of data reuse than traditional citation tracking. 
+In collaboration with our ICC Administrative Core, we have also made some progress toward collectiong user surveys associated with events, which would complement the behavioral and citation-based metrics currently collected.
+Hierarchical narrative summaries of GitHub repositories using AI are also being piloted as a way to provide more qualitative insight into the nature of the work being done in each project, which could help contextualize the quantitative metrics collected.
+Finally, we are exploring opportunities to leverage generative AI to enhance our metric collection and analysis capabilities, including automated qualitative feedback solicitation through virtual or augmented structured interviews [@doi:10.48550/arXiv.2509.12709]. 
 
 
 ## Synthesis and Recommendations
@@ -508,25 +514,9 @@ Implementation of these evaluation frameworks can be accelerated through pilot "
 For the CFDE, identifying Driver Projects across centers would generate practical evidence about which metrics are most informative and feasible before committing to portfolio-wide deployment.
 Ultimately, the long-term measure of evaluation success is whether the ecosystem achieves practice change: a measurable shift toward data-driven discovery, broader cross-disciplinary collaboration, and more equitable access to computational resources.
 
-Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — would enable the portfolio-level comparisons that are currently impossible.
+Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — enables the portfolio-level comparisons that are currently impossible.
 The frameworks presented here, grounded in real evaluation data from the CFDE, offer a starting point for that standardization.
 
-<!--
-  OLD REFERENCES SECTION REMOVED - Manubot auto-generates references from citation keys.
-
-  TODOs remaining:
-  - Ref 2 (TCGA "Pan-Cancer Analysis Project" Cell 2014): verify correct paper and add DOI
-  - Ref 10 (Volchenboum 2018 Kids First): incomplete citation, needs DOI
-  - Ref 13 FAIRplus-DSM model: now cited via @https://fairplus.github.io/Data-Maturity/docs/Indicators/
-  - Ref 16 (Dahal 2025, SAGE Open): needs DOI
-  - Refs 29-32, 36, 37: existed in old reference list but were never cited in text
-  - ISBN-based citations (refs 14, 15, 18, 19, 20) should be verified:
-    - @isbn:9780875846514 (Kaplan & Norton, Balanced Scorecard)
-    - @isbn:9780273653349 (Neely, Performance Prism)
-    - @isbn:9780201624328 (Clegg & Barker, Case Method Fast-Track / MoSCoW)
-    - @isbn:9780471465102 (Keeney & Raiffa, Decisions with Multiple Objectives)
-    - @isbn:9780792375067 (Belton & Stewart, Multiple Criteria Decision Analysis)
--->
 
 
 ## References {.page_break_before}
