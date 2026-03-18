@@ -11,7 +11,7 @@ authors:
     initials: EL
     orcid: 0000-0001-7075-4287
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
   - github: techvik
@@ -19,7 +19,7 @@ authors:
     initials: VG
     orcid: 0009-0009-2056-2696
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
   - github: falquaddoomi
@@ -27,7 +27,7 @@ authors:
     initials: FA
     orcid: 0000-0003-4297-8747
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: false
@@ -36,7 +36,7 @@ authors:
     initials: DM
     orcid: 0000-0002-6056-9771
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: false
@@ -45,7 +45,7 @@ authors:
     initials: AI
     orcid: XXXX-XXXX-XXXX-XXXX
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: false
@@ -54,7 +54,7 @@ authors:
     initials: VR
     orcid: XXXX-XXXX-XXXX-XXXX
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: false
@@ -64,7 +64,7 @@ authors:
     orcid: 0000-0001-8713-9213
     email: casey.s.greene@cuanschutz.edu
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: true
@@ -74,7 +74,7 @@ authors:
     orcid: 0000-0002-8991-6458
     email: seandavi@gmail.com
     affiliations:
-      - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+      - Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
       - Grant U54OD036472
     corresponding: true
