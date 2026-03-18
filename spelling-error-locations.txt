@@ -10,6 +10,7 @@ content/05.cfde-metrics-paper.md:4:TOPMed
 content/05.cfde-metrics-paper.md:5:BioData
 content/05.cfde-metrics-paper.md:8:CFDE
 content/05.cfde-metrics-paper.md:9:CFDE
+content/05.cfde-metrics-paper.md:9:GlyGen
 content/05.cfde-metrics-paper.md:9:GTEx
 content/05.cfde-metrics-paper.md:9:HuBMAP
 content/05.cfde-metrics-paper.md:9:Microbiome
@@ -46,7 +47,6 @@ content/05.cfde-metrics-paper.md:66:semrush
 content/05.cfde-metrics-paper.md:66:Semrush
 content/05.cfde-metrics-paper.md:66:similarweb
 content/05.cfde-metrics-paper.md:66:Similarweb
-content/05.cfde-metrics-paper.md:71:GlyGen
 content/05.cfde-metrics-paper.md:74:clarivate
 content/05.cfde-metrics-paper.md:74:Clarivate
 content/05.cfde-metrics-paper.md:74:ncbi

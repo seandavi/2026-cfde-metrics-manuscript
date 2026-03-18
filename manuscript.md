@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-18" />
   <meta name="citation_publication_date" content="2026-03-18" />
   <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T15:58:08+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T15:58:08+00:00" />
+  <meta name="dc.modified" content="2026-03-18T16:02:00+00:00" />
+  <meta property="article:modified_time" content="2026-03-18T16:02:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c2dfa6da47e8ad0de5ff23e9ba96e8b997d672d0/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c2dfa6da47e8ad0de5ff23e9ba96e8b997d672d0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c2dfa6da47e8ad0de5ff23e9ba96e8b997d672d0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c2dfa6da47e8ad0de5ff23e9ba96e8b997d672d0/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/84e12d2754df8431f7b41fcab9922fe799683b29/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@c2dfa6d](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/c2dfa6da47e8ad0de5ff23e9ba96e8b997d672d0)
+from [seandavi/2026-cfde-metrics-manuscript@84e12d2](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/84e12d2754df8431f7b41fcab9922fe799683b29)
 on March 18, 2026.
 </em></small>
 
@@ -241,7 +241,7 @@ NIH has complemented these with cloud computing environments — the Cancer Geno
 The collective ambition is to democratize access to reusable data and accelerate scientific discovery.
 
 The Common Fund Data Ecosystem [@doi:10.1093/gigascience/giac105] (CFDE) takes a slightly different approach.
-Building upon the data coordinating centers spanning 19 projects including GTEx [@doi:10.1038/ng.2653], the Human Microbiome Project [@doi:10.1038/nature11234; @doi:10.1038/nature11209], and HuBMAP [@pmid:31597973], the CFDE is a cross-cutting initiative that harmonizes metadata across these diverse datasets and provides a unified portal for discovery and access.
+Building upon the data coordinating centers spanning 19 projects including GTEx [@doi:10.1038/ng.2653], the Human Microbiome Project [@doi:10.1038/nature11234; @doi:10.1038/nature11209], HuBMAP [@pmid:31597973], GlyGen [@doi:10.1093/glycob/cwz080], and Bridge2AI [@doi:10.1101/2024.03.11.584478], the CFDE is a cross-cutting initiative that harmonizes metadata across these diverse datasets and provides a unified portal for discovery and access.
 The CFDE's mission is to create a scalable, sustainable infrastructure that enables researchers to find and reuse data across the Common Fund portfolio, with the ultimate goal of accelerating scientific discovery and improving human health.
 The ecosystem is organized into five specialized centers: the Data Resource Center (DRC), the Knowledge Center (KC), the Training Center (TC), the Cloud Workspace Implementation Center (CWIC), and the Integration and Coordination Center (ICC).
 The ICC bears primary responsibility for leading annual program-wide metric collection and facilitating evaluation efforts in partnership with NIH program staff, ensuring a continuous improvement cycle and building the evidence base for future science investments.
@@ -303,7 +303,7 @@ These metrics are typically collected via platforms such as Google Analytics [@h
 More direct evidence of data engagement comes from *downloads* and *compute jobs*.
 Downloads are a simple indicator of interest but cannot distinguish actual usage from passive acquisition, nor track data sharing among multiple users of the same file.
 Cloud-hosted datasets address these limitations: compute jobs directly measure analysis activity, reduce sharing ambiguity, and can be monitored in near real-time (*trend downloads*, *trend compute jobs*).
-Projects that include tool development — such as GlyGen [@doi:10.1093/glycob/cwz080] or Bridge2AI [@doi:10.1101/2024.03.11.584478] — also track *tool usage* (online) and *tool downloads*, with online usage being more accurately quantified.
+Projects that include tool development can track *tool usage* (online) and *tool downloads*, with online usage being more accurately quantified.
 
 User behavior metrics do not capture scientific impact.
 The strongest proxies are publications and citations, accessible via sites like PubMed [@https://pubmed.ncbi.nlm.nih.gov], Scopus [@https://www.scopus.com], Google Scholar [@https://scholar.google.com], Clarivate [@https://clarivate.com], and OpenAlex [@https://openalex.org].
