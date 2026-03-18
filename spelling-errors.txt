@@ -3,7 +3,7 @@ Alquaddoomi
 Anschutz
 APM
 backend
-bibliometric
+Bibliometric
 BioData
 bioinformatics
 BioProject
@@ -35,15 +35,17 @@ GTEx
 HIPAA
 HuBMAP
 IAM
+ICC’s
 iCite
 impactful
 implementability
 ISSM
+iteratively
 Ivich
 ivichadriana
 KPI
 Lange
-lifecycle
+Lifecycle
 linkability
 Matomo
 metabolomic
@@ -58,6 +60,7 @@ Olink
 omics
 onboarded
 OpenAlex
+operationalize
 performant
 PIsCO
 pre
