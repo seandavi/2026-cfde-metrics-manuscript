@@ -1,6 +1,4 @@
-# Automated scholarly manuscripts on GitHub
-
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
+# Multidimensional Evaluation Frameworks for the NIH Common Fund Data Ecosystem
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://manubot.github.io/rootstock/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://manubot.github.io/rootstock/manuscript.pdf)
@@ -8,10 +6,11 @@
 
 ## Manuscript description
 
-<!-- usage note: edit this section. -->
+This paper proposes a structured approach to evaluating large-scale NIH biomedical data resources, organized around three complementary frameworks: *public value* (user engagement, citations, scientific impact), *scientific data quality* (metadata completeness, FAIR compliance, representativeness), and *operations and finance* (infrastructure reliability, software health, cost sustainability). We argue that the relative importance of each framework shifts predictably across a data resource's lifecycle — from early infrastructure-building, through active use, to long-term sustainability — and that embedding this lifecycle logic into evaluation design is essential for informed decision-making.
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+The NIH Common Fund Data Ecosystem (CFDE), a cross-cutting initiative that harmonizes metadata across 19 Common Fund programs through five specialized centers, serves as both the motivating case study and the testbed for these ideas. We describe the Integration and Coordination Center's (ICC) implementation of a centralized dashboard that automatically collects publication, citation, GitHub, and web analytics data across the portfolio, and report on the practical challenges of onboarding projects, balancing transparency with privacy, and iteratively expanding metric coverage through a cross-center Metrics Working Group.
+
+The manuscript is built using [Manubot](https://manubot.org/), with source content in the [`content`](content) directory.
 
 ## Manubot
 
