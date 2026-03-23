@@ -39,6 +39,7 @@ HuBMAP
 IAM
 ICC’s
 iCite
+ICMJE
 impactful
 implementability
 ISSM
@@ -59,7 +60,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-omics
+Omics
 onboarded
 OpenAlex
 operationalize
@@ -83,7 +84,7 @@ TCGA
 techvik
 TOPMed
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti

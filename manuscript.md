@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-23" />
   <meta name="citation_publication_date" content="2026-03-23" />
   <meta property="article:published_time" content="2026-03-23" />
-  <meta name="dc.modified" content="2026-03-23T13:39:27+00:00" />
-  <meta property="article:modified_time" content="2026-03-23T13:39:27+00:00" />
+  <meta name="dc.modified" content="2026-03-23T13:43:27+00:00" />
+  <meta property="article:modified_time" content="2026-03-23T13:43:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@4268416](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/4268416a74a12891b0aac33bd93a720b1b1583ec)
+from [seandavi/2026-cfde-metrics-manuscript@df9cc42](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe)
 on March 23, 2026.
 </em></small>
 
@@ -529,8 +529,13 @@ The ICC's dashboard and metric collection infrastructure demonstrate that such s
 ## Acknowledgments
 
 This work was supported by the National Institutes of Health under grant U54OD036472, the CFDE Integration and Coordination Center (ICC).
-We thank the CFDE ICC Metrics Working Group for their ongoing contributions to the development and implementation of these evaluation frameworks and metrics, including representatives from the Data Analysis Center, Data Commons, Knowledge Center, and Training Center, as well as NIH program staff. 
+We thank the CFDE ICC Metrics Working Group for their ongoing contributions to the development and implementation of these evaluation frameworks and metrics, including representatives from CFDE programs and centers as well as NIH program staff. 
 We also thank the CFDE project teams for their collaboration in sharing data and providing feedback on the dashboard and metrics collection processes.
+
+## Author contributions
+
+All authors meet the International Committee of Medical Journal Editors (ICMJE) criteria for authorship. 
+Ethan M. Lange, Vikram Adithya Ganesh, Faisal Alquaddoomi, David Mayer, Adriana Ivich, Vince Rubinetti, Casey Greene, and Sean Davis each made substantial contributions to the conception or design of the work and to the acquisition, analysis, or interpretation of data; participated in drafting the manuscript or revising it critically for important intellectual content; approved the final version for publication; and agreed to be accountable for all aspects of the work.
 
 
 

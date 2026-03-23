@@ -159,4 +159,13 @@ content/05.cfde-metrics-paper.md:292:CFDE
 content/05.cfde-metrics-paper.md:292:ICC's
 content/05.cfde-metrics-paper.md:296:CFDE
 content/05.cfde-metrics-paper.md:297:CFDE
+content/05.cfde-metrics-paper.md:297:CFDE
 content/05.cfde-metrics-paper.md:298:CFDE
+content/05.cfde-metrics-paper.md:302:ICMJE
+content/05.cfde-metrics-paper.md:303:Adithya
+content/05.cfde-metrics-paper.md:303:Alquaddoomi
+content/05.cfde-metrics-paper.md:303:Ganesh
+content/05.cfde-metrics-paper.md:303:Ivich
+content/05.cfde-metrics-paper.md:303:Lange
+content/05.cfde-metrics-paper.md:303:Rubinetti
+content/05.cfde-metrics-paper.md:303:Vikram
