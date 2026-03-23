@@ -4542,21 +4542,24 @@
   {
     "id": "RH2E7ekW",
     "type": "book",
-    "call-number": "QA76.9.A25 I465 2001",
     "collection-number": "72",
     "collection-title": "International Federation for Information Processing",
     "event-place": "Boston",
     "ISBN": "9780792375067",
-    "number-of-pages": "22",
-    "publisher": "Kluwer Academic Publishers",
+    "language": "eng",
+    "number-of-pages": "212",
+    "publisher": "Kluwer",
     "publisher-place": "Boston",
-    "source": "Library of Congress ISBN",
-    "title": "Advances in information security management & small systems security: IFIP TC11 WG11.1/WG11.2 Eighth Annual Working Conference on Information Security Management & Small Systems Security, September 27-28, 2001, Las Vegas, Nevada, USA",
+    "source": "K10plus ISBN",
+    "title": "Advances in information security management & small systems security: IFIP TC11 WG11.1/WG11.2 Eighth Annual Working Conference on Information Security Management & Small Systems Security, September 27 - 28, 2001, Las Vegas, Nevada, USA",
     "title-short": "Advances in information security management & small systems security",
     "editor": [
       {
         "family": "Eloff",
         "given": "Jan H. P."
+      },
+      {
+        "literal": "International Federation for Information Processing"
       }
     ],
     "issued": {
@@ -4754,7 +4757,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4780,7 +4783,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4805,7 +4808,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4822,7 +4825,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4841,7 +4844,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4860,7 +4863,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4876,7 +4879,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4892,7 +4895,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4911,7 +4914,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4928,7 +4931,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4948,7 +4951,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4966,7 +4969,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -4992,7 +4995,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -5067,7 +5070,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },
@@ -5102,7 +5105,7 @@
         [
           "2026",
           3,
-          18
+          23
         ]
       ]
     },

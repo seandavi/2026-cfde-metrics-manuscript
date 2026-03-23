@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2026-03-18'
+date-meta: '2026-03-23'
 author-meta:
 - Ethan M. Lange
 - Vikram Adithya Ganesh
@@ -26,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
-  <meta name="dc.date" content="2026-03-18" />
-  <meta name="citation_publication_date" content="2026-03-18" />
-  <meta property="article:published_time" content="2026-03-18" />
-  <meta name="dc.modified" content="2026-03-18T16:07:33+00:00" />
-  <meta property="article:modified_time" content="2026-03-18T16:07:33+00:00" />
+  <meta name="dc.date" content="2026-03-23" />
+  <meta name="citation_publication_date" content="2026-03-23" />
+  <meta property="article:published_time" content="2026-03-23" />
+  <meta name="dc.modified" content="2026-03-23T13:32:55+00:00" />
+  <meta property="article:modified_time" content="2026-03-23T13:32:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,10 +91,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d780cb087acffff7064ff1b5b1a9c91c6b064bbd/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@d780cb0](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/d780cb087acffff7064ff1b5b1a9c91c6b064bbd)
-on March 18, 2026.
+from [seandavi/2026-cfde-metrics-manuscript@e8df3cb](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/e8df3cb4e3dfbd142cba376fe9156af3746460b6)
+on March 23, 2026.
 </em></small>
 
 
@@ -253,21 +253,23 @@ Each center carries a distinct focus, as summarized in Table {@tbl:center-eval}.
 
 | Center | Significance in the Ecosystem |
 | :---- | :---- |
-| Data Resource Center (DRC) | Primary entry point for researchers to query datasets |
-| Knowledge Center (KC) | Cross-cutting biological insights through knowledge graphs |
-| Training Center (TC) | Addresses the cultural shift required for cloud-based computing |
-| Cloud Workspace (CWIC) | Computational power to analyze massive datasets in situ |
-| Integration & Coordination (ICC) | Ensures disparate centers function as a unified ecosystem |
+| Data Resource Center (DRC) | Centralized entry point for researchers to discover CFDE data and other resources |
+| Knowledge Center (KC) | Cross-cutting biological insights through applications and outreach |
+| Training Center (TC) | Addresses gaps in data and ecosystem understanding and helps drive the cultural shift required for cloud-based computing |
+| Cloud Workspace (CWIC) | Computational power to analyze massive datasets in situ on large-scale shared infrastructure |
+| Integration & Coordination (ICC) | Ensures disparate centers function as a unified ecosystem, drives data-driven decisions, and supports efforts to enhance sustainability |
 
 Table: Center-specific focus areas across the five CFDE centers. {#tbl:center-eval}
 
 With five centers and 19 projects, the CFDE is a microcosm of the broader NIH data ecosystem, making it an ideal case study for developing and testing federated evaluation frameworks.
 
-Evaluation across the CFDE has historically been somewhat fragmented: each program or projects tracks slightly different metrics in different ways, making portfolio-level evaluation challenging.
+Evaluation across the CFDE has historically been performed independently by each program. 
+Historically, each program has tracked slightly different metrics in different ways, making portfolio-level evaluation challenging.
 The business world has long solved analogous problems with structured prioritization frameworks that combine multiple performance metrics into coherent decision tools.
 Public science needs equivalent rigor.
-We contend that the "customer" is the research community, the "product" is reusable data and tools, and the measure of success is scientific discovery and improved human health.
-We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--suggest that their importance and prioritization should vary over a project lifecycle, and report on the ICC's initial implementation of a centralized dashboard for portfolio-wide metric collection.
+In response to this need, the NIH established the Integration and Coordination Center (ICC), which included an evaluation component. 
+The "product" is reusable data and tools, and the ultimate measure of success is scientific discovery and improved human health.
+We describe three complementary prioritization frameworks--*public value*, *scientific data quality*, *operations and finance*--and suggest that their importance and prioritization should vary over a project lifecycle, and report on the ICC's initial implementation of a centralized dashboard for portfolio-wide metric collection.
 
 Performance metrics have long been used in the business world to optimize decision-making, with established frameworks ranging from quantitative scoring functions such as RICE (Reach, Impact, Confidence, Effort) [@https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers] to qualitative prioritization methods such as MoSCoW ("must-have", "should-have", "could-have", "won't have") [@isbn:9780201624328].
 Crucially, effective prioritization frameworks rely on metrics that are informative, feasible to collect, and economical to measure [@isbn:9780875846514; @isbn:9780273653349].
@@ -515,7 +517,11 @@ NIH's 2023 Data Management and Sharing Policy creates a structural opportunity t
 
 Implementation of these evaluation frameworks can be accelerated through pilot "Driver Projects" — an approach pioneered by the Global Alliance for Genomics and Health (GA4GH) [@https://www.ga4gh.org/about-us/strategic-road-map/], in which selected projects test new standards and metrics in real-world settings and provide deep qualitative feedback on their utility.
 The CFDE's Metrics Working Group already serves a similar function, bringing together representatives from multiple centers and NIH program staff to iteratively evaluate which metrics are most informative and feasible before expanding collection portfolio-wide.
+The Metrics Working Group also serves as a forum for sharing best practices, troubleshooting challenges, and coordinating with other evaluation efforts across the NIH data ecosystem.
+As the CFDE and the broader NIH data ecosystem evolve, these frameworks and metrics should be treated as living documents, revised iteratively based on emerging evidence and community feedback. 
+The Metrics Working Group will also help regularly review the relevance, presentation, and utility of collected metrics, not just for internal evaluation but also for external communication with stakeholders, including the scientific community, funders, and the public. 
 Ultimately, the long-term measure of evaluation success is whether the ecosystem achieves practice change: a measurable shift toward data-driven discovery, broader cross-disciplinary collaboration, and more equitable access to computational resources.
+While this outcome is difficult to measure directly, the metrics described here — particularly those related to user behavior and scientific data quality — provide leading indicators that NIH and the CFDE can track over time to assess progress toward this goal.
 
 Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — enables the portfolio-level comparisons that have historically been impossible.
 The ICC's dashboard and metric collection infrastructure demonstrate that such standardization is achievable, and the frameworks presented here, grounded in real evaluation data from the CFDE, offer a blueprint for extending this approach to the broader NIH data ecosystem.

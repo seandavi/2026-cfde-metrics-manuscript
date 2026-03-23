@@ -28,6 +28,7 @@ falquaddoomi
 Findable
 FISMA
 frontend
+funders
 Ganesh
 genomic
 GH
