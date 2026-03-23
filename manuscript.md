@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-23" />
   <meta name="citation_publication_date" content="2026-03-23" />
   <meta property="article:published_time" content="2026-03-23" />
-  <meta name="dc.modified" content="2026-03-23T13:43:27+00:00" />
-  <meta property="article:modified_time" content="2026-03-23T13:43:27+00:00" />
+  <meta name="dc.modified" content="2026-03-23T14:06:39+00:00" />
+  <meta property="article:modified_time" content="2026-03-23T14:06:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -54,7 +54,7 @@ header-includes: |
   <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Vince Rubinetti" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-4655-3773" />
   <meta name="citation_author" content="Casey Greene" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f2468cf5a5649f94749285e4e95bd790ceb8fcea/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f2468cf5a5649f94749285e4e95bd790ceb8fcea/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f2468cf5a5649f94749285e4e95bd790ceb8fcea/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/f2468cf5a5649f94749285e4e95bd790ceb8fcea/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@df9cc42](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/df9cc42f9e2da921b4a9de673ac8ebf3da3c36fe)
+from [seandavi/2026-cfde-metrics-manuscript@f2468cf](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/f2468cf5a5649f94749285e4e95bd790ceb8fcea)
 on March 23, 2026.
 </em></small>
 
@@ -164,7 +164,7 @@ on March 23, 2026.
 + **Vince Rubinetti**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-4655-3773](https://orcid.org/0000-0002-4655-3773)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [vincerubinetti](https://github.com/vincerubinetti)
     <br>
