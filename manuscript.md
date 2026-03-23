@@ -29,8 +29,8 @@ header-includes: |
   <meta name="dc.date" content="2026-03-23" />
   <meta name="citation_publication_date" content="2026-03-23" />
   <meta property="article:published_time" content="2026-03-23" />
-  <meta name="dc.modified" content="2026-03-23T13:32:55+00:00" />
-  <meta property="article:modified_time" content="2026-03-23T13:32:55+00:00" />
+  <meta name="dc.modified" content="2026-03-23T13:39:27+00:00" />
+  <meta property="article:modified_time" content="2026-03-23T13:39:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -67,9 +67,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/e8df3cb4e3dfbd142cba376fe9156af3746460b6/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/4268416a74a12891b0aac33bd93a720b1b1583ec/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@e8df3cb](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/e8df3cb4e3dfbd142cba376fe9156af3746460b6)
+from [seandavi/2026-cfde-metrics-manuscript@4268416](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/4268416a74a12891b0aac33bd93a720b1b1583ec)
 on March 23, 2026.
 </em></small>
 
@@ -525,6 +525,12 @@ While this outcome is difficult to measure directly, the metrics described here 
 
 Standardizing a core set of metrics across all NIH Common Fund programs — while allowing program-specific extensions — enables the portfolio-level comparisons that have historically been impossible.
 The ICC's dashboard and metric collection infrastructure demonstrate that such standardization is achievable, and the frameworks presented here, grounded in real evaluation data from the CFDE, offer a blueprint for extending this approach to the broader NIH data ecosystem.
+
+## Acknowledgments
+
+This work was supported by the National Institutes of Health under grant U54OD036472, the CFDE Integration and Coordination Center (ICC).
+We thank the CFDE ICC Metrics Working Group for their ongoing contributions to the development and implementation of these evaluation frameworks and metrics, including representatives from the Data Analysis Center, Data Commons, Knowledge Center, and Training Center, as well as NIH program staff. 
+We also thank the CFDE project teams for their collaboration in sharing data and providing feedback on the dashboard and metrics collection processes.
 
 
 

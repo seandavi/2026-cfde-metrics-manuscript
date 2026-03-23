@@ -157,3 +157,6 @@ content/05.cfde-metrics-paper.md:287:funders
 content/05.cfde-metrics-paper.md:289:CFDE
 content/05.cfde-metrics-paper.md:292:CFDE
 content/05.cfde-metrics-paper.md:292:ICC's
+content/05.cfde-metrics-paper.md:296:CFDE
+content/05.cfde-metrics-paper.md:297:CFDE
+content/05.cfde-metrics-paper.md:298:CFDE
