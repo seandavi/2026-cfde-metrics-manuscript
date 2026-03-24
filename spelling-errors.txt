@@ -3,7 +3,8 @@ Alquaddoomi
 Anschutz
 APM
 backend
-Bibliometric
+bibliometric
+Bioconductor
 BioData
 bioinformatics
 BioProject
@@ -12,8 +13,7 @@ CFDE
 CFDE’s
 cgreene
 Clarivate
-Codebase
-collectiong
+codebase
 CRDC
 CrossRef
 curation
@@ -21,7 +21,6 @@ CWIC
 discoverability
 DRC
 DSM
-Eigenfactor
 eval
 FAIRplus
 falquaddoomi
@@ -48,7 +47,7 @@ Ivich
 ivichadriana
 KPI
 Lange
-lifecycle
+Lifecycle
 linkability
 Matomo
 metabolomic
@@ -60,7 +59,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-Omics
+omics
 onboarded
 OpenAlex
 operationalize
@@ -69,6 +68,7 @@ PIsCO
 pre
 programmatically
 proteomics
+README
 Reimplementation
 representativeness
 reusability
@@ -79,12 +79,15 @@ scalable
 Scopus
 seandavis
 Semrush
+signifier
 Similarweb
+sophsticated
+sunsetting
 TCGA
 techvik
 TOPMed
 unshared
-Uptime
+uptime
 validator
 Vikram
 vincerubinetti
