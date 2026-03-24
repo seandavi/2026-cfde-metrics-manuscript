@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://seandavi.github.io/2026-cfde-metrics-manuscript/>.
-The permalink for this webpage version is <https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c7f501e859c6d9ea75a6973688166fc1983dbec5/>.
+The permalink for this webpage version is <https://seandavi.github.io/2026-cfde-metrics-manuscript/v/d94694c19e75930fe5f7e0e2d3eaa32294a32a7a/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://seandavi.github.io/2026-cfde-metrics-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c7f501e859c6d9ea75a6973688166fc1983dbec5`](https://github.com/seandavi/2026-cfde-metrics-manuscript/commit/c7f501e859c6d9ea75a6973688166fc1983dbec5).
+[`d94694c19e75930fe5f7e0e2d3eaa32294a32a7a`](https://github.com/seandavi/2026-cfde-metrics-manuscript/commit/d94694c19e75930fe5f7e0e2d3eaa32294a32a7a).
