@@ -59,7 +59,7 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-omics
+Omics
 onboarded
 OpenAlex
 operationalize
@@ -87,7 +87,7 @@ TCGA
 techvik
 TOPMed
 unshared
-uptime
+Uptime
 validator
 Vikram
 vincerubinetti
