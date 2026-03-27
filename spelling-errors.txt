@@ -3,7 +3,7 @@ Alquaddoomi
 Anschutz
 APM
 backend
-bibliometric
+Bibliometric
 Bioconductor
 BioData
 bioinformatics
@@ -12,10 +12,10 @@ biospecimen
 CFDE
 CFDE’s
 cgreene
+citiation
 Clarivate
 codebase
 CRDC
-CrossRef
 curation
 CWIC
 discoverability
@@ -59,12 +59,13 @@ NeuroMorpho
 NHLBI
 NIH’s
 Olink
-Omics
+omics
 onboarded
 OpenAlex
 operationalize
 performant
 PIsCO
+platformsor
 pre
 programmatically
 proteomics
@@ -87,10 +88,9 @@ TCGA
 techvik
 TOPMed
 unshared
-Uptime
+uptime
 validator
 Vikram
 vincerubinetti
 VPN
 workspaces
-XXXX

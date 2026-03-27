@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2026-03-25'
+date-meta: '2026-03-27'
 author-meta:
 - Ethan M. Lange
 - Vikram Adithya Ganesh
@@ -26,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
-  <meta name="dc.date" content="2026-03-25" />
-  <meta name="citation_publication_date" content="2026-03-25" />
-  <meta property="article:published_time" content="2026-03-25" />
-  <meta name="dc.modified" content="2026-03-25T15:16:13+00:00" />
-  <meta property="article:modified_time" content="2026-03-25T15:16:13+00:00" />
+  <meta name="dc.date" content="2026-03-27" />
+  <meta name="citation_publication_date" content="2026-03-27" />
+  <meta property="article:published_time" content="2026-03-27" />
+  <meta name="dc.modified" content="2026-03-27T19:09:27+00:00" />
+  <meta property="article:modified_time" content="2026-03-27T19:09:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -51,7 +51,6 @@ header-includes: |
   <meta name="citation_author_orcid" content="0000-0002-6056-9771" />
   <meta name="citation_author" content="Adriana Ivich" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
   <meta name="citation_author" content="Vince Rubinetti" />
   <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045" />
   <meta name="citation_author_orcid" content="0000-0002-4655-3773" />
@@ -67,9 +66,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6ec1265628102f212fefdba0c11142ddc3383a4f/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6ec1265628102f212fefdba0c11142ddc3383a4f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6ec1265628102f212fefdba0c11142ddc3383a4f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -91,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6ec1265628102f212fefdba0c11142ddc3383a4f/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@6ec1265](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/6ec1265628102f212fefdba0c11142ddc3383a4f)
-on March 25, 2026.
+from [seandavi/2026-cfde-metrics-manuscript@6af765a](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/6af765a05f55cc7ee141e7f90f4794fe56f7388c)
+on March 27, 2026.
 </em></small>
 
 
@@ -151,8 +150,6 @@ on March 25, 2026.
 
 + **Adriana Ivich**
   <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [ivichadriana](https://github.com/ivichadriana)
     <br>
@@ -395,26 +392,26 @@ More broadly, evaluating the return on investment (ROI) of a data ecosystem requ
 Cloud computing introduces additional complexity, as costs are provider-specific, usage-dependent, and subject to change unpredictably [@doi:10.1093/jamia/ocab278].
 A summary of all metrics across frameworks is provided in Table {@tbl:metrics-summary}.
 
-| Metric | Difficulty | How Collected | Value | Lifecycle Phase | Notes |
+| Metric | Difficulty of Collection | How Collected | Value | Lifecycle Phase | Notes |
 | :---- | :---- | :---- | :---- | :---- | :---- |
 | **User Behavior Framework** |  |  |  |  |  |
-|  *page views*  |  Easy  |  Google Analytics  |  Low  | Mid |  A minimum indicator of interest.   |
-|  *time on page*  |  Easy  |  Google Analytics  |  Low  | Mid |  A minimum indicator of interest.  |
-|  *actions/triggers*  |  Easy  |  Google Analytics (Tag Manager)  |  Medium  | Mid |  A moderate indicator of interest.   |
-|  *priority link clicks*  |  Easy  |  Google Analytics (Tag Manager)  |  Medium  | Mid |  A moderate indicator of interest.  |
-|  *new vs returning users*  |  Medium  |  Google Analytics  |  Medium  | Mid |  A moderate indicator of continuing interest.  |
-|  *downloads*  |  Easy  |  Google Analytics or Server-side logs  |  Medium-High  | Mid |  A strong indicator of interest. Downloading not equivalent to usage.  |
+|  *page views*  |  Easy  |  Google Analytics or Matomo or similar platforms  |  Low  | Mid |  A minimum indicator of interest.   |
+|  *time on page*  |  Easy  |  Google Analytics  or Matomo or similar platforms |  Low  | Mid |  A minimum indicator of interest.  |
+|  *actions/triggers*  |  Easy  |  Google Analytics or Matomo or similar platforms  |  Medium  | Mid |  A moderate indicator of interest.   |
+|  *priority link clicks*  |  Easy  |  Google Analytics or Matomo or similar platforms |  Medium  | Mid |  A moderate indicator of interest.  |
+|  *new vs returning users*  |  Easy  |  Google Analytics or Matomo or similar platforms  |  Medium  | Mid |  A moderate indicator of continuing interest.  |
+|  *downloads*  |  Easy  |  Google Analytics  or Matomo or similar platforms or Server-side logs  |  Medium-High  | Mid |  A strong indicator of interest. Downloading not equivalent to usage.  |
 |  *compute jobs*  |  Easy  |  Compute scheduler logs or cloud environment logs  |  High  | Mid |  A direct indicator of interest.  |
-|  *tool downloads*  |  Easy  |  Google Analytics or server-side logs  |  Medium-High  | Mid |  A strong indicator of interest.  |
-|  *tool usage*  |  Easy  |  Google Analytics or API logs  |  High  | Mid |  A direct indicator of interest.  |
-|  *trend downloads*  |  Medium  |  Google Analytics or server-side logs BI tools for visualization  |  Medium-High  | Mid–Late |  A strong indicator of change in interest over time.  |
-|  *trend compute jobs*  |  Medium  |  Compute scheduler logs or cloud environment logs BI tools for visualization  |  High  | Mid–Late |  A direct indicator of change in interest over time.  |
-|  *number grants*  |  Hard  |  NIH RePORTER Self-reporting  |  High  | Mid–Late |  Relevant grant data not publicly available.  |
+|  *tool downloads*  |  Easy  |  Google Analytics or Matomo or similar platforms or server-side logs  |  Medium-High  | Mid |  A strong indicator of interest.  |
+|  *tool usage*  |  Easy  |  Google Analytics  or Matomo or similar platformsor API logs  |  High  | Mid |  A direct indicator of interest.  |
+|  *trend downloads*  |  Medium  |  Google Analytics  or Matomo or similar platforms or server-side logs, BI tools for visualization  |  Medium-High  | Mid–Late |  A strong indicator of change in interest over time.  |
+|  *trend compute jobs*  |  Medium  |  Compute scheduler logs or cloud environment logs, BI tools for visualization  |  High  | Mid–Late |  A direct indicator of change in interest over time.  |
+|  *number grants*  |  Hard  |  NIH RePORTER, Self-reporting  |  High  | Mid–Late |  Relevant grant data not publicly available.  |
 |  *number presentations*  |  Hard  |  Self-reporting  |  Medium  | Mid–Late |  Data difficult to track and often not available in sufficient detail.  |
-|  *number citations*  |  Easy  |  Google Scholar or CrossRef or other similar platforms  |  High  | Mid–Late |  A direct indicator of data value. Can miss downstream cumulative value.  |
-|  *number secondary citations*  |  Medium  |    |  High  | Late |  An indirect measure of "downstream" value of initial publications.  |
-|  *citations \+ secondary citations*  |  Medium  |    |  High  | Late |  A measure of cumulative impact over time of study data.  |
-|  *trend citations*  |  Medium  |    |  High  | Late |  Measures change in impact of data over time. Subject to time lag in publications.  |
+|  *number citations*  |  Easy  |  Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms  |  High  | Mid–Late |  A direct indicator of data value. Can miss downstream cumulative value.  |
+|  *number secondary citations*  |  Medium  |  Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms  |  High  | Late |  An indirect measure of "downstream" value of initial publications.  |
+|  *citations \+ secondary citations*  |  Medium  | Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or citiation network analysis  |  High  | Late |  A measure of cumulative impact over time of study data.  |
+|  *trend citations*  |  Medium  | Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms, BI tools   |  High  | Late |  Measures change in impact of data over time. Subject to time lag in publications.  |
 |  *data citation rate*  |  Hard  |  Full-text search for accession numbers, Methods section mining  |  High  | Mid–Late |  <30% of secondary analyses formally cite datasets. Multi-pronged tracking required.  |
 |  *perceived value (user surveys)*  |  Medium  |  Structured surveys (ISSM/TAM framework)  |  High  | Mid–Late |  Entropy-weighted: dataset breadth, timeliness, search comprehensiveness, responsiveness.  |
 |  *cloud adoption rate*  |  Medium  |  Cloud workspace logs vs. download logs  |  Medium-High  | Mid–Late |  Proxy for computational paradigm shift (cloud vs. local analysis).  |
@@ -434,18 +431,18 @@ A summary of all metrics across frameworks is provided in Table {@tbl:metrics-su
 |  *software good practices score*  |  Medium  |  ELIXIR Top 10 framework; automated collection via PIsCO  |  High  | All |  Covers version control, discoverability, automated builds, test data, documentation.  |
 |  |  |  |  |  |  |
 | ***Operations and Finance*** **Framework** |  |  |  |  |  |
-|  *uptime*  |  Easy  |  Uptime monitoring tool based on infrastructure/cloud used  |  Medium-Low  | Mid–Late |  Measure of server stability.  |
-|  *page load time*  |  Easy  |  Google Analytics  |  Medium  | Mid–Late |  Measure of server performance.   |
-|  *latency*  |  Easy  |  Google Analytics ( not real-time)  |  Medium  | Mid–Late |  Measure of server performance.  |
+|  *uptime*  |  Easy  |  Application Performance Monitoring (APM) tools  |  Medium-Low  | Mid–Late |  Measure of server stability.  |
+|  *page load time*  |  Easy  |  Application Performance Monitoring (APM) tools   |  Medium  | Mid–Late |  Measure of server performance.   |
+|  *latency*  |  Easy  |  Application Performance Monitoring (APM) tools or Google Analytics ( not real-time)  |  Medium  | Mid–Late |  Measure of server performance.  |
 |  *server errors*  |  Easy  |  Server-side logs or Application Performance Monitoring (APM) tools  |  Medium  | Mid–Late |  Measure of server stability and performance.  |
 |  *client errors*  |  Medium  |  Application logs or Application Performance Monitoring (APM) tools  |  Low  | Mid–Late |  Measure of errors on client end. Possible not addressable.  |
 |  *download speed*  |  Easy  |  Server-side logs or Application Performance Monitoring (APM) tools  |  Low-Medium  | Mid–Late |  Download times can be function of client connection speeds.  |
-|  *cpu/gpu usage*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
-|  *memory usage*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
+|  *cpu/gpu usage*  |  Easy  |  Application Performance Monitoring (APM) tools   |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
+|  *memory usage*  |  Easy  |  Application Performance Monitoring (APM) tools  |  High  | Mid–Late |  Important to evaluate performance and additional needs.  |
 |  *number of users*  |  Easy  |  Google Analytics or IAM logs for granular details (if available)  |  Medium  | Mid–Late |  Indirect measure of computational load/burden.  |
-|  *client queue times*  |  Easy  |  Cloud/infrastructure logs or dashboards  |  Medium-High  | Mid–Late |  Long queue times can result in less usage.  |
-|  *job run times*  |  Easy  |  Cloud/infrastructure compute logs or dashboards  |  Medium  | Mid–Late |  Excessive long job run times can result in less usage.  |
-|  *funding cost*  |  Easy  |    |  High  | All |  Total cost of study. Critical element in evaluating study feasibility and sustainability.  |
+|  *client queue times*  |  Easy  |  Application Performance Monitoring (APM) tools or Cloud/infrastructure logs |  Medium-High  | Mid–Late |  Long queue times can result in less usage.  |
+|  *job run times*  |  Easy  |  Application Performance Monitoring (APM) tools or Cloud/infrastructure compute logs |  Medium  | Mid–Late |  Excessive long job run times can result in less usage.  |
+|  *funding cost*  |  Easy  |  NIH RePORTER  |  High  | All |  Total cost of study. Critical element in evaluating study feasibility and sustainability.  |
 |  *sample collection costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
 |  *sample measurement costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
 |  *QC costs*  |  Medium  |    |  Medium  | Early |  Cost typically associated with early study period. Cost does not impact sustainability.  |
