@@ -43,7 +43,7 @@ authors:
   - github: ivichadriana
     name: Adriana Ivich
     initials: AI
-    orcid: XXXX-XXXX-XXXX-XXXX
+    # orcid: XXXX-XXXX-XXXX-XXXX
     affiliations:
       - Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA 80045
     funders:
