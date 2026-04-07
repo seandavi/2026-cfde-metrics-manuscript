@@ -47,7 +47,7 @@ Ivich
 ivichadriana
 KPI
 Lange
-lifecycle
+Lifecycle
 linkability
 Matomo
 metabolomic

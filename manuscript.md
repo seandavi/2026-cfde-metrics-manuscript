@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2026-03-27'
+date-meta: '2026-04-07'
 author-meta:
 - Ethan M. Lange
 - Vikram Adithya Ganesh
@@ -26,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
-  <meta name="dc.date" content="2026-03-27" />
-  <meta name="citation_publication_date" content="2026-03-27" />
-  <meta property="article:published_time" content="2026-03-27" />
-  <meta name="dc.modified" content="2026-03-27T19:09:27+00:00" />
-  <meta property="article:modified_time" content="2026-03-27T19:09:27+00:00" />
+  <meta name="dc.date" content="2026-04-07" />
+  <meta name="citation_publication_date" content="2026-04-07" />
+  <meta property="article:published_time" content="2026-04-07" />
+  <meta name="dc.modified" content="2026-04-07T21:12:53+00:00" />
+  <meta property="article:modified_time" content="2026-04-07T21:12:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/6af765a05f55cc7ee141e7f90f4794fe56f7388c/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@6af765a](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/6af765a05f55cc7ee141e7f90f4794fe56f7388c)
-on March 27, 2026.
+from [seandavi/2026-cfde-metrics-manuscript@54fdb90](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/54fdb906730976f2b8bedfabee475988eec5f08f)
+on April 7, 2026.
 </em></small>
 
 
