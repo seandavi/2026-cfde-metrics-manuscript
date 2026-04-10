@@ -1,9 +1,10 @@
 Adithya
 Alquaddoomi
 Anschutz
+Anthropic
 APM
 backend
-Bibliometric
+bibliometric
 Bioconductor
 BioData
 bioinformatics

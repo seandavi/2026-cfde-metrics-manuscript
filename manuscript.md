@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2026-04-07'
+date-meta: '2026-04-10'
 author-meta:
 - Ethan M. Lange
 - Vikram Adithya Ganesh
@@ -26,11 +26,11 @@ header-includes: |
   <meta name="citation_title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="og:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
   <meta property="twitter:title" content="Metrics across the lifecycle: a framework for evaluating NIH biomedical data ecosystems" />
-  <meta name="dc.date" content="2026-04-07" />
-  <meta name="citation_publication_date" content="2026-04-07" />
-  <meta property="article:published_time" content="2026-04-07" />
-  <meta name="dc.modified" content="2026-04-07T21:12:53+00:00" />
-  <meta property="article:modified_time" content="2026-04-07T21:12:53+00:00" />
+  <meta name="dc.date" content="2026-04-10" />
+  <meta name="citation_publication_date" content="2026-04-10" />
+  <meta property="article:published_time" content="2026-04-10" />
+  <meta name="dc.modified" content="2026-04-10T17:28:56+00:00" />
+  <meta property="article:modified_time" content="2026-04-10T17:28:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/" />
   <meta name="citation_pdf_url" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/" />
-  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c3bd4a56aa51a8fcb0102735c502a1e43bedee4e/" />
+  <meta name="manubot_html_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c3bd4a56aa51a8fcb0102735c502a1e43bedee4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c3bd4a56aa51a8fcb0102735c502a1e43bedee4e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -90,10 +90,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/54fdb906730976f2b8bedfabee475988eec5f08f/))
+([permalink](https://seandavi.github.io/2026-cfde-metrics-manuscript/v/c3bd4a56aa51a8fcb0102735c502a1e43bedee4e/))
 was automatically generated
-from [seandavi/2026-cfde-metrics-manuscript@54fdb90](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/54fdb906730976f2b8bedfabee475988eec5f08f)
-on April 7, 2026.
+from [seandavi/2026-cfde-metrics-manuscript@c3bd4a5](https://github.com/seandavi/2026-cfde-metrics-manuscript/tree/c3bd4a56aa51a8fcb0102735c502a1e43bedee4e)
+on April 10, 2026.
 </em></small>
 
 
@@ -459,7 +459,7 @@ Table: Summary of metrics across the three frameworks, organized by difficulty o
 
 The CFDE presents some challenges to implementation of these frameworks and also some opportunities.
 The CFDE Integration and Coordination Center (ICC) collects and centralizes metrics across the portfolio, which is a critical step toward enabling real-time monitoring and standardized metrics.
-Because there are so many projects, data coordinating centers, and five CFDE centers, the ICC has prioritized a subset of metrics that are both informative and feasible to collect across all projects, with the intention of expanding over time.
+Because there are so many projects, data coordinating centers, and five CFDE centers, the ICC has prioritized a subset of metrics (see Table {@tbl:metrics-cfde}) that are both informative and feasible to collect across all projects, with the intention of expanding over time.
 The ICC has also developed a dashboard to visualize these metrics at the project and portfolio level, providing actionable insights for program managers and project teams.
 
 | Source | Metrics collected |
@@ -476,7 +476,7 @@ The ICC has also developed a dashboard to visualize these metrics at the project
 | Google Analytics | Website engagement metrics (page views, new vs. returning users, top countries, etc.) |
 
 Table: Summary of data sources and metrics collected by the CFDE ICC dashboard as of January 2026. 
-Note that this is a subset of the full set of metrics described in this paper, selected for feasibility and informativeness across the portfolio. {#tbl:metrics-summary}
+Note that this is a subset of the full set of metrics described in this paper, selected for feasibility and informativeness across the portfolio. {#tbl:metrics-cfde}
 
 Collection of certain *public value* metrics is relatively straightforward when data are already collected by projects for their own reporting purposes (e.g., publications, presentations, grants) or are accessible via public databases (e.g., PubMed, NIH RePORTER).
 However, the collection of GitHub and Google Analytics data requires coordination with project teams to ensure that the ICC has access to these data sources.
@@ -546,6 +546,10 @@ We also thank the CFDE project teams for their collaboration in sharing data and
 
 All authors meet the International Committee of Medical Journal Editors (ICMJE) criteria for authorship. 
 Ethan M. Lange, Vikram Adithya Ganesh, Faisal Alquaddoomi, David Mayer, Adriana Ivich, Vince Rubinetti, Casey Greene, and Sean Davis each made substantial contributions to the conception or design of the work and to the acquisition, analysis, or interpretation of data; participated in drafting the manuscript or revising it critically for important intellectual content; approved the final version for publication; and agreed to be accountable for all aspects of the work.
+
+## Declaration of generative AI and AI-assisted technologies in the writing process
+
+During the preparation of this work the author(s) used Claude from Anthropic in order to improve readability and clarity. After using this tool/service, the author(s) reviewed and edited the content as needed and take(s) full responsibility for the content of the published article.
 
 
 

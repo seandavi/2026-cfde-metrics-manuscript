@@ -169,11 +169,13 @@ content/05.cfde-metrics-paper.md:212:APM
 content/05.cfde-metrics-paper.md:224:lifecycle
 content/05.cfde-metrics-paper.md:228:CFDE
 content/05.cfde-metrics-paper.md:229:CFDE
+content/05.cfde-metrics-paper.md:230:cfde
 content/05.cfde-metrics-paper.md:230:CFDE
 content/05.cfde-metrics-paper.md:235:CFDE
 content/05.cfde-metrics-paper.md:239:iCite
 content/05.cfde-metrics-paper.md:241:README
 content/05.cfde-metrics-paper.md:246:CFDE
+content/05.cfde-metrics-paper.md:247:cfde
 content/05.cfde-metrics-paper.md:252:onboarded
 content/05.cfde-metrics-paper.md:256:backend
 content/05.cfde-metrics-paper.md:256:frontend
@@ -210,3 +212,4 @@ content/05.cfde-metrics-paper.md:316:Ivich
 content/05.cfde-metrics-paper.md:316:Lange
 content/05.cfde-metrics-paper.md:316:Rubinetti
 content/05.cfde-metrics-paper.md:316:Vikram
+content/05.cfde-metrics-paper.md:320:Anthropic
