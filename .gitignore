@@ -40,6 +40,18 @@ index.docx
 index.tex
 index.aux
 index.log
+significance.html
+significance.pdf
+significance.docx
+significance.tex
+outstanding-questions.html
+outstanding-questions.pdf
+outstanding-questions.docx
+outstanding-questions.tex
+key-references.html
+key-references.pdf
+key-references.docx
+key-references.tex
 
 # Legacy Manubot output kept under output/ during transition;
 # this ignores transient root-level images symlink that Manubot used to create.

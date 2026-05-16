@@ -1,0 +1,10 @@
+---
+title: "Significance statement"
+subtitle: "Lifecycle-aware evaluation of biomedical data ecosystems"
+format:
+  docx: default
+  pdf: default
+  html: default
+---
+
+{{< include content/boxes/significance.md >}}
