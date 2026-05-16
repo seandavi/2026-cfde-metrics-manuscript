@@ -20,7 +20,7 @@ Full catalog of metrics across the three frameworks, organized by difficulty of 
 |  *number presentations*  |  Hard  |  Self-reporting  |  Medium  | Mid–Late |  Data difficult to track and often not available in sufficient detail.  |
 |  *number citations*  |  Easy  |  Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms  |  High  | Mid–Late |  A direct indicator of data value. Can miss downstream cumulative value.  |
 |  *number secondary citations*  |  Medium  |  Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms  |  High  | Late |  An indirect measure of "downstream" value of initial publications.  |
-|  *citations \+ secondary citations*  |  Medium  | Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or citiation network analysis  |  High  | Late |  A measure of cumulative impact over time of study data.  |
+|  *citations \+ secondary citations*  |  Medium  | Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or citation network analysis  |  High  | Late |  A measure of cumulative impact over time of study data.  |
 |  *trend citations*  |  Medium  | Google Scholar, PubMed, Scopus, Clarivate, OpenAlex, or other similar platforms, BI tools   |  High  | Late |  Measures change in impact of data over time. Subject to time lag in publications.  |
 |  *data citation rate*  |  Hard  |  Full-text search for accession numbers, Methods section mining  |  High  | Mid–Late |  <30% of secondary analyses formally cite datasets. Multi-pronged tracking required.  |
 |  *perceived value (user surveys)*  |  Medium  |  Structured surveys (ISSM/TAM framework)  |  High  | Mid–Late |  Entropy-weighted: dataset breadth, timeliness, search comprehensiveness, responsiveness.  |
