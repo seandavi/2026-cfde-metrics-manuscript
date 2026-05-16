@@ -100,17 +100,27 @@ abstract: |
 {{< include content/boxes/glossary.md >}}
 
 <!--
-SEPARATE-FILE DELIVERABLES at Trends Open submission time.
-Included below in the rendered preview for review only; uploaded
-to Editorial Manager as standalone Word files per the live
-Trends Open guidelines (see header comments in each file).
+The three blocks below (Significance, Outstanding Questions,
+Key References) are SEPARATE-FILE DELIVERABLES at Trends Open
+submission time. Each has its own top-level .qmd file at the project
+root (significance.qmd, outstanding-questions.qmd, key-references.qmd)
+that renders as its own Word document for upload to Editorial Manager.
+
+We include them here too, wrapped in `content-visible: html`, so the
+HTML preview at /v/<sha>/ shows the full submission packet in one
+place for review. They are intentionally omitted from index.pdf and
+index.docx — those are the main-manuscript-only deliverables.
 -->
+
+::: {.content-visible when-format="html"}
 
 {{< include content/boxes/significance.md >}}
 
 {{< include content/boxes/outstanding-questions.md >}}
 
 {{< include content/boxes/key-references.md >}}
+
+:::
 
 # References {.unnumbered}
 

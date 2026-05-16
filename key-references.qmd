@@ -1,0 +1,14 @@
+---
+title: "Key references"
+subtitle: "Lifecycle-aware evaluation of biomedical data ecosystems"
+format:
+  docx: default
+  pdf: default
+  html: default
+bibliography:
+  - references.bib
+  - references.json
+csl: assets/trends-journals.csl
+---
+
+{{< include content/boxes/key-references.md >}}
