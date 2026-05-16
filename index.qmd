@@ -26,14 +26,6 @@ author:
         state: CO
         country: USA
         postal-code: "80045"
-  - name: Faisal Alquaddoomi
-    orcid: 0000-0003-4297-8747
-    affiliations:
-      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
-        city: Aurora
-        state: CO
-        country: USA
-        postal-code: "80045"
   - name: David Mayer
     orcid: 0000-0002-6056-9771
     affiliations:
