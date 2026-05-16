@@ -20,3 +20,4 @@ jobs:
       pull-requests: write
     with:
       project-type: manuscript
+      quarto-version: release
