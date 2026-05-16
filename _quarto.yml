@@ -17,7 +17,7 @@ format:
   html:
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
     theme: cosmo
     embed-resources: true
     include-before-body:
@@ -28,13 +28,13 @@ format:
     geometry:
       - margin=1in
     toc: false
-    number-sections: true
+    number-sections: false
     colorlinks: true
     fig-pos: "H"
     keep-tex: true
   docx:
     toc: false
-    number-sections: true
+    number-sections: false
 
 execute:
   echo: false
