@@ -1,3 +1,14 @@
+<!--
+SUBMISSION NOTE (Trends Open):
+The "Key references" box is uploaded as a separate Word file in
+Editorial Manager. Up to 5 references, each with a 30-50 word
+annotation that explains the reference's importance to the
+manuscript's central idea (not a summary). At most one entry may be
+from the authors' own work (current: 0 self-citations). No in-text
+citation of the box is required. The box is exempt from the
+manuscript's display-element/text-box count.
+-->
+
 ::: {.callout-note title="Key References"}
 
 1. Wilkinson MD et al. The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data*, 2016 [@doi:10.1038/sdata.2016.18]. The foundational definition of the principles that anchor the scientific-quality framework throughout this paper.
