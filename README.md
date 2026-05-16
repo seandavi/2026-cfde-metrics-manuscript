@@ -21,7 +21,7 @@ The manuscript is authored in [Quarto](https://quarto.org) and uses [quartobot](
 - `content/images/` — figures
 - `references.bib` — hand-curated bibliography entries (currently empty)
 - `references.json` — auto-resolved entries written by `quartobot resolve` (gitignored; regenerated on every render)
-- `assets/style.csl` — citation style
+- `assets/trends-journals.csl` — citation style (Cell Press Trends journals; non-superscript bracketed numeric, e.g. `[1]`, `[1,5,7]`)
 - `_quarto.yml` — project config; wires the `quartobot resolve` pre-render hook
 - `_version-banner.html[.template]` — per-commit version banner injected into the HTML output
 - `.github/workflows/render.yml` — CI render and deploy via the upstream quartobot reusable workflow
