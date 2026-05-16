@@ -1,3 +1,14 @@
+<!--
+SUBMISSION NOTE (Trends Open):
+The "Outstanding questions" box is uploaded as a separate Word file
+in Editorial Manager. Max 2,000 characters including spaces (current:
+1,171). Bullets phrased as actual questions. No references. The box
+is exempt from the manuscript's display-element/text-box count. It
+should be called out from the Concluding remarks section as
+'see "Outstanding questions."' and placed as the last box in the
+typeset article (not numbered with other boxes).
+-->
+
 ::: {.callout-note title="Outstanding Questions"}
 
 - At what break-even point does the curation cost of a shared dataset get recovered by downstream reuse, and how should that point inform the decision to invest in further sharing versus letting a resource sunset?

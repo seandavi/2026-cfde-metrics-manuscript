@@ -1,9 +1,15 @@
-::: {.callout-note title="Significance"}
+<!--
+SUBMISSION NOTE (Trends Open):
+This significance statement is uploaded as a separate Word file in
+Editorial Manager, NOT as an in-body element. Max 75 words. No
+citations. Plain language for a general audience (including
+researchers outside the field, students, reporters).
+-->
 
-Public data ecosystems are central infrastructure across biology, medicine, and the data sciences, but whether any given resource is succeeding mostly goes unanswered. Each funded program tracks its own metrics in its own way, which makes portfolio-level comparison effectively impossible.
+::: {.callout-note title="Significance statement"}
 
-Three prioritization frameworks long familiar in product strategy (public value, scientific quality, operations and finance) carry over cleanly to research data resources. Their relative weight shifts predictably across a resource's lifecycle. Uniform metric panels ignore that shift and misallocate funding as a result.
-
-We ground the argument in the NIH Common Fund Data Ecosystem, where a portfolio-wide dashboard now operationalizes the model across 19 programs. The framework generalizes to every federated biomedical data ecosystem and gives evaluators a shared vocabulary, instead of forcing each program to invent its own.
+Public biomedical data ecosystems are now core scientific infrastructure, but each funded program tracks its own metrics differently, so portfolio-level comparison is effectively impossible.
+We argue that three product-strategy frameworks — public value, scientific quality, operations and finance — map onto research data resources, that their weight shifts predictably across a resource's lifecycle, and that ignoring this shift misallocates funding.
+The NIH Common Fund Data Ecosystem operationalizes the model across 19 programs in real time.
 
 :::
