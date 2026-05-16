@@ -1,5 +1,7 @@
 project:
   type: default
+  render:
+    - index.qmd
   # Resolves @doi:, @pmid:, @arxiv:, @isbn:, @url:, @wikidata:, @pmcid:,
   # and bare DOIs before pandoc runs. The resolved CSL JSON lands in
   # references.json (gitignored — regenerated each render) and pandoc

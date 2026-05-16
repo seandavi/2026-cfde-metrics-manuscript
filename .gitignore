@@ -41,3 +41,5 @@ index.docx
 # Legacy Manubot output kept under output/ during transition;
 # this ignores transient root-level images symlink that Manubot used to create.
 /images
+
+/.quarto/
