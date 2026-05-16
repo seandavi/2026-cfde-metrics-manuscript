@@ -11,7 +11,7 @@ project:
 bibliography:
   - references.bib
   - references.json
-csl: assets/style.csl
+csl: assets/trends-journals.csl
 
 format:
   html:
