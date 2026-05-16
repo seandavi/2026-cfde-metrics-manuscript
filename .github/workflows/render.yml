@@ -1,0 +1,22 @@
+# Renders on every push and PR via the upstream reusable workflow.
+# Override inputs in the `with:` block below; see
+#   https://github.com/seandavi/quartobot/blob/main/.github/workflows/render-reusable.yml
+# for the full list.
+
+name: Render
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  render:
+    uses: seandavi/quartobot/.github/workflows/render-reusable.yml@main
+    permissions:
+      contents: write
+      pull-requests: write
+    with:
+      project-type: manuscript

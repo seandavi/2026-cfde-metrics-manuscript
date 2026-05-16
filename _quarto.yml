@@ -1,0 +1,39 @@
+project:
+  type: default
+  # Resolves @doi:, @pmid:, @arxiv:, @isbn:, @url:, @wikidata:, @pmcid:,
+  # and bare DOIs before pandoc runs. The resolved CSL JSON lands in
+  # references.json (gitignored — regenerated each render) and pandoc
+  # citeproc reads it alongside hand-curated entries in references.bib.
+  pre-render: quartobot resolve --from-scan . --output references.json --id-mode citation-key
+
+bibliography:
+  - references.bib
+  - references.json
+csl: assets/style.csl
+
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    theme: cosmo
+    embed-resources: true
+    include-before-body:
+      - _version-banner.html
+  pdf:
+    documentclass: article
+    papersize: letter
+    geometry:
+      - margin=1in
+    toc: false
+    number-sections: true
+    colorlinks: true
+    fig-pos: "H"
+    keep-tex: true
+  docx:
+    toc: false
+    number-sections: true
+
+execute:
+  echo: false
+  warning: false
