@@ -98,9 +98,17 @@ abstract: |
   web analytics data across the portfolio.
 ---
 
-{{< include content/01.bigger_picture.md >}}
+{{< include content/boxes/highlights.md >}}
+
+{{< include content/boxes/significance.md >}}
 
 {{< include content/05.cfde-metrics-paper.md >}}
+
+{{< include content/boxes/outstanding-questions.md >}}
+
+{{< include content/boxes/key-references.md >}}
+
+{{< include content/boxes/glossary.md >}}
 
 # References {.unnumbered}
 
