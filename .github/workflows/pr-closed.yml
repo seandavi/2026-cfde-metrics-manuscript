@@ -18,8 +18,12 @@ jobs:
     steps:
       - name: Check whether gh-pages branch exists
         id: branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git ls-remote --exit-code --heads origin gh-pages >/dev/null 2>&1; then
+          # No checkout has happened yet, so query the API directly rather
+          # than relying on a local `origin` remote.
+          if gh api "repos/${{ github.repository }}/branches/gh-pages" >/dev/null 2>&1; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
           else
             echo "exists=false" >> "$GITHUB_OUTPUT"
