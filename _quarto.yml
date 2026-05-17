@@ -51,14 +51,14 @@ format:
     toc-depth: 3
     number-sections: false
     theme: cosmo
-    # Don't show the PDF / DOCX format-switcher buttons. The CI render
-    # only produces HTML for the website (see render.yml comment for
-    # why). Authors render PDF/DOCX locally for Editorial Manager
-    # upload. The website is for browsing, not for distributing the
-    # publisher-ready files.
+    # PDF / DOCX format-switcher buttons stay hidden. CI's per-format
+    # render loop (--to html, then --to pdf, then --to docx) overwrites
+    # _site/ on each pass, so only the last format's outputs survive
+    # to deploy. Until the upstream workflow runs a single `quarto
+    # render` for website projects (filed: quartobot/quartobot#103),
+    # the buttons would point at files CI doesn't ship. Authors render
+    # all three formats locally for Editorial Manager submission.
     format-links: false
-    include-before-body:
-      - _version-banner.html
   pdf:
     documentclass: article
     papersize: letter
