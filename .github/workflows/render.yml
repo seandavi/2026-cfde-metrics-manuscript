@@ -19,5 +19,17 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      project-type: manuscript
+      # Quartobot's reusable workflow doesn't natively support
+      # project-type: website yet. Workarounds:
+      # 1. project-type=book + book-output-dir=_site → stages _site/
+      # 2. formats: html → render HTML only, since the workflow's
+      #    per-format render loop overwrites _site/ on each pass
+      #    (a single `quarto render` works locally, but the workflow
+      #    does --to html, --to pdf, --to docx separately). HTML-only
+      #    matches what the website preview needs; the submission
+      #    DOCX/PDF deliverables are produced locally for Editorial
+      #    Manager upload anyway.
+      project-type: book
+      book-output-dir: _site
+      formats: html
       quarto-version: release
