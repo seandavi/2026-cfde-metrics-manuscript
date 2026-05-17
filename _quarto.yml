@@ -1,5 +1,10 @@
 project:
-  type: default
+  type: website
+  output-dir: _site
+  # Render targets: the main manuscript plus the three separate-file
+  # submission deliverables (Significance, Outstanding Questions, Key
+  # References). Each renders to its own page in the website and to
+  # standalone .docx/.pdf for Editorial Manager upload.
   render:
     - index.qmd
     - significance.qmd
@@ -10,6 +15,30 @@ project:
   # references.json (gitignored — regenerated each render) and pandoc
   # citeproc reads it alongside hand-curated entries in references.bib.
   pre-render: quartobot resolve --from-scan . --output references.json --id-mode citation-key
+
+website:
+  title: "Lifecycle-aware evaluation of biomedical data ecosystems"
+  description: "Trends Open Opinion article: a lifecycle-aware framework for evaluating federated biomedical data ecosystems, grounded in the NIH Common Fund Data Ecosystem."
+  navbar:
+    background: primary
+    search: false
+    left:
+      - text: "Manuscript"
+        href: index.html
+      - text: "Significance"
+        href: significance.html
+      - text: "Outstanding questions"
+        href: outstanding-questions.html
+      - text: "Key references"
+        href: key-references.html
+    right:
+      - icon: github
+        href: https://github.com/seandavi/2026-cfde-metrics-manuscript
+        aria-label: GitHub source
+  page-footer:
+    left: "Submitted to *Trends Open* under the CC BY 4.0 license."
+    right: |
+      Built with [Quarto](https://quarto.org) and [quartobot](https://github.com/quartobot/quartobot).
 
 bibliography:
   - references.bib
@@ -22,7 +51,6 @@ format:
     toc-depth: 3
     number-sections: false
     theme: cosmo
-    embed-resources: true
     include-before-body:
       - _version-banner.html
   pdf:

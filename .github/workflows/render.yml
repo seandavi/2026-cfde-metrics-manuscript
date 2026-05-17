@@ -19,5 +19,11 @@ jobs:
       contents: write
       pull-requests: write
     with:
-      project-type: manuscript
+      # Quartobot's reusable workflow doesn't natively support
+      # project-type: website yet. Using `book` with a custom
+      # book-output-dir pointed at `_site/` stages the website's
+      # rendered directory tree into public/v/<sha>/ correctly.
+      # Filed upstream as quartobot/quartobot#... (TBD).
+      project-type: book
+      book-output-dir: _site
       quarto-version: release
