@@ -51,6 +51,12 @@ format:
     toc-depth: 3
     number-sections: false
     theme: cosmo
+    # Don't show the PDF / DOCX format-switcher buttons. The CI render
+    # only produces HTML for the website (see render.yml comment for
+    # why). Authors render PDF/DOCX locally for Editorial Manager
+    # upload. The website is for browsing, not for distributing the
+    # publisher-ready files.
+    format-links: false
     include-before-body:
       - _version-banner.html
   pdf:
