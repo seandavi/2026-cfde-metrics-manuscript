@@ -20,11 +20,14 @@ jobs:
       pull-requests: write
     with:
       # Quartobot's reusable workflow doesn't natively support
-      # project-type: website yet. Workaround: project-type=book +
-      # book-output-dir=_site stages the website's output dir tree
-      # correctly. Formats default to html,pdf,docx so the format-
-      # switcher buttons in the rendered pages resolve.
+      # project-type: website yet. Two settings make it work:
+      # 1. project-type=book + book-output-dir=_site stages the
+      #    website's output dir tree.
+      # 2. formats: html — the workflow's per-format render loop
+      #    overwrites _site/ on each pass, so we render html only.
+      #    PDF/DOCX produced locally by authors for Editorial Manager.
       # Filed upstream as quartobot/quartobot#103.
       project-type: book
       book-output-dir: _site
+      formats: html
       quarto-version: release

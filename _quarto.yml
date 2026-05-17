@@ -51,9 +51,14 @@ format:
     toc-depth: 3
     number-sections: false
     theme: cosmo
-    # PDF / DOCX format-switcher links re-enabled. CI now renders
-    # all three formats so the buttons resolve.
-    format-links: true
+    # PDF / DOCX format-switcher buttons stay hidden. CI's per-format
+    # render loop (--to html, then --to pdf, then --to docx) overwrites
+    # _site/ on each pass, so only the last format's outputs survive
+    # to deploy. Until the upstream workflow runs a single `quarto
+    # render` for website projects (filed: quartobot/quartobot#103),
+    # the buttons would point at files CI doesn't ship. Authors render
+    # all three formats locally for Editorial Manager submission.
+    format-links: false
   pdf:
     documentclass: article
     papersize: letter
