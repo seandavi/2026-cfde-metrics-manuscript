@@ -15,10 +15,6 @@ Third, the data-citation gap — fewer than 30% of secondary analyses formally c
 We illustrate the framework with the NIH Common Fund Data Ecosystem as a concrete case study, including the Integration and Coordination Center's first portfolio-wide dashboard, which now operationalizes the model across 19 Common Fund programs in near real time.
 The argument generalizes to every federated biomedical data ecosystem.
 
-The manuscript has seven authors, which exceeds your default cap of six.
-The three frameworks each rest on different methodological subspecialties (bibliometrics, FAIR/data quality, infrastructure economics), and operationalizing them into a portfolio-wide dashboard required parallel contributions across software engineering, evaluation design, and program operations.
-We ask for the editor's agreement to retain all seven; role-by-role contributions in the Trends format can be documented at submission if helpful.
-
 This manuscript has not been published elsewhere and is not under consideration at another journal.
 All authors have approved this submission and the author list.
 We have no competing interests to declare.
