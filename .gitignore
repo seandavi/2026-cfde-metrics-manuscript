@@ -56,6 +56,12 @@ key-references.html
 key-references.pdf
 key-references.docx
 key-references.tex
+preprint.html
+preprint.pdf
+preprint.docx
+preprint.tex
+preprint.aux
+preprint.log
 
 # Legacy Manubot output kept under output/ during transition;
 # this ignores transient root-level images symlink that Manubot used to create.

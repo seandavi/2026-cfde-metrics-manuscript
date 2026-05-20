@@ -1,0 +1,110 @@
+---
+title: "Lifecycle-aware evaluation of biomedical data ecosystems"
+date: today
+lang: en-US
+keywords:
+  - biomedical data ecosystems
+  - research evaluation
+  - FAIR
+  - bibliometrics
+  - NIH Common Fund
+  - data sharing
+author:
+  - name: Ethan M. Lange
+    orcid: 0000-0001-7075-4287
+    affiliations:
+      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+  - name: Vikram Adithya Ganesh
+    orcid: 0009-0009-2056-2696
+    affiliations:
+      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+  - name: Adriana Ivich
+    affiliations:
+      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+  - name: Vince Rubinetti
+    orcid: 0000-0002-4655-3773
+    affiliations:
+      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+  - name: Casey Greene
+    orcid: 0000-0001-8713-9213
+    email: casey.s.greene@cuanschutz.edu
+    affiliations:
+      - name: Department of Biomedical Informatics, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+  - name: Sean Davis
+    orcid: 0000-0002-8991-6458
+    email: seandavi@gmail.com
+    corresponding: true
+    affiliations:
+      - name: Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus
+        city: Aurora
+        state: CO
+        country: USA
+        postal-code: "80045"
+funding: "Grant U54OD036472"
+abstract: |
+  Public biomedical data resources have become central scientific
+  infrastructure, but evaluation of these investments is fragmented: each
+  funded program tracks different metrics in different ways, preventing
+  portfolio-level comparison and evidence-driven funding decisions. We
+  construct a structured approach built on three complementary
+  prioritization frameworks: *public value* (user engagement, citations,
+  funded grants), *scientific data quality* (metadata completeness, FAIR
+  compliance, data dictionaries), and *operations and finance*
+  (infrastructure reliability, cost sustainability). The relative weight of
+  each framework shifts predictably across a resource's lifecycle, and
+  uniform metric panels across phases misallocate funding as a result.
+  Drawing on the NIH Common Fund Data Ecosystem, we describe a
+  portfolio-wide dashboard that operationalizes the framework across 19
+  programs in near real time.
+format:
+  pdf:
+    documentclass: article
+    papersize: letter
+    geometry:
+      - margin=1in
+    toc: false
+    number-sections: false
+    colorlinks: true
+    fig-pos: "H"
+    keep-tex: false
+    linestretch: 1.15
+bibliography:
+  - references.bib
+  - references.json
+csl: assets/trends-journals.csl
+---
+
+{{< include content/05.cfde-metrics-paper.md >}}
+
+{{< include content/boxes/glossary.md >}}
+
+{{< include content/boxes/significance.md >}}
+
+{{< include content/boxes/outstanding-questions.md >}}
+
+{{< include content/boxes/key-references.md >}}
+
+# References {.unnumbered}
+
+::: {#refs}
+:::
