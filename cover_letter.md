@@ -1,25 +1,16 @@
-May 16, 2026
+May 20, 2026
 
 Dear Dr. Carnevale and the Trends Open editorial team,
 
-We submit "Lifecycle-aware evaluation of biomedical data ecosystems" for consideration as an Opinion article in *Trends Open*.
+We submit "Lifecycle-aware evaluation of biomedical data ecosystems" as an Opinion article for *Trends Open*.
 
-NIH alone has invested billions of dollars in federated biomedical data ecosystems over the past decade, but each funded program tracks its own metrics in its own way, and portfolio-level comparison is effectively impossible.
-The existing literature already provides the building blocks for a shared evaluation language; the missing piece is committing to a lifecycle-aware weighting principle and operationalizing it at scale.
+NIH has invested billions in federated biomedical data ecosystems over the past decade. Each funded program tracks different metrics in different ways, so portfolio-level comparison is not currently possible. The literature offers most of the components of a shared evaluation language; what is still missing is a program that commits to a lifecycle-aware weighting principle and runs it across a full portfolio.
 
-Three prioritization frameworks from product strategy (public value, scientific quality, and operations and finance) map cleanly onto research data resources.
-The relative weight of each shifts predictably across a resource's lifecycle, and uniform metric panels across all phases misallocate funding in predictable ways.
-Citation-based impact KPIs further compound the problem: with fewer than 30% of secondary analyses formally citing source data, programs that rely on citation counts are measuring reach rather than influence.
-We illustrate the framework with the NIH Common Fund Data Ecosystem and report on the Integration and Coordination Center's first portfolio-wide dashboard, which now operationalizes the model across 19 Common Fund programs in near real time.
-The argument generalizes to other federated biomedical data ecosystems.
+We argue that three prioritization frameworks from product strategy (public value, scientific quality, and operations and finance) apply to research data resources, that their relative weight shifts across a resource's lifecycle, and that the standard practice of using one metric panel for every phase therefore misallocates funding. Fewer than 30% of secondary analyses formally cite source data, so programs that rely on citation counts are measuring reach rather than influence. We use the NIH Common Fund Data Ecosystem as the case study and describe the Integration and Coordination Center's first portfolio-wide dashboard, which now runs the model across 19 Common Fund programs in near real time.
 
-This manuscript has not been published elsewhere and is not under consideration at another journal.
-All authors have approved this submission and the author list.
-We have no competing interests to declare.
+This manuscript has not been published elsewhere and is not under consideration at another journal. All authors have approved the submission and the author list. We declare no competing interests.
 
-We are happy to discuss any aspect of the work, including suggested reviewers and any conflict exclusions.
-
-Thank you for your consideration.
+We can provide reviewer suggestions and any conflict exclusions on request.
 
 Sincerely,
 

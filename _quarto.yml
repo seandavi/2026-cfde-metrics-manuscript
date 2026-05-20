@@ -72,6 +72,9 @@ format:
   docx:
     toc: false
     number-sections: false
+    reference-doc: assets/trends-reference.docx
+    filters:
+      - assets/strip-figures-docx.lua
 
 execute:
   echo: false
