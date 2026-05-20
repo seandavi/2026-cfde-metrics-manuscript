@@ -14,7 +14,7 @@ on:
 
 jobs:
   render:
-    uses: quartobot/quartobot/.github/workflows/render-reusable.yml@main
+    uses: seandavi/quartobot/.github/workflows/render-reusable.yml@main
     permissions:
       contents: write
       pull-requests: write
