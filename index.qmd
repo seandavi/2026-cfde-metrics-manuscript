@@ -70,12 +70,12 @@ abstract: |
   resource: is anyone better off (*public value*), can the data be
   trusted and reused (*data quality and reusability*), and can the
   resource keep running (*operations and finance*). We expect the
-  relative weight of these domains to shift across a resource's
+  relative priority of these domains to shift across a resource's
   lifecycle, so uniform metric panels risk undervaluing
   infrastructure-building. An NIH Common Fund dashboard collects some of
-  these measures across 19 programs, without phase weighting. Funders
+  these measures across 19 programs, without phase priorities. Funders
   and resource communities should agree on shared indicators and test
-  the weights together, grounding portfolio decisions in common
+  the priorities together, grounding portfolio decisions in common
   evidence.
 ---
 
