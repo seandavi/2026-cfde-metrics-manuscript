@@ -63,19 +63,20 @@ author:
         postal-code: "80045"
 funding: "Grant U54OD036472"
 abstract: |
-  Public biomedical data resources have become central scientific
-  infrastructure, but evaluation of these investments is fragmented: each
-  funded program tracks different metrics in different ways, preventing
-  portfolio-level comparison and evidence-driven funding decisions. We
-  propose a framework built on three questions a funder must answer about
-  any data resource: is anyone better off (*public value*), can the data be
-  trusted and reused (*data quality and reusability*), and can the resource
-  keep running (*operations and finance*). We expect the relative weight of
-  these domains to shift across a resource's lifecycle, so uniform metric
-  panels risk undervaluing infrastructure-building.
-  Drawing on the NIH Common Fund Data Ecosystem, we describe a
-  portfolio-wide dashboard that operationalizes the framework across 19
-  programs in near real time.
+  Public biomedical data resources are central scientific
+  infrastructure, but in our experience their evaluation is fragmented:
+  each funded program tracks its own metrics, hindering portfolio-level
+  comparison. We propose a framework of three questions about any data
+  resource: is anyone better off (*public value*), can the data be
+  trusted and reused (*data quality and reusability*), and can the
+  resource keep running (*operations and finance*). We expect the
+  relative priority of these domains to shift across a resource's
+  lifecycle, so uniform metric panels risk undervaluing
+  infrastructure-building. An NIH Common Fund dashboard collects some of
+  these measures across 19 programs, without phase priorities. Funders
+  and resource communities should agree on shared indicators and test
+  the priorities together, grounding portfolio decisions in common
+  evidence.
 ---
 
 {{< include content/05.cfde-metrics-paper.md >}}
