@@ -5,13 +5,23 @@
 -- every callout into a plain level-2 heading (the callout title)
 -- followed by its content, which pandoc's DOCX writer emits as
 -- ordinary styled paragraphs. HTML and PDF keep the callout box.
+--
+-- The separate box deliverables (significance.qmd and friends) are
+-- titled after their single box, so a heading that repeats the
+-- document title is dropped (issue #75).
 
-function Callout(callout)
+local doc_title = ""
+
+local function read_title(meta)
+  doc_title = meta.title and pandoc.utils.stringify(meta.title):lower() or ""
+end
+
+local function unbox(callout)
   local blocks = {}
   -- Quarto stores the title as a block, not inlines; titles here are
   -- plain text, so stringify it.
   local title = callout.title and pandoc.utils.stringify(callout.title) or ""
-  if title ~= "" then
+  if title ~= "" and title:lower() ~= doc_title then
     table.insert(blocks, pandoc.Header(2, title, {class = "unnumbered"}))
   end
   -- A single-paragraph callout stores its content as one Block rather
@@ -21,3 +31,9 @@ function Callout(callout)
   end
   return blocks
 end
+
+-- Meta is visited after blocks, so read the title in a first pass.
+return {
+  {Meta = read_title},
+  {Callout = unbox},
+}
