@@ -6,7 +6,7 @@ Reproduces Figure 1 for:
    NIH Common Fund Data Ecosystem Investments"
 
 Generates a line/area plot showing how the relative priority of each
-evaluation framework shifts across the three lifecycle phases.
+evaluation domain shifts across the three lifecycle phases.
 
 Requirements: numpy, matplotlib, scipy
   pip install numpy matplotlib scipy
@@ -27,7 +27,7 @@ import matplotlib.patches as mpatches
 from scipy.interpolate import PchipInterpolator
 
 # ---------------------------------------------------------------------------
-# 1. Data — relative priority of each framework at each lifecycle phase
+# 1. Data — relative priority of each domain at each lifecycle phase
 #    Scale: 0 (low) to 1 (high). Values reflect the paper's core argument.
 # ---------------------------------------------------------------------------
 
@@ -37,30 +37,30 @@ phase_labels = ["Early\n(Infrastructure &\nCollection)",
                 "Mid\n(Active Use\n& Impact)",
                 "Late\n(Sustainability\n& Legacy)"]
 
-# Relative priority per framework per phase
+# Relative priority per domain per phase
 priorities = {
-    "Public Value":               np.array([0.35, 0.90, 0.55]),
-    "Scientific Data Quality":    np.array([0.85, 0.80, 0.50]),
-    "Operations & Finance":       np.array([0.85, 0.50, 0.85]),
+    "Public value":                 np.array([0.35, 0.90, 0.55]),
+    "Data quality and reusability": np.array([0.85, 0.80, 0.50]),
+    "Operations and finance":       np.array([0.85, 0.50, 0.85]),
 }
 
 # Colors — consistent with the Excalidraw matrix diagram
 colors = {
-    "Public Value":            "#1971c2",   # blue
-    "Scientific Data Quality": "#e8590c",   # orange
-    "Operations & Finance":    "#2f9e44",   # green
+    "Public value":                 "#1971c2",   # blue
+    "Data quality and reusability": "#e8590c",   # orange
+    "Operations and finance":       "#2f9e44",   # green
 }
 
 fill_colors = {
-    "Public Value":            "#a5d8ff",
-    "Scientific Data Quality": "#ffd8a8",
-    "Operations & Finance":    "#b2f2bb",
+    "Public value":                 "#a5d8ff",
+    "Data quality and reusability": "#ffd8a8",
+    "Operations and finance":       "#b2f2bb",
 }
 
 markers = {
-    "Public Value":            "o",
-    "Scientific Data Quality": "s",
-    "Operations & Finance":    "^",
+    "Public value":                 "o",
+    "Data quality and reusability": "s",
+    "Operations and finance":       "^",
 }
 
 # ---------------------------------------------------------------------------

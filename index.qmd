@@ -53,7 +53,7 @@ author:
         postal-code: "80045"
   - name: Sean Davis
     orcid: 0000-0002-8991-6458
-    email: seandavi@gmail.com
+    email: sean.2.davis@cuanschutz.edu
     corresponding: true
     affiliations:
       - name: Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus
@@ -67,12 +67,12 @@ abstract: |
   infrastructure, but evaluation of these investments is fragmented: each
   funded program tracks different metrics in different ways, preventing
   portfolio-level comparison and evidence-driven funding decisions. We
-  construct a structured approach built on three complementary
-  prioritization frameworks: *public value* (user engagement, citations,
-  funded grants), *scientific data quality* (metadata completeness, FAIR
+  construct a framework built on three complementary
+  prioritization domains: *public value* (user engagement, citations,
+  funded grants), *data quality and reusability* (metadata completeness, FAIR
   compliance, data dictionaries), and *operations and finance*
   (infrastructure reliability, cost sustainability). The relative weight of
-  each framework shifts predictably across a resource's lifecycle, and
+  each domain shifts predictably across a resource's lifecycle, and
   uniform metric panels across phases misallocate funding as a result.
   Drawing on the NIH Common Fund Data Ecosystem, we describe a
   portfolio-wide dashboard that operationalizes the framework across 19
