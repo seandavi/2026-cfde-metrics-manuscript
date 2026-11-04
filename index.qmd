@@ -67,13 +67,12 @@ abstract: |
   infrastructure, but evaluation of these investments is fragmented: each
   funded program tracks different metrics in different ways, preventing
   portfolio-level comparison and evidence-driven funding decisions. We
-  construct a framework built on three complementary
-  prioritization domains: *public value* (user engagement, citations,
-  funded grants), *data quality and reusability* (metadata completeness, FAIR
-  compliance, data dictionaries), and *operations and finance*
-  (infrastructure reliability, cost sustainability). The relative weight of
-  each domain shifts predictably across a resource's lifecycle, and
-  uniform metric panels across phases misallocate funding as a result.
+  propose a framework built on three questions a funder must answer about
+  any data resource: is anyone better off (*public value*), can the data be
+  trusted and reused (*data quality and reusability*), and can the resource
+  keep running (*operations and finance*). We expect the relative weight of
+  these domains to shift across a resource's lifecycle, so uniform metric
+  panels risk undervaluing infrastructure-building.
   Drawing on the NIH Common Fund Data Ecosystem, we describe a
   portfolio-wide dashboard that operationalizes the framework across 19
   programs in near real time.

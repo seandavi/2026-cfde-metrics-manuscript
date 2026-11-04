@@ -13,6 +13,8 @@ first occurrences is a follow-up pass once the main text is final.
 
 **CFDE (Common Fund Data Ecosystem)**: NIH cross-cutting initiative that harmonizes metadata and tooling across 19 Common Fund programs so researchers can find and reuse data across the portfolio.
 
+**CoreTrustSeal**: Certification for trustworthy data repositories, awarded after peer review of a repository's self-assessment against requirements on organizational infrastructure, digital object management, and technology; valid for three years.
+
 **DMS Policy (NIH Data Management and Sharing Policy)**: The 2023 NIH policy requiring grantees to plan for data sharing, which establishes a pre-policy baseline against which sharing and reuse improvements can be measured.
 
 **ELIXIR**: European life-sciences research infrastructure that publishes a ten-metric framework for evaluating bioinformatics software, covering version control, discoverability, automated builds, test data, and documentation.
@@ -32,5 +34,7 @@ first occurrences is a follow-up pass once the main text is final.
 **RCR (Relative Citation Ratio)**: NIH iCite metric that benchmarks an article's citation rate against field-specific expectations.
 
 **RDA (Research Data Alliance)**: International community that classifies FAIR indicators by priority (Essential, Important, Useful), providing a tiered roadmap for incremental FAIR improvement.
+
+**TRUST principles**: Transparency, Responsibility, User focus, Sustainability, Technology — five principles for demonstrating the trustworthiness of digital repositories.
 
 :::
