@@ -8,7 +8,7 @@ researchers outside the field, students, reporters).
 
 ::: {.callout-note title="Significance statement"}
 
-Public biomedical data ecosystems are now core scientific infrastructure, but each funded program tracks its own metrics differently, so portfolio-level comparison is effectively impossible.
+Public biomedical data ecosystems are now core scientific infrastructure, but each funded program tracks its own metrics differently, which makes portfolio-level comparison difficult.
 We propose evaluating any data resource in three domains (public value, data quality and reusability, and operations and finance), with weights that shift across its lifecycle, because uniform weighting risks misallocating funding.
 The NIH Common Fund Data Ecosystem operationalizes the framework across 19 programs in near real time.
 

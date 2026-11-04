@@ -64,9 +64,9 @@ author:
 funding: "Grant U54OD036472"
 abstract: |
   Public biomedical data resources have become central scientific
-  infrastructure, but evaluation of these investments is fragmented: each
-  funded program tracks different metrics in different ways, preventing
-  portfolio-level comparison and evidence-driven funding decisions. We
+  infrastructure, but in our experience their evaluation is fragmented:
+  each funded program tracks different metrics in different ways,
+  hindering portfolio-level comparison and evidence-driven funding decisions. We
   propose a framework built on three questions a funder must answer about
   any data resource: is anyone better off (*public value*), can the data be
   trusted and reused (*data quality and reusability*), and can the resource
