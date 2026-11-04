@@ -40,6 +40,25 @@
   doi = {10.1038/ng.2764},
 }
 
+% GTEx Consortium paper (#85). PubMed (PMID 23715323) lists "GTEx
+% Consortium" as the sole author and the named individuals as
+% investigators; Crossref lists them as authors, which made the
+% reference list read "Lonsdale, J. et al.". Unlike the two entries
+% above, this one keeps its @doi: key and overrides the resolved entry.
+% Other fields from the resolver's output.
+
+@article{doi:10.1038/ng.2653,
+  author = {{GTEx Consortium}},
+  title = {{The Genotype-Tissue Expression (GTEx) project}},
+  journaltitle = {Nature Genetics},
+  shortjournal = {Nat Genet},
+  volume = {45},
+  number = {6},
+  pages = {580--585},
+  date = {2013-05-29},
+  doi = {10.1038/ng.2653},
+}
+
 % Overrides of resolved entries (issue #74). Manubot drops Crossref's
 % article number, so article-number-only papers rendered with no pages;
 % the article number goes in `pages` (pandoc ignores `eid`). Others fix
