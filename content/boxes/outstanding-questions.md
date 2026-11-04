@@ -9,7 +9,7 @@ should be called out from the Concluding remarks section as
 typeset article (not numbered with other boxes).
 -->
 
-::: {.callout-note title="Outstanding Questions"}
+::: {.callout-note title="Outstanding questions"}
 
 - Who should convene a consensus process among data-sharing, FAIR, and repository leaders, funders, and resource operators to agree on core indicators, their definitions, and how to collect them, and how can funders commit to using the result?
 

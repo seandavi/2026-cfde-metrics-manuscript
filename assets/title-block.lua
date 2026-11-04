@@ -8,7 +8,8 @@
 --   1. names, each with superscript affiliation numbers and * for
 --      corresponding authors;
 --   2. one line per affiliation, prefixed by its number;
---   3. a * line with the corresponding authors' emails.
+--   3. a * line with the corresponding authors' emails, in the Trends
+--      form "email (initials surname)".
 --
 -- Pandoc's DOCX writer sets each `author` entry as an Author-styled
 -- paragraph; for PDF, assets/title.tex lays the same lines out under
@@ -78,17 +79,25 @@ local function affiliation_line(affiliation)
   return line
 end
 
+-- "Casey Greene" -> "C. Greene", "Ethan M. Lange" -> "E.M. Lange".
+local function initials_and_family(name)
+  local initials = ""
+  for word in pandoc.utils.stringify(name.given or ""):gmatch("[^%s%.]+") do
+    initials = initials .. pandoc.text.sub(word, 1, 1) .. "."
+  end
+  return initials .. " " .. pandoc.utils.stringify(name.family or "")
+end
+
+-- Trends format: *Correspondence: jqsmith@univ.edu (J.Q. Smith).
 local function correspondence_line(authors)
   local contacts = {}
   for _, author in ipairs(authors) do
     if is_corresponding(author) and author.email then
       local email = pandoc.utils.stringify(author.email)
-      local contact = pandoc.Inlines(author.name.literal)
-      contact:extend({
-        pandoc.Space(),
-        pandoc.Str("("),
+      local contact = pandoc.Inlines({
         pandoc.Link(email, "mailto:" .. email),
-        pandoc.Str(")"),
+        pandoc.Space(),
+        pandoc.Str("(" .. initials_and_family(author.name) .. ")"),
       })
       table.insert(contacts, contact)
     end

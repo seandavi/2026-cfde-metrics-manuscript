@@ -80,6 +80,7 @@ format:
       - assets/title.tex
     filters:
       - assets/title-block.lua
+      - assets/unbox-title-callout-pdf.lua
   docx:
     toc: false
     number-sections: false
