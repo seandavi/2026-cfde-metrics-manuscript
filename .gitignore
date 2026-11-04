@@ -67,6 +67,9 @@ key-references.tex
 # Confidential peer review material (never commit)
 revision/private/
 
+# Saved dashboard login session for make_figure2.py capture (never commit)
+content/images/.dashboard-auth.json
+
 # Render byproducts (quartobot resolve, quarto site assets)
 references.resolved.bib
 /site_libs/
