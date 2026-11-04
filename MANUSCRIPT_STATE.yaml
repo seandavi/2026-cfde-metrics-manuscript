@@ -1,0 +1,130 @@
+# MANUSCRIPT_STATE.yaml
+#
+# Shared editorial state for a scriptorium-managed writing project.
+# Every scriptorium skill reads this file to ground its work.
+# Validate at any time with: scriptorium validate MANUSCRIPT_STATE.yaml
+#
+# Bootstrapped non-conversationally by scriptorium's init skill from the
+# manuscript text (index.qmd, _quarto.yml, content/). Fields marked
+# `# DRAFT: author to confirm` are an agent's reading of the text, not
+# the authors' stated intent.
+
+# Scriptorium-side preferences (how scriptorium talks to you).
+# Not editorial properties of the manuscript itself.
+meta:
+  guidance_level: standard  # one of: terse, standard, full
+  # overrides:                # guards you choose to override for this project
+  #   - guard: nih-application-prose  # a guard id from a skill's manifest.yaml
+  #     skills: [specific-aims]       # or ["*"] for every skill that declares it
+  #     note: "..."                   # optional
+  #   # Policy and scope guards only; accuracy guards cannot be
+  #   # overridden. See knowledge/conventions/author-authority.md.
+
+project:
+  title: "Lifecycle-aware evaluation of biomedical data ecosystems"
+  target_type: manuscript   # Trends Open article type: Opinion
+  target_venue: "Trends Open (Cell Press), Opinion article"
+  source_format: quarto
+
+document_phase:
+  current: revision         # major revision, round 1 (branch revision-1)
+  # submission_target_date: 2026-12-31   # resubmission date, once known
+
+# What the document is arguing, drawn from the abstract and the
+# concluding remarks. Critique skills test whether the prose supports
+# each claim; transformation skills must preserve them.
+core_claims:
+  - "Evaluation of public biomedical data resources is fragmented: each funded program tracks its own metrics in its own way, which blocks portfolio-level comparison and evidence-driven funding decisions."  # DRAFT: author to confirm
+  - "A funder must answer three questions about any data resource, which define the framework's three domains: is anyone better off (public value), can the data be trusted and reused (data quality and reusability), and can the resource keep running (operations and finance)."  # DRAFT: author to confirm
+  - "The relative weight of the three domains shifts across a resource's lifecycle (early, mid, late), so uniform metric panels risk undervaluing infrastructure-building and misallocating funding; lifecycle-aware weighting is an organizing principle for evaluation, not a refinement on top."  # DRAFT: author to confirm
+  - "The framework is implementable: the CFDE Integration and Coordination Center's portfolio-wide dashboard operationalizes it across 19 Common Fund programs in near real time."  # DRAFT: author to confirm
+  - "Because standard metrics can justify or deny funding, the community they will judge should agree on core indicators, their collection, and their weights through a consensus process that tests the proposed lifecycle weights; the paper offers a shared evaluation language, not a final metric set."  # DRAFT: author to confirm
+
+# Limitations the manuscript itself acknowledges. Reviewer-simulation
+# will not flag these as fatal because they're known.
+known_weaknesses:
+  - "The lifecycle weights (Figure 1) are a normative proposal informed by experience coordinating the CFDE, not an empirical estimate; testing them needs weights elicited from stakeholders at each phase and longitudinal portfolio data."  # DRAFT: author to confirm
+  - "The framework is grounded in a single ecosystem: the CFDE serves as both the motivating case study and the operational testbed."  # DRAFT: author to confirm
+  - "Intrinsic data quality needs domain-expert review against community QC standards; most indicators in the data quality and reusability domain measure reusability, and QC compliance records that review happened without replacing it."  # DRAFT: author to confirm
+  - "The CFDE dashboard collects a prioritized subset of the catalog (Table 2) selected for feasibility; collection does not make an indicator core, and several core indicators in Table 1 are not among its current sources."  # DRAFT: author to confirm
+  - "Citation-based public value indicators understate reuse because of the data-citation gap (fewer than 30% of secondary analyses formally cite their source data); full-text mining of accession numbers is still being piloted."  # DRAFT: author to confirm
+  - "Community-size normalization is proposed but its candidate denominators need pilot validation, and practice change, the long-term measure of public value, is not yet measurable."  # DRAFT: author to confirm
+  - "The three-domain grouping is a synthesis of existing evaluation frameworks justified by tractability for funders, not derived empirically (main text carries an open TODO on how the domains were identified)."  # DRAFT: author to confirm
+
+terminology:
+  preferred:
+    - "framework"                          # the overall model only
+    - "domain"                             # each of the three parts of the framework
+    - "public value"
+    - "data quality and reusability"
+    - "operations and finance"
+    - "early phase (Infrastructure & Collection)"
+    - "mid phase (Active Use & Impact)"
+    - "late phase (Sustainability & Legacy)"
+    - "content citations"                  # DRAFT: author to confirm (citations to, or reuse of, hosted data)
+    - "platform citations"                 # DRAFT: author to confirm (citations to papers describing the resource)
+    - "second-generation citations"        # DRAFT: author to confirm (citations to the citing papers)
+    - "core indicators"                    # DRAFT: author to confirm (Table 1)
+  forbidden:
+    - "scientific quality"                 # as a domain name; quoting ELIXIR/GCBR categories or CoreTrustSeal is fine
+    - "User Behavior Framework"
+    - "framework (for a single domain)"    # e.g. "public value framework"; a domain is not a framework
+  synonyms:
+    # Commit 25634bd split the old term: in prose, "secondary citations"
+    # meant citations to the citing papers (now second-generation
+    # citations); the table row "number secondary citations" became
+    # "content citations". Review each hit before normalizing.
+    "secondary citations": "second-generation citations"  # DRAFT: author to confirm
+    "number citations": "platform citations"              # DRAFT: author to confirm
+
+style:
+  tone:                     # DRAFT: author to confirm
+    - restrained
+    - evidence-driven
+    - concise
+    - plain-language
+  voice: active             # DRAFT: author to confirm ("We argue", "We propose")
+  audience: "Funders and program staff, data-resource operators, and data-sharing, FAIR, and repository leaders who evaluate or are evaluated by biomedical data infrastructure; Trends Open's broad scientific readership outside research evaluation."  # DRAFT: author to confirm
+
+constraints:
+  preserve_citations: true
+  preserve_statistics: true
+  avoid_hype: true
+  max_word_count: 3500      # Trends Open Opinion main text limit (issue #13)
+
+bibliography:
+  # Order matters (see _quarto.yml): references.json is generated by
+  # quartobot pre-render from @doi:/@pmid:/@url:/@isbn: keys and is
+  # gitignored; references.bib holds overrides and hand-curated entries
+  # and wins on key collisions.
+  paths:
+    - "references.json"
+    - "references.bib"
+  format: mixed             # CSL JSON (quartobot) + BibTeX (hand-curated)
+
+# Section manifest for the Quarto multi-file layout. index.qmd holds the
+# front matter and abstract and includes the content/ files; the boxes
+# and supplement also render as separate Editorial Manager deliverables
+# via their own top-level .qmd files.
+sections:
+  - name: "front matter and abstract"
+    path: "index.qmd"
+    status: review          # DRAFT: author to confirm
+  - name: "main text"
+    path: "content/05.cfde-metrics-paper.md"
+    status: review          # DRAFT: author to confirm (open TODO(authors) notes remain)
+  - name: "glossary"
+    path: "content/boxes/glossary.md"
+    status: review          # DRAFT: author to confirm
+  - name: "significance statement"
+    path: "content/boxes/significance.md"
+    status: review          # DRAFT: author to confirm
+  - name: "outstanding questions"
+    path: "content/boxes/outstanding-questions.md"
+    status: review          # DRAFT: author to confirm
+  - name: "key references"
+    path: "content/boxes/key-references.md"
+    status: review          # DRAFT: author to confirm
+  - name: "supplementary information (Table S1)"
+    path: "content/supplement.md"
+    status: review          # DRAFT: author to confirm
