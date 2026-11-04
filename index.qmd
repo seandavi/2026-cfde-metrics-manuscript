@@ -73,9 +73,9 @@ abstract: |
   keep running (*operations and finance*). We expect the relative weight of
   these domains to shift across a resource's lifecycle, so uniform metric
   panels risk undervaluing infrastructure-building.
-  Drawing on the NIH Common Fund Data Ecosystem, we describe a
-  portfolio-wide dashboard that operationalizes the framework across 19
-  programs in near real time.
+  From the NIH Common Fund Data Ecosystem, we describe a dashboard that
+  collects a subset of these measures across 19 programs, without phase
+  weighting.
 ---
 
 {{< include content/05.cfde-metrics-paper.md >}}
