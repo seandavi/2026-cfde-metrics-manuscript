@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  Local copy of the upstream Trends journals style
+  (citation-style-language/styles, trends-journals.csl), changed for the
+  Ed-8 request that every reference show its DOI (issue #74):
+  - every entry ends with "https://doi.org/<DOI>" when it has a DOI,
+    following the official Cell style (cell.csl);
+  - preprints (type "article") read "Preprint at <publisher>", as in
+    cell.csl, instead of running the publisher into the title;
+  - journal abbreviations print without periods (e.g. "R Soc Open Sci").
+-->
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
     <title>Trends journals</title>
@@ -146,6 +156,9 @@
       </if>
     </choose>
   </macro>
+  <macro name="doi">
+    <text variable="DOI" prefix="https://doi.org/"/>
+  </macro>
   <macro name="page">
     <choose>
       <if type="chapter paper-conference" match="any">
@@ -178,7 +191,7 @@
       <choose>
         <if type="article-journal">
           <group delimiter=" " prefix=". ">
-            <text variable="container-title" form="short" font-style="italic"/>
+            <text variable="container-title" form="short" font-style="italic" strip-periods="true"/>
             <choose>
               <if variable="volume">
                 <group delimiter=", ">
@@ -186,12 +199,13 @@
                   <text macro="page"/>
                 </group>
               </if>
-              <else-if variable="DOI">
-                <text variable="DOI" prefix="DOI: "/>
-              </else-if>
-              <else-if variable="URL">
-                <text term="at"/>
-                <text variable="URL" prefix=" &lt;" suffix="&gt;"/>
+              <else-if variable="DOI" match="none">
+                <choose>
+                  <if variable="URL">
+                    <text term="at"/>
+                    <text variable="URL" prefix=" &lt;" suffix="&gt;"/>
+                  </if>
+                </choose>
               </else-if>
             </choose>
           </group>
@@ -212,6 +226,12 @@
         <else-if type="webpage post post-weblog" match="any">
           <text variable="container-title" font-style="italic" prefix=". " suffix=". "/>
           <text macro="access"/>
+        </else-if>
+        <else-if type="article">
+          <group delimiter=" " prefix=". ">
+            <text term="article" text-case="capitalize-first"/>
+            <text variable="publisher" prefix="at "/>
+          </group>
         </else-if>
         <else-if type="patent">
           <text variable="number" prefix=", "/>
@@ -253,6 +273,7 @@
           </group>
         </else>
       </choose>
+      <text macro="doi" prefix=". "/>
     </layout>
   </bibliography>
 </style>
