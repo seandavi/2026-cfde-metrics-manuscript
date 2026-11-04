@@ -6,6 +6,8 @@ for citation keys, looks each one up in the bibliography (`references.json`,
 written by `quartobot resolve`, plus hand-curated `references.bib`), and
 reports every cited entry missing an author, title, container/publisher,
 issued year, or DOI. Web pages need a URL and accessed date instead of a DOI.
+It also lists the keys whose `references.bib` entry overrides the resolved
+one, so a shadowed resolver entry is never silent.
 
 Run `quartobot resolve --from-scan . --output references.json
 --id-mode citation-key` (or `quarto render`) first so references.json exists.
@@ -102,7 +104,16 @@ def main() -> int:
     bibliography = {e["id"]: e for e in json.loads(json_path.read_text(encoding="utf-8"))}
     bib_path = project / "references.bib"
     if bib_path.exists():
-        bibliography.update({e["id"]: e for e in load_bib_as_csl(bib_path)})
+        # references.bib is listed after references.json in `bibliography:`,
+        # so pandoc uses its entry when a key is in both.
+        curated = {e["id"]: e for e in load_bib_as_csl(bib_path)}
+        overridden = sorted(curated.keys() & bibliography.keys())
+        if overridden:
+            print(f"references.bib overrides {len(overridden)} resolved entries:")
+            for key in overridden:
+                print(f"  {key}")
+            print()
+        bibliography.update(curated)
 
     keys = cited_keys(project)
     flagged = 0
