@@ -53,7 +53,7 @@ author:
         postal-code: "80045"
   - name: Sean Davis
     orcid: 0000-0002-8991-6458
-    email: seandavi@gmail.com
+    email: sean.2.davis@cuanschutz.edu
     corresponding: true
     affiliations:
       - name: Departments of Biomedical Informatics and Medicine, University of Colorado Anschutz Medical Campus
