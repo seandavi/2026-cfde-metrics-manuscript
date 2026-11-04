@@ -72,11 +72,16 @@ format:
     colorlinks: true
     fig-pos: "H"
     keep-tex: true
+    template-partials:
+      - assets/title.tex
+    filters:
+      - assets/title-block.lua
   docx:
     toc: false
     number-sections: false
     reference-doc: assets/trends-reference.docx
     filters:
+      - assets/title-block.lua
       - assets/strip-figures-docx.lua
       - assets/unbox-callouts-docx.lua
 

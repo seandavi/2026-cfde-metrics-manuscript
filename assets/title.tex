@@ -1,0 +1,27 @@
+$-- Quarto's title.tex partial with the \author line replaced so the PDF
+$-- title page shows the lines assets/title-block.lua builds in `author`:
+$-- names first, then affiliations and correspondence in smaller type.
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(subtitle)$
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{$subtitle$}
+$endif$
+$if(author)$
+\author{\parbox{\linewidth}{\centering
+$author/first$
+$if(author/rest)$
+\\[\medskipamount]
+{\normalsize $for(author/rest)$$it$$sep$\\ $endfor$}
+$endif$
+}}
+$else$
+\author{}
+$endif$
+\date{$date$}
