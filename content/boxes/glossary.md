@@ -29,7 +29,7 @@ first occurrences is a follow-up pass once the main text is final.
 
 **MCDA (Multi-Criteria Decision Analysis)**: A decision-making approach that combines multiple weighted performance dimensions into a single composite score.
 
-**PIsCO (Performance Indicators framework for Collection of bioinformatics resource metrics)**: Server-side framework for automated collection and visualization of software-quality metrics, allowing software health data to feed an evaluation dashboard directly.
+**PIsCO (Performance Indicators framework for Collection of bioinformatics resource metrics)**: Server-side framework for collecting, registering, and sharing metrics on bioinformatics resources such as software, databases, and training, and for presenting them visually.
 
 **RCR (Relative Citation Ratio)**: NIH iCite metric that benchmarks an article's citation rate against field-specific expectations.
 
