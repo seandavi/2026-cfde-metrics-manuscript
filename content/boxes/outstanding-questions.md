@@ -23,6 +23,8 @@ typeset article (not numbered with other boxes).
 
 - At what break-even point does the curation cost of a shared dataset get recovered by downstream reuse, and how should that point inform the decision to invest further or let a resource sunset?
 
+- If indicators are ever combined into a composite score, how should it keep strength in one domain from compensating for failure in another, and avoid counting the same reuse twice, as in content citations and cost per reuse?
+
 - As the data-citation gap persists, how can content citations be counted at portfolio scale without burdening individual projects?
 
 - As AI-driven and agent-based traffic on data portals grows, how do we partition it into noise to remove versus signal to interpret as evidence of resource value?
