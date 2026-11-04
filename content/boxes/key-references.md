@@ -9,7 +9,7 @@ citation of the box is required. The box is exempt from the
 manuscript's display-element/text-box count.
 -->
 
-::: {.callout-note title="Key References"}
+::: {.callout-note title="Key references"}
 
 1. Wilkinson MD et al. The FAIR Guiding Principles for scientific data management and stewardship. *Scientific Data*, 2016 [@doi:10.1038/sdata.2016.18]. The foundational definition of the principles that anchor the data quality and reusability domain throughout this paper.
 
