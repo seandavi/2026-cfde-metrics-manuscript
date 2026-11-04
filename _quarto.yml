@@ -40,9 +40,12 @@ website:
     right: |
       Built with [Quarto](https://quarto.org) and [quartobot](https://github.com/quartobot/quartobot).
 
+# Order matters: pandoc takes the later file when a key appears in both,
+# so entries in references.bib keyed like resolver keys (doi:, pmid:, ...)
+# override quartobot's output in references.json.
 bibliography:
-  - references.bib
   - references.json
+  - references.bib
 csl: assets/trends-journals.csl
 
 format:
