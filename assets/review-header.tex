@@ -1,0 +1,10 @@
+% Review-format PDF (issue #51), pulled in by _quarto-review.yml:
+% continuous line numbers and double spacing. The article class
+% already prints page numbers in the footer (plain page style).
+\usepackage{lineno}
+% Start numbering at \begin{document}: \linenumbers in the preamble
+% breaks packages Quarto loads after this header (fontawesome5 under
+% LuaLaTeX).
+\AtBeginDocument{\linenumbers}
+\usepackage{setspace}
+\doublespacing

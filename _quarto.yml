@@ -75,6 +75,7 @@ format:
     reference-doc: assets/trends-reference.docx
     filters:
       - assets/strip-figures-docx.lua
+      - assets/unbox-callouts-docx.lua
 
 execute:
   echo: false

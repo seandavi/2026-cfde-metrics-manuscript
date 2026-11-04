@@ -62,6 +62,14 @@ quarto render
 
 The pre-render hook resolves all `@doi:`, `@pmid:`, `@isbn:`, `@url:` cite keys into `references.json` before pandoc runs; pandoc-citeproc merges that with `references.bib` at render time. Outputs land in `_site/` — one HTML page, one PDF, and one DOCX per entry point.
 
+For the review-format build used for resubmission (continuous line numbers, double spacing, page numbers), render with the `review` profile:
+
+```sh
+quarto render --profile review
+```
+
+`_quarto-review.yml` is merged over `_quarto.yml` and writes to `_review/`, leaving `_site/` alone. The PDF gets `assets/review-header.tex`. The DOCX uses `assets/trends-review-reference.docx`, which is generated from `assets/trends-reference.docx` by `uv run assets/make-review-reference-docx.py`. Re-run that script after editing the base reference doc.
+
 ### Continuous integration
 
 Every push to `main` and every PR triggers `.github/workflows/render.yml`, which uses the [Quartobot reusable workflow](https://github.com/quartobot/quartobot/blob/main/.github/workflows/render-reusable.yml) to render and deploy. Outputs land on the `gh-pages` branch:
