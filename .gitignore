@@ -66,3 +66,7 @@ key-references.tex
 
 # Confidential peer review material (never commit)
 revision/private/
+
+# Render byproducts (quartobot resolve, quarto site assets)
+references.resolved.bib
+/site_libs/
