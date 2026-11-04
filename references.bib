@@ -1,6 +1,15 @@
 % Hand-curated entries live here. Auto-resolved entries written by
 % `quartobot resolve` land in references.json (regenerated each render,
 % ignored by git).
+%
+% Two kinds of entry:
+% - Keys without a prefix (e.g. allofus2019) are hand-curated entries
+%   that quartobot never resolves.
+% - Keys shaped like resolver keys (doi:, pmid:, url:, isbn:, ...)
+%   deliberately override quartobot's output for the same key: an entry
+%   here replaces the resolved one whole. This works because _quarto.yml
+%   lists references.bib after references.json and pandoc takes the later
+%   bibliography. `python3 ci/check_refs.py` lists every overridden key.
 
 % Consortium-authored articles. Crossref lists the consortium as the
 % author, but `quartobot resolve` drops consortium names, so these are

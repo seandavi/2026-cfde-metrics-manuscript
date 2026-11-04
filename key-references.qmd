@@ -6,8 +6,8 @@ format:
   pdf: default
   html: default
 bibliography:
-  - references.bib
   - references.json
+  - references.bib
 csl: assets/trends-journals.csl
 ---
 

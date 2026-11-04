@@ -36,7 +36,7 @@ The website navbar links between the four; on disk each renders to a navigable H
 - `content/` — manuscript prose in markdown chunks; citations as `@doi:…`, `@pmid:…`, `@isbn:…`, `@url:…` directly in prose; cross-refs as `@fig-name` / `@tbl-name`
 - `content/images/` — figures
 - `content/boxes/` — the Significance / Outstanding Questions / Key References / Glossary content (included by the corresponding `*.qmd` wrappers, with Glossary inlined in the main manuscript)
-- `references.bib` — hand-curated bibliography entries (currently empty)
+- `references.bib` — hand-curated bibliography entries, plus entries keyed like resolver keys (`doi:…`) that override `references.json` (listed after it in `bibliography:`)
 - `references.json` — auto-resolved entries written by `quartobot resolve` (gitignored; regenerated on every render)
 - `assets/trends-journals.csl` — citation style (Cell Press *Trends* journals; non-superscript bracketed numeric, e.g. `[1]`, `[1,5,7]`)
 - `assets/custom-dictionary.txt` — spell-check additions
