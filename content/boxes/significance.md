@@ -9,7 +9,7 @@ researchers outside the field, students, reporters).
 ::: {.callout-note title="Significance statement"}
 
 Public biomedical data ecosystems are now core scientific infrastructure, but each funded program tracks its own metrics differently, so portfolio-level comparison is effectively impossible.
-We argue that three product-strategy frameworks — public value, scientific quality, operations and finance — map onto research data resources, that their weight shifts predictably across a resource's lifecycle, and that ignoring this shift misallocates funding.
-The NIH Common Fund Data Ecosystem operationalizes the model across 19 programs in real time.
+We argue that three product-strategy domains — public value, data quality and reusability, and operations and finance — map onto research data resources, that their weight shifts predictably across a resource's lifecycle, and that ignoring this shift misallocates funding.
+The NIH Common Fund Data Ecosystem operationalizes the framework across 19 programs in real time.
 
 :::
