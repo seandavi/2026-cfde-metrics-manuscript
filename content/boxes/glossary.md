@@ -21,7 +21,7 @@ first occurrences is a follow-up pass once the main text is final.
 
 **FAIR**: Findable, Accessible, Interoperable, Reusable — a widely adopted set of principles for making research data reliably reusable.
 
-**FAIRplus-DSM (FAIRplus Dataset Maturity model)**: Six-level maturity scale that operationalizes the FAIR principles for life-sciences data, from Level 0 (no identifiers, local storage) to Level 5 (enterprise-grade lifecycle management with cross-community provenance).
+**FAIRplus-DSM (FAIRplus Dataset Maturity model)**: Six-level maturity scale that operationalizes the FAIR principles for life-sciences data, from Level 0 (no identifiers, local storage) to Level 5 (enterprise-level data governance with cross-community provenance).
 
 **GA4GH (Global Alliance for Genomics and Health)**: International standards organization whose "Driver Projects" model — small pilots that road-test new standards before portfolio-wide adoption — informs the CFDE's Metrics Working Group.
 
