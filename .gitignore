@@ -62,3 +62,6 @@ key-references.tex
 /images
 
 /.quarto/
+
+# Confidential peer review material (never commit)
+revision/private/
