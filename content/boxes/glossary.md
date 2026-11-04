@@ -15,7 +15,7 @@ first occurrences is a follow-up pass once the main text is final.
 
 **CoreTrustSeal**: Certification for trustworthy data repositories, awarded after peer review of a repository's self-assessment against requirements on organizational infrastructure, digital object management, and technology; valid for three years.
 
-**DMS Policy (NIH Data Management and Sharing Policy)**: The 2023 NIH policy requiring grantees to plan for data sharing, which establishes a pre-policy baseline against which sharing and reuse improvements can be measured.
+**DMS Policy (NIH Data Management and Sharing Policy)**: NIH policy, effective January 2023, that requires researchers to submit a plan for managing and sharing their scientific data and to comply with the plan NIH approves.
 
 **ELIXIR**: European life-sciences research infrastructure that publishes a ten-metric framework for evaluating bioinformatics software, covering version control, discoverability, automated builds, test data, and documentation.
 
