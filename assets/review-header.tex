@@ -8,3 +8,18 @@
 \AtBeginDocument{\linenumbers}
 \usepackage{setspace}
 \doublespacing
+% At 12 pt the Figure 2 legend no longer fits under the full-height
+% image and runs into the page number. Bound images to 0.7\textheight
+% (pandoc's \pandocbounded uses \textheight) so a figure and its legend
+% share one page.
+\makeatletter
+\renewcommand*\pandocbounded[1]{%
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{0.7\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi
+}
+\makeatother
