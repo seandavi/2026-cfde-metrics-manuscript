@@ -28,6 +28,7 @@ Thumbs.db
 _book/
 _freeze/
 _site/
+_review/
 .quarto/
 references.json
 *_files/
