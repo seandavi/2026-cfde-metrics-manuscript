@@ -21,15 +21,15 @@ first occurrences is a follow-up pass once the main text is final.
 
 **FAIR**: Findable, Accessible, Interoperable, Reusable — a widely adopted set of principles for making research data reliably reusable.
 
-**FAIRplus-DSM (FAIRplus Dataset Maturity model)**: Six-level maturity scale that operationalizes the FAIR principles for life-sciences data, from Level 0 (no identifiers, local storage) to Level 5 (enterprise-grade lifecycle management with cross-community provenance).
+**FAIRplus-DSM (FAIRplus Dataset Maturity model)**: Six-level maturity scale that operationalizes the FAIR principles for life-sciences data, from Level 0 (no identifiers, local storage) to Level 5 (enterprise-level data governance with cross-community provenance).
 
-**GA4GH (Global Alliance for Genomics and Health)**: International standards organization whose "Driver Projects" model — small pilots that road-test new standards before portfolio-wide adoption — informs the CFDE's Metrics Working Group.
+**GA4GH (Global Alliance for Genomics and Health)**: International standards organization whose "Driver Projects" model — a small number of real-world initiatives that steer and use new standards as proxies for the wider community — informs the CFDE's Metrics Working Group.
 
 **ICC (Integration and Coordination Center)**: CFDE center responsible for cross-portfolio coordination, evaluation, and the centralized metrics dashboard described here.
 
 **MCDA (Multi-Criteria Decision Analysis)**: A decision-making approach that combines multiple weighted performance dimensions into a single composite score.
 
-**PIsCO (Performance Indicators framework for Collection of bioinformatics resource metrics)**: Server-side framework for automated collection and visualization of software-quality metrics, allowing software health data to feed an evaluation dashboard directly.
+**PIsCO (Performance Indicators framework for Collection of bioinformatics resource metrics)**: Server-side framework for collecting, registering, and sharing metrics on bioinformatics resources such as software, databases, and training, and for presenting them visually.
 
 **RCR (Relative Citation Ratio)**: NIH iCite metric that benchmarks an article's citation rate against field-specific expectations.
 
