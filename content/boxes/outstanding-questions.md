@@ -2,7 +2,7 @@
 SUBMISSION NOTE (Trends Open):
 The "Outstanding questions" box is uploaded as a separate Word file
 in Editorial Manager. Max 2,000 characters including spaces (current:
-1,171). Bullets phrased as actual questions. No references. The box
+1,357). Bullets phrased as actual questions. No references. The box
 is exempt from the manuscript's display-element/text-box count. It
 should be called out from the Concluding remarks section as
 'see "Outstanding questions."' and placed as the last box in the
@@ -11,16 +11,20 @@ typeset article (not numbered with other boxes).
 
 ::: {.callout-note title="Outstanding Questions"}
 
-- At what break-even point does the curation cost of a shared dataset get recovered by downstream reuse, and how should that point inform the decision to invest in further sharing versus letting a resource sunset?
+- Who should convene a consensus process among data-sharing, FAIR, and repository leaders, funders, and resource operators to agree on core indicators, their definitions, and how to collect them, and how can funders commit to using the result?
 
-- As the data-citation gap persists, what KPI should replace raw citation counts as the primary measure of data-resource impact, and how do we collect it at portfolio scale without burdening individual projects?
+- Which resource types and lifecycle phases must a pilot cover to test whether phase-dependent weights predict later reuse and survival better than uniform weights?
 
-- How should cross-disciplinary co-authorship arising from a shared dataset be weighted relative to direct citation when evaluating a resource's scientific influence?
+- What shared infrastructure (common counting rules, open collection tooling, a common reporting format) would let every resource report the core indicators without building its own?
 
-- What is the right cadence for re-assessing the FAIR maturity of an active data resource, who owns the re-assessment, and how do we keep the process tractable as portfolios grow?
+- How often should indicators and weights be revisited, and who owns that re-weighting as evidence accumulates?
 
-- As AI-driven and agent-based traffic on data portals continues to grow, how do we partition it into noise to remove versus signal to interpret as evidence of resource value?
+- How should use and citation counts be normalized for small and domain-specific communities, and how can the size of an intended community be estimated reliably?
 
-- What governance structures keep federated evaluation frameworks honest as they evolve, so that metrics continue to serve funders' strategic questions rather than drifting toward data managers' reporting convenience?
+- At what break-even point does the curation cost of a shared dataset get recovered by downstream reuse, and how should that point inform the decision to invest further or let a resource sunset?
+
+- As the data-citation gap persists, how can content citations be counted at portfolio scale without burdening individual projects?
+
+- As AI-driven and agent-based traffic on data portals grows, how do we partition it into noise to remove versus signal to interpret as evidence of resource value?
 
 :::
