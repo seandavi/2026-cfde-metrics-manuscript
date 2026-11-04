@@ -1,0 +1,11 @@
+---
+title: "Supplementary information"
+subtitle: "Lifecycle-aware evaluation of biomedical data ecosystems"
+format:
+  docx: default
+  pdf:
+    classoption: landscape
+  html: default
+---
+
+{{< include content/supplement.md >}}

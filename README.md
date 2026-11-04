@@ -5,7 +5,7 @@
 
 Manuscript source for an [Opinion article](https://www.cell.com/trends-open/information-for-authors/article-types) prepared for submission to *[Trends Open](https://www.cell.com/trends-open)* (Cell Press).
 
-**Live preview**: https://seandavi.github.io/2026-cfde-metrics-manuscript/ — navbar walks between the main manuscript and the three separate-file submission deliverables (Significance, Outstanding questions, Key references).
+**Live preview**: https://seandavi.github.io/2026-cfde-metrics-manuscript/ — navbar walks between the main manuscript and the separate-file submission deliverables (Significance, Outstanding questions, Key references, Supplementary information).
 
 ## Manuscript description
 
@@ -15,7 +15,7 @@ The NIH [Common Fund Data Ecosystem](https://commonfund.nih.gov/dataecosystem) (
 
 ## How this repository is built
 
-The manuscript is authored in [Quarto](https://quarto.org) as a multi-target **website** with four entry points: a main manuscript and three Editorial-Manager-ready separate-file deliverables. Citations are resolved from persistent identifiers (DOI / PubMed ID / ISBN / URL) by [**quartobot**](https://github.com/quartobot/quartobot) running as a Quarto pre-render hook.
+The manuscript is authored in [Quarto](https://quarto.org) as a multi-target **website** with five entry points: a main manuscript and four Editorial-Manager-ready separate-file deliverables. Citations are resolved from persistent identifiers (DOI / PubMed ID / ISBN / URL) by [**quartobot**](https://github.com/quartobot/quartobot) running as a Quarto pre-render hook.
 
 Quartobot brings the [Manubot](https://manubot.org/) manuscript-as-software pattern — git-versioned source, automatic citation resolution, per-commit permalinks, CI builds — to Quarto. The repo here is a real-world test of quartobot's website-project support, with several findings filed upstream (see [quartobot/quartobot#103](https://github.com/quartobot/quartobot/issues/103)).
 
@@ -27,12 +27,13 @@ Quartobot brings the [Manubot](https://manubot.org/) manuscript-as-software patt
 | `significance.qmd` | Trends-required 75-word Significance statement (separate-file submission deliverable). | `significance.{pdf,docx}` for Editorial Manager |
 | `outstanding-questions.qmd` | "Outstanding questions" box (separate-file deliverable, ≤2,000 chars). | `outstanding-questions.{pdf,docx}` |
 | `key-references.qmd` | "Key references" box: 5 anchor refs with annotations (separate-file deliverable). | `key-references.{pdf,docx}` |
+| `supplement.qmd` | Supplementary information: Supplementary Table S1, the full indicator catalog with definitions (separate-file deliverable). | `supplement.{pdf,docx}` |
 
-The website navbar links between the four; on disk each renders to a navigable HTML page plus standalone Word and PDF documents for upload to Editorial Manager.
+The website navbar links between the five; on disk each renders to a navigable HTML page plus standalone Word and PDF documents for upload to Editorial Manager.
 
 ### Repository layout
 
-- `index.qmd`, `significance.qmd`, `outstanding-questions.qmd`, `key-references.qmd` — top-level render targets
+- `index.qmd`, `significance.qmd`, `outstanding-questions.qmd`, `key-references.qmd`, `supplement.qmd` — top-level render targets
 - `content/` — manuscript prose in markdown chunks; citations as `@doi:…`, `@pmid:…`, `@isbn:…`, `@url:…` directly in prose; cross-refs as `@fig-name` / `@tbl-name`
 - `content/images/` — figures
 - `content/boxes/` — the Significance / Outstanding Questions / Key References / Glossary content (included by the corresponding `*.qmd` wrappers, with Glossary inlined in the main manuscript)

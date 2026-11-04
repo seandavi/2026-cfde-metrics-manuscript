@@ -1,15 +1,17 @@
 project:
   type: website
   output-dir: _site
-  # Render targets: the main manuscript plus the three separate-file
+  # Render targets: the main manuscript plus the separate-file
   # submission deliverables (Significance, Outstanding Questions, Key
-  # References). Each renders to its own page in the website and to
-  # standalone .docx/.pdf for Editorial Manager upload.
+  # References, Supplementary information). Each renders to its own page
+  # in the website and to standalone .docx/.pdf for Editorial Manager
+  # upload.
   render:
     - index.qmd
     - significance.qmd
     - outstanding-questions.qmd
     - key-references.qmd
+    - supplement.qmd
   # Resolves @doi:, @pmid:, @arxiv:, @isbn:, @url:, @wikidata:, @pmcid:,
   # and bare DOIs before pandoc runs. The resolved CSL JSON lands in
   # references.json (gitignored — regenerated each render) and pandoc
@@ -31,6 +33,8 @@ website:
         href: outstanding-questions.html
       - text: "Key references"
         href: key-references.html
+      - text: "Supplementary information"
+        href: supplement.html
     right:
       - icon: github
         href: https://github.com/seandavi/2026-cfde-metrics-manuscript
