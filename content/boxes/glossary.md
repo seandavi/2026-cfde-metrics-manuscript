@@ -23,7 +23,7 @@ first occurrences is a follow-up pass once the main text is final.
 
 **FAIRplus-DSM (FAIRplus Dataset Maturity model)**: Six-level maturity scale that operationalizes the FAIR principles for life-sciences data, from Level 0 (no identifiers, local storage) to Level 5 (enterprise-level data governance with cross-community provenance).
 
-**GA4GH (Global Alliance for Genomics and Health)**: International standards organization whose "Driver Projects" model — small pilots that road-test new standards before portfolio-wide adoption — informs the CFDE's Metrics Working Group.
+**GA4GH (Global Alliance for Genomics and Health)**: International standards organization whose "Driver Projects" model — a small number of real-world initiatives that steer and use new standards as proxies for the wider community — informs the CFDE's Metrics Working Group.
 
 **ICC (Integration and Coordination Center)**: CFDE center responsible for cross-portfolio coordination, evaluation, and the centralized metrics dashboard described here.
 
