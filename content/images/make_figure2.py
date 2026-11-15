@@ -9,20 +9,24 @@
 """Build Figure 2: the CFDE ICC metrics dashboard as three stacked panels.
 
 Panels
-  (A) Program overview: summary counts and cumulative projects/publications.
+  (A) Program overview: summary counts and cumulative publications and
+      award funding.
   (B) Website engagement from Google Analytics.
-  (C) Project-level publications (left) and GitHub repositories (right) for
-      one core project.
+  (C) GitHub repositories for one core project.
+
+The screenshot build shows the full March 2026 panels; the live capture
+shows a curated subset of each (see LIVE_PANELS).
 
 Two sources, never mixed, so every panel shows one data vintage:
 
   from-screenshot  Crop the three panels out of the March 2026 three-column
                    screenshot (dashboard_screenshot.png) and restack them.
                    This is the committed interim figure.
-  capture          Re-capture all three panels from the live dashboard at
-                   high resolution. Panel C (project repositories) needs an
-                   ORCID login, so pass a saved Playwright session created
-                   with the `login` command.
+  capture          Re-capture a curated subset of the live dashboard at
+                   high resolution, two cards per row, so its text stays
+                   legible at print size. Panel C (project repositories)
+                   needs an ORCID login, so pass a saved Playwright session
+                   created with the `login` command.
 
 Output is a 300 dpi PNG sized for Trends Open (max 12.7 cm wide with the
 legend below the figure).
@@ -44,7 +48,7 @@ from pathlib import Path
 
 import click
 from PIL import Image, ImageChops, ImageDraw, ImageFont
-from playwright.async_api import Page, async_playwright
+from playwright.async_api import Locator, Page, async_playwright
 
 HERE = Path(__file__).resolve().parent
 DASHBOARD_URL = "https://cfde-eval.netlify.app/"
@@ -61,25 +65,43 @@ LABEL_FONTS = [
 ]
 
 # Panel boxes (left, top, right, bottom) in dashboard_screenshot.png
-# (2218x893), measured from its light-blue separator gutters. Panel C is
-# two stacked cards in the screenshot; they are placed side by side here.
-SCREENSHOT_PANELS: dict[str, list[tuple[int, int, int, int]]] = {
-    "A": [(15, 16, 874, 876)],
-    "B": [(899, 16, 1757, 876)],
-    "C": [(1783, 16, 2200, 434), (1783, 459, 2200, 876)],
+# (2218x893), measured from its light-blue separator gutters, as rows of
+# cards. Panel C is two stacked cards in the screenshot; they are placed side
+# by side here.
+SCREENSHOT_PANELS: dict[str, list[list[tuple[int, int, int, int]]]] = {
+    "A": [[(15, 16, 874, 876)]],
+    "B": [[(899, 16, 1757, 876)]],
+    "C": [[(1783, 16, 2200, 434), (1783, 459, 2200, 876)]],
 }
 
-# Live capture: (path, section headings, viewport width in CSS px) per card.
-# The project publications table needs a 1200 px viewport to avoid a
-# horizontal scrollbar (capture_sections refuses to cut off scrolled content).
-LIVE_PANELS: dict[str, list[tuple[str, list[str], int]]] = {
-    "A": [("", ["Overview", "Over Time"], 1600)],
-    "B": [("", ["Analytics"], 1600)],
+# Live capture. A full dashboard section scaled to 12.7 cm prints its text at
+# 2-3 pt, so the figure shows a curated subset: each row is at most two
+# 360x270 CSS px chart cards, which puts the charts' 11 px labels near 6 pt.
+# A card is (page path, section heading, CSS selector within the section,
+# index among its matches, table columns to keep or None). Chart cards are
+# ECharts canvases, so they are picked by position; captions are checked by
+# eye in the output.
+REPO_COLUMNS = ["Name", "Commits", "Issues", "PRs", "License"]
+PROJECT = f"core-project/{PANEL_C_PROJECT}"
+CHART = ".charts > .chart"
+Card = tuple[str, str, str, int, list[str] | None]
+LIVE_PANELS: dict[str, list[list[Card]]] = {
+    "A": [
+        [("", "Overview", "dl.details", 0, None)],
+        # Over Time charts: projects, fiscal-year awards, publications.
+        [("", "Over Time", CHART, 2, None), ("", "Over Time", CHART, 1, None)],
+    ],
+    "B": [
+        # Analytics charts: active, new, returning users, engaged sessions.
+        [("", "Analytics", CHART, 0, None), ("", "Analytics", CHART, 3, None)],
+    ],
     "C": [
-        (f"core-project/{PANEL_C_PROJECT}", ["Publications"], 1200),
-        (f"core-project/{PANEL_C_PROJECT}", ["Repositories"], 1200),
+        [(PROJECT, "Repositories", "table", 0, REPO_COLUMNS)],
+        # Repository charts: forks, issues, pull requests, commits.
+        [(PROJECT, "Repositories", CHART, 3, None), (PROJECT, "Repositories", CHART, 1, None)],
     ],
 }
+VIEWPORT_WIDTH = 1200
 DEVICE_SCALE_FACTOR = 3
 NOT_AUTHORIZED_TEXT = "not authorized"
 
@@ -154,54 +176,64 @@ def load_label_font(size_px: int) -> ImageFont.FreeTypeFont:
 
 
 def compose(
-    panels: dict[str, list[Image.Image]], width_cm: float, output: Path
+    panels: dict[str, list[list[Image.Image]]], width_cm: float, output: Path
 ) -> Image.Image:
-    """Stack panels as rows, cards within a panel side by side, one scale.
+    """Stack panels and their rows, cards within a row side by side, one scale.
 
     Every card is scaled by the same factor, chosen so the widest row fills
     the print width; narrower rows are centred.
     """
     card_gap = 12  # source px between cards in one row
-    rows = {
-        label: [collapse_blank_rows(trim(card)) for card in cards]
-        for label, cards in panels.items()
-    }
-    row_width = {
-        label: sum(c.width for c in cards) + card_gap * (len(cards) - 1)
-        for label, cards in rows.items()
-    }
+    rows = [
+        (label if i == 0 else None, [collapse_blank_rows(trim(c)) for c in cards])
+        for label, panel_rows in panels.items()
+        for i, cards in enumerate(panel_rows)
+    ]
+    row_widths = [
+        sum(c.width for c in cards) + card_gap * (len(cards) - 1) for _, cards in rows
+    ]
     width_px = cm_to_px(width_cm)
-    scale = width_px / max(row_width.values())
+    scale = width_px / max(row_widths)
 
     font = load_label_font(pt_to_px(LABEL_PT))
     label_height = round(pt_to_px(LABEL_PT) * 1.25)
-    row_gap = pt_to_px(LABEL_PT) // 2
+    panel_gap = pt_to_px(LABEL_PT) // 2
+    row_gap = round(card_gap * scale)
 
-    scaled: dict[str, list[Image.Image]] = {
-        label: [
-            c.resize(
-                (round(c.width * scale), round(c.height * scale)),
-                Image.Resampling.LANCZOS,
-            )
-            for c in cards
-        ]
-        for label, cards in rows.items()
-    }
+    scaled = [
+        (
+            label,
+            [
+                c.resize(
+                    (round(c.width * scale), round(c.height * scale)),
+                    Image.Resampling.LANCZOS,
+                )
+                for c in cards
+            ],
+        )
+        for label, cards in rows
+    ]
     height_px = sum(
-        label_height + max(c.height for c in cards) for cards in scaled.values()
-    ) + row_gap * (len(scaled) - 1)
+        (label_height + (panel_gap if i else 0) if label else row_gap)
+        + max(c.height for c in cards)
+        for i, (label, cards) in enumerate(scaled)
+    )
 
     figure = Image.new("RGB", (width_px, height_px), "white")
     draw = ImageDraw.Draw(figure)
     y = 0
-    for label, cards in scaled.items():
-        draw.text((0, y), f"({label})", font=font, fill="black")
-        y += label_height
-        x = round((width_px - row_width[label] * scale) / 2)
+    for i, ((label, cards), row_width) in enumerate(zip(scaled, row_widths)):
+        if label:
+            y += panel_gap if i else 0
+            draw.text((0, y), f"({label})", font=font, fill="black")
+            y += label_height
+        else:
+            y += row_gap
+        x = round((width_px - row_width * scale) / 2)
         for card in cards:
             figure.paste(card, (x, y))
             x += card.width + round(card_gap * scale)
-        y += max(c.height for c in cards) + row_gap
+        y += max(c.height for c in cards)
 
     figure.save(output, dpi=(DPI, DPI))
     click.echo(
@@ -212,66 +244,85 @@ def compose(
     return figure
 
 
-async def capture_sections(page: Page, headings: list[str]) -> Image.Image:
-    """Screenshot the page region spanning the sections with these h2 titles."""
-    boxes = []
-    for heading in headings:
-        section = page.locator(f'main > section:has(> h2:text-is("{heading}"))')
-        await section.scroll_into_view_if_needed()
-        text = await section.inner_text()
-        if NOT_AUTHORIZED_TEXT in text.lower():
-            raise click.ClickException(
-                f"Section {heading!r} at {page.url} is login-only. Run the "
-                "`login` command and pass its --storage-state file."
-            )
-        clipped = await section.evaluate(
-            """s => [...s.querySelectorAll('*')].some(e =>
-                e.scrollWidth > e.clientWidth + 2 &&
-                getComputedStyle(e).overflowX !== 'visible')"""
-        )
-        if clipped:
-            raise click.ClickException(
-                f"Section {heading!r} at {page.url} scrolls horizontally, so "
-                "the screenshot would cut it off; widen its viewport."
-            )
-        box = await section.bounding_box()
-        if box is None:
-            raise click.ClickException(
-                f"Section {heading!r} not rendered at {page.url}"
-            )
-        scroll_y = await page.evaluate("window.scrollY")
-        boxes.append((box["x"], box["y"] + scroll_y, box["width"], box["height"]))
-    left = min(b[0] for b in boxes)
-    top = min(b[1] for b in boxes)
-    right = max(b[0] + b[2] for b in boxes)
-    bottom = max(b[1] + b[3] for b in boxes)
-    png = await page.screenshot(
-        full_page=True,
-        clip={"x": left, "y": top, "width": right - left, "height": bottom - top},
+async def keep_table_columns(table: Locator, columns: list[str]) -> None:
+    """Hide every column of the table whose header is not listed; fit the rest."""
+    missing = await table.evaluate(
+        """(table, keep) => {
+            const headers = [...table.querySelectorAll('thead th')]
+                .map(th => th.textContent.trim());
+            const hide = new Set();
+            headers.forEach((h, i) => { if (!keep.includes(h)) hide.add(i); });
+            for (const row of table.querySelectorAll('tr')) {
+                [...row.children].forEach((cell, i) => {
+                    if (hide.has(i)) cell.style.display = 'none';
+                    // Wrap long cells (licence names) instead of widening.
+                    cell.style.maxWidth = '14em';
+                    cell.style.whiteSpace = 'normal';
+                });
+            }
+            // Size the table to its remaining columns, not the page width.
+            table.style.width = 'auto';
+            return keep.filter(h => !headers.includes(h));
+        }""",
+        columns,
     )
-    return Image.open(BytesIO(png))
+    if missing:
+        raise click.ClickException(f"Table has no column(s) {missing}")
 
 
-async def capture_live(storage_state: Path) -> dict[str, list[Image.Image]]:
+async def capture_card(page: Page, card: Card) -> Image.Image:
+    """Screenshot one element of a dashboard section."""
+    _, heading, selector, index, columns = card
+    section = page.locator(f'main > section:has(> h2:text-is("{heading}"))')
+    if NOT_AUTHORIZED_TEXT in (await section.inner_text()).lower():
+        raise click.ClickException(
+            f"Section {heading!r} at {page.url} is login-only. Run the "
+            "`login` command and pass its --storage-state file."
+        )
+    element = section.locator(selector).nth(index)
+    if columns is not None:
+        await keep_table_columns(element, columns)
+    await element.scroll_into_view_if_needed()
+    clipped = await element.evaluate(
+        """e => [e, ...e.querySelectorAll('*'), e.parentElement].some(x =>
+            x.scrollWidth > x.clientWidth + 2 &&
+            getComputedStyle(x).overflowX !== 'visible')"""
+    )
+    if clipped:
+        raise click.ClickException(
+            f"{selector!r} in {heading!r} at {page.url} scrolls horizontally, "
+            "so the screenshot would cut it off; drop columns or widen the "
+            "viewport."
+        )
+    return Image.open(BytesIO(await element.screenshot()))
+
+
+async def capture_live(storage_state: Path) -> dict[str, list[list[Image.Image]]]:
     async with async_playwright() as p:
         browser = await p.chromium.launch()
-        panels: dict[str, list[Image.Image]] = {}
-        for label, cards in LIVE_PANELS.items():
+        context = await browser.new_context(
+            storage_state=storage_state,
+            viewport={"width": VIEWPORT_WIDTH, "height": 1000},
+            device_scale_factor=DEVICE_SCALE_FACTOR,
+        )
+        pages: dict[str, Page] = {}
+        panels: dict[str, list[list[Image.Image]]] = {}
+        for label, rows in LIVE_PANELS.items():
             panels[label] = []
-            for path, headings, viewport_width in cards:
-                context = await browser.new_context(
-                    storage_state=storage_state,
-                    viewport={"width": viewport_width, "height": 1000},
-                    device_scale_factor=DEVICE_SCALE_FACTOR,
-                )
-                page = await context.new_page()
-                await page.goto(DASHBOARD_URL + path, wait_until="networkidle")
-                # The dashboard is a client-side app: wait for its charts and
-                # their entry animations before taking the screenshot.
-                await page.locator("main svg").first.wait_for()
-                await page.wait_for_timeout(2000)
-                panels[label].append(await capture_sections(page, headings))
-                await context.close()
+            for cards in rows:
+                row = []
+                for card in cards:
+                    path = card[0]
+                    if path not in pages:
+                        page = await context.new_page()
+                        await page.goto(DASHBOARD_URL + path, wait_until="networkidle")
+                        # The dashboard is a client-side app: wait for its
+                        # charts and their entry animations.
+                        await page.locator("main svg").first.wait_for()
+                        await page.wait_for_timeout(2000)
+                        pages[path] = page
+                    row.append(await capture_card(pages[path], card))
+                panels[label].append(row)
         await browser.close()
     return panels
 
@@ -315,8 +366,8 @@ def from_screenshot(screenshot: Path, output: Path, width_cm: float) -> None:
     """Restack the panels of the March 2026 three-column screenshot."""
     source = Image.open(screenshot).convert("RGB")
     panels = {
-        label: [source.crop(box) for box in boxes]
-        for label, boxes in SCREENSHOT_PANELS.items()
+        label: [[source.crop(box) for box in row] for row in rows]
+        for label, rows in SCREENSHOT_PANELS.items()
     }
     compose(panels, width_cm, output)
 
@@ -336,7 +387,7 @@ def from_screenshot(screenshot: Path, output: Path, width_cm: float) -> None:
 )
 @click.option("--width-cm", type=float, default=12.7, show_default=True)
 def capture(storage_state: Path, output: Path, width_cm: float) -> None:
-    """Re-capture all three panels from the live dashboard."""
+    """Re-capture a curated subset of the live dashboard."""
     panels = asyncio.run(capture_live(storage_state))
     compose(panels, width_cm, output)
     click.echo(
