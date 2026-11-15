@@ -47,7 +47,7 @@ known_weaknesses:
   - "The framework is grounded in a single ecosystem: the CFDE serves as both the motivating case study and the operational testbed."  # DRAFT: author to confirm
   - "Intrinsic data quality needs domain-expert review against community QC standards; most indicators in the data quality and reusability domain measure reusability, and QC compliance records that review happened without replacing it."  # DRAFT: author to confirm
   - "The CFDE dashboard collects a prioritized subset of the catalog (Table 2) selected for feasibility; collection does not make an indicator core, and several core indicators in Table 1 are not among its current sources."  # DRAFT: author to confirm
-  - "Citation-based public value indicators understate reuse because of the data-citation gap (fewer than 30% of secondary analyses formally cite their source data); full-text mining of accession numbers is still being piloted."  # DRAFT: author to confirm
+  - "Citation-based public value indicators understate reuse because of the data-citation gap (secondary analyses often leave their source data uncited); full-text mining of accession numbers is still being piloted."  # DRAFT: author to confirm
   - "Community-size normalization is proposed but its candidate denominators need pilot validation, and practice change, the long-term measure of public value, is not yet measurable."  # DRAFT: author to confirm
   - "The three-domain grouping is a synthesis of existing evaluation frameworks justified by tractability for funders, not derived empirically (main text carries an open TODO on how the domains were identified)."  # DRAFT: author to confirm
 
